@@ -1,0 +1,2 @@
+ExtractWav.R takes as input trial times, experiment data and extracts motion tracking trial data and audio data
+OpenPoseToTimeSeries.R extracts timeseries from raw Openpose data (also smooths the data)
