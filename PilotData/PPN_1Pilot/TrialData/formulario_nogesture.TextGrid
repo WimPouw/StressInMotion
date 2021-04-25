@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 9.44 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 9.44 
+        intervals: size = 12 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.165 
+            text = "_" 
+        intervals [2]:
+            xmin = 3.165 
+            xmax = 3.275 
+            text = "f" 
+        intervals [3]:
+            xmin = 3.275 
+            xmax = 3.355 
+            text = "o" 
+        intervals [4]:
+            xmin = 3.355 
+            xmax = 3.4250000000000003 
+            text = "4" 
+        intervals [5]:
+            xmin = 3.4250000000000003 
+            xmax = 3.515 
+            text = "m" 
+        intervals [6]:
+            xmin = 3.515 
+            xmax = 3.595 
+            text = "u" 
+        intervals [7]:
+            xmin = 3.595 
+            xmax = 3.645 
+            text = "l" 
+        intervals [8]:
+            xmin = 3.645 
+            xmax = 3.785 
+            text = "a" 
+        intervals [9]:
+            xmin = 3.785 
+            xmax = 3.845 
+            text = "4" 
+        intervals [10]:
+            xmin = 3.845 
+            xmax = 3.955 
+            text = "j" 
+        intervals [11]:
+            xmin = 3.955 
+            xmax = 4.055 
+            text = "o" 
+        intervals [12]:
+            xmin = 4.055 
+            xmax = 9.44 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 9.44 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.165 
+            text = "_" 
+        intervals [2]:
+            xmin = 3.165 
+            xmax = 3.4250000000000003 
+            text = "fo4" 
+        intervals [3]:
+            xmin = 3.4250000000000003 
+            xmax = 3.595 
+            text = "mu" 
+        intervals [4]:
+            xmin = 3.595 
+            xmax = 3.785 
+            text = "la" 
+        intervals [5]:
+            xmin = 3.785 
+            xmax = 4.055 
+            text = "4jo" 
+        intervals [6]:
+            xmin = 4.055 
+            xmax = 9.44 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 9.44 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.165 
+            text = "_" 
+        intervals [2]:
+            xmin = 3.165 
+            xmax = 4.055 
+            text = "formulario" 
+        intervals [3]:
+            xmin = 4.055 
+            xmax = 9.44 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 9.44 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.165 
+            text = "_" 
+        intervals [2]:
+            xmin = 3.165 
+            xmax = 9.44 
+            text = "fo4-mu-l'a-4jo" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 9.44 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.165 
+            text = "_" 
+        intervals [2]:
+            xmin = 3.165 
+            xmax = 9.44 
+            text = "formulario" 

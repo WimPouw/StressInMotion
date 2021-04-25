@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.24 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 3.24 
+        intervals: size = 12 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 1.255 
+            text = "i" 
+        intervals [3]:
+            xmin = 1.255 
+            xmax = 1.285 
+            text = "l" 
+        intervals [4]:
+            xmin = 1.285 
+            xmax = 1.315 
+            text = "u" 
+        intervals [5]:
+            xmin = 1.315 
+            xmax = 1.4349999999999998 
+            text = "s" 
+        intervals [6]:
+            xmin = 1.4349999999999998 
+            xmax = 1.4649999999999999 
+            text = "t" 
+        intervals [7]:
+            xmin = 1.4649999999999999 
+            xmax = 1.4949999999999999 
+            text = "4" 
+        intervals [8]:
+            xmin = 1.4949999999999999 
+            xmax = 1.575 
+            text = "a" 
+        intervals [9]:
+            xmin = 1.575 
+            xmax = 1.625 
+            text = "D" 
+        intervals [10]:
+            xmin = 1.625 
+            xmax = 1.795 
+            text = "o" 
+        intervals [11]:
+            xmin = 1.795 
+            xmax = 1.835 
+            text = "4" 
+        intervals [12]:
+            xmin = 1.835 
+            xmax = 3.24 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 3.24 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 1.255 
+            text = "i" 
+        intervals [3]:
+            xmin = 1.255 
+            xmax = 1.4349999999999998 
+            text = "lus" 
+        intervals [4]:
+            xmin = 1.4349999999999998 
+            xmax = 1.575 
+            text = "t4a" 
+        intervals [5]:
+            xmin = 1.575 
+            xmax = 1.835 
+            text = "Do4" 
+        intervals [6]:
+            xmin = 1.835 
+            xmax = 3.24 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 3.24 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 1.835 
+            text = "ilustrador" 
+        intervals [3]:
+            xmin = 1.835 
+            xmax = 3.24 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 3.24 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 3.24 
+            text = "i-lus-t4a-D'o4" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 3.24 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 3.24 
+            text = "ilustrador" 

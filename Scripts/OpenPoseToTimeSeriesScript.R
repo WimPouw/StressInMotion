@@ -101,7 +101,7 @@ for(vidfold in list_ppnfol)
   
   #make another slim dataframe for the hand and smooth with a Kolmogorov-Zurbenko filter (span 5, order 3)
   MT$y_index_left <- kz(MT$y_index_left, 5, 3) 
-  MT$y_index_left <- kz(MT$y_index_right, 5, 3)
+  MT$y_index_right <- kz(MT$y_index_right, 5, 3)
     
   if(handedness[which(list_ppnfol == vidfold)] =="left")    #based on on right or left handedness extract only relevant time series
   {MTslim <- cbind.data.frame(MT$time_ms, MT$y_index_left)
@@ -120,7 +120,7 @@ library(ggplot2)   #for plotting
 library(gridExtra) #for combine plots
 sample <- MT[3600:4900, ] #extract a sample from the motion tracking file
 sample$time_ms <- (max(sample$time_ms)-sample$time_ms)/1000 #set start to 0 time
-sample$smoothed <- kz(sample$y_index_left, 5, 3) #make a smoothed version
+sample$smoothed <- kz(sample$y_index_right, 5, 3) #make a smoothed version
 a <- ggplot(sample, aes(x=time_ms)) +geom_path(aes(y = smoothed), color = "red") + geom_rect(aes(xmin = 4, xmax = 6, ymin = -1500, ymax = -485), colour = "grey", fill = NA, alpha = 0.3)+
   geom_path(aes(y = y_index_right)) + theme_bw() #zoomed out plot
 b <- ggplot(sample[sample$time_ms >4 & sample$time_ms < 6, ], aes(x=time_ms)) + geom_path(aes(y = y_index_right)) + geom_path(aes(y = smoothed), color = "red") + theme_bw()

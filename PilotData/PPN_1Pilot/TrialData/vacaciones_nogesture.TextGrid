@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.09 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 12 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.035 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.035 
+            xmax = 1.085 
+            text = "b" 
+        intervals [3]:
+            xmin = 1.085 
+            xmax = 1.135 
+            text = "a" 
+        intervals [4]:
+            xmin = 1.135 
+            xmax = 1.2149999999999999 
+            text = "k" 
+        intervals [5]:
+            xmin = 1.2149999999999999 
+            xmax = 1.285 
+            text = "a" 
+        intervals [6]:
+            xmin = 1.285 
+            xmax = 1.4049999999999998 
+            text = "T" 
+        intervals [7]:
+            xmin = 1.4049999999999998 
+            xmax = 1.515 
+            text = "j" 
+        intervals [8]:
+            xmin = 1.515 
+            xmax = 1.565 
+            text = "o" 
+        intervals [9]:
+            xmin = 1.565 
+            xmax = 1.615 
+            text = "n" 
+        intervals [10]:
+            xmin = 1.615 
+            xmax = 1.7449999999999999 
+            text = "e" 
+        intervals [11]:
+            xmin = 1.7449999999999999 
+            xmax = 1.9549999999999998 
+            text = "s" 
+        intervals [12]:
+            xmin = 1.9549999999999998 
+            xmax = 3.09 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.035 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.035 
+            xmax = 1.135 
+            text = "ba" 
+        intervals [3]:
+            xmin = 1.135 
+            xmax = 1.285 
+            text = "ka" 
+        intervals [4]:
+            xmin = 1.285 
+            xmax = 1.565 
+            text = "Tjo" 
+        intervals [5]:
+            xmin = 1.565 
+            xmax = 1.9549999999999998 
+            text = "nes" 
+        intervals [6]:
+            xmin = 1.9549999999999998 
+            xmax = 3.09 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.035 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.035 
+            xmax = 1.9549999999999998 
+            text = "vacaciones" 
+        intervals [3]:
+            xmin = 1.9549999999999998 
+            xmax = 3.09 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.035 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.035 
+            xmax = 3.09 
+            text = "ba-ka-Tj'o-nes" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.035 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.035 
+            xmax = 3.09 
+            text = "vacaciones" 

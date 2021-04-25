@@ -1,0 +1,130 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.09 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.025 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.025 
+            xmax = 1.095 
+            text = "o" 
+        intervals [3]:
+            xmin = 1.095 
+            xmax = 1.135 
+            text = "4" 
+        intervals [4]:
+            xmin = 1.135 
+            xmax = 1.2149999999999999 
+            text = "i" 
+        intervals [5]:
+            xmin = 1.2149999999999999 
+            xmax = 1.335 
+            text = "T" 
+        intervals [6]:
+            xmin = 1.335 
+            xmax = 1.4249999999999998 
+            text = "o" 
+        intervals [7]:
+            xmin = 1.4249999999999998 
+            xmax = 1.535 
+            text = "n" 
+        intervals [8]:
+            xmin = 1.535 
+            xmax = 1.615 
+            text = "t" 
+        intervals [9]:
+            xmin = 1.615 
+            xmax = 1.785 
+            text = "e" 
+        intervals [10]:
+            xmin = 1.785 
+            xmax = 3.09 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.025 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.025 
+            xmax = 1.095 
+            text = "o" 
+        intervals [3]:
+            xmin = 1.095 
+            xmax = 1.2149999999999999 
+            text = "4i" 
+        intervals [4]:
+            xmin = 1.2149999999999999 
+            xmax = 1.535 
+            text = "Ton" 
+        intervals [5]:
+            xmin = 1.535 
+            xmax = 1.785 
+            text = "te" 
+        intervals [6]:
+            xmin = 1.785 
+            xmax = 3.09 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.025 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.025 
+            xmax = 1.785 
+            text = "horizonte" 
+        intervals [3]:
+            xmin = 1.785 
+            xmax = 3.09 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.025 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.025 
+            xmax = 3.09 
+            text = "o-4i-T'on-te" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.025 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.025 
+            xmax = 3.09 
+            text = "horizonte" 

@@ -1,0 +1,126 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.08 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.045 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.045 
+            xmax = 1.105 
+            text = "f" 
+        intervals [3]:
+            xmin = 1.105 
+            xmax = 1.1549999999999998 
+            text = "a" 
+        intervals [4]:
+            xmin = 1.1549999999999998 
+            xmax = 1.1849999999999998 
+            text = "4" 
+        intervals [5]:
+            xmin = 1.1849999999999998 
+            xmax = 1.285 
+            text = "m" 
+        intervals [6]:
+            xmin = 1.285 
+            xmax = 1.4049999999999998 
+            text = "a" 
+        intervals [7]:
+            xmin = 1.4049999999999998 
+            xmax = 1.555 
+            text = "T" 
+        intervals [8]:
+            xmin = 1.555 
+            xmax = 1.615 
+            text = "j" 
+        intervals [9]:
+            xmin = 1.615 
+            xmax = 1.7249999999999999 
+            text = "a" 
+        intervals [10]:
+            xmin = 1.7249999999999999 
+            xmax = 3.08 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.045 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.045 
+            xmax = 1.1849999999999998 
+            text = "fa4" 
+        intervals [3]:
+            xmin = 1.1849999999999998 
+            xmax = 1.4049999999999998 
+            text = "ma" 
+        intervals [4]:
+            xmin = 1.4049999999999998 
+            xmax = 1.7249999999999999 
+            text = "Tja" 
+        intervals [5]:
+            xmin = 1.7249999999999999 
+            xmax = 3.08 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.045 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.045 
+            xmax = 1.7249999999999999 
+            text = "farmacia" 
+        intervals [3]:
+            xmin = 1.7249999999999999 
+            xmax = 3.08 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.045 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.045 
+            xmax = 3.08 
+            text = "fa4-m'a-Tja" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.045 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.045 
+            xmax = 3.08 
+            text = "farmacia" 

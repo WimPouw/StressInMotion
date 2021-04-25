@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.09 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 8 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 1.2149999999999999 
+            text = "k" 
+        intervals [3]:
+            xmin = 1.2149999999999999 
+            xmax = 1.295 
+            text = "a" 
+        intervals [4]:
+            xmin = 1.295 
+            xmax = 1.325 
+            text = "B" 
+        intervals [5]:
+            xmin = 1.325 
+            xmax = 1.375 
+            text = "l" 
+        intervals [6]:
+            xmin = 1.375 
+            xmax = 1.4449999999999998 
+            text = "e" 
+        intervals [7]:
+            xmin = 1.4449999999999998 
+            xmax = 1.7349999999999999 
+            text = "s" 
+        intervals [8]:
+            xmin = 1.7349999999999999 
+            xmax = 3.09 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 4 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 1.295 
+            text = "ka" 
+        intervals [3]:
+            xmin = 1.295 
+            xmax = 1.7349999999999999 
+            text = "Bles" 
+        intervals [4]:
+            xmin = 1.7349999999999999 
+            xmax = 3.09 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 1.7349999999999999 
+            text = "cables" 
+        intervals [3]:
+            xmin = 1.7349999999999999 
+            xmax = 3.09 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 3.09 
+            text = "k'a-Bles" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1449999999999998 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.1449999999999998 
+            xmax = 3.09 
+            text = "cables" 

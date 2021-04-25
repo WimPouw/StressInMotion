@@ -1,0 +1,130 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.58 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 3.58 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.935 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.935 
+            xmax = 1.015 
+            text = "tS" 
+        intervals [3]:
+            xmin = 1.015 
+            xmax = 1.065 
+            text = "o" 
+        intervals [4]:
+            xmin = 1.065 
+            xmax = 1.1449999999999998 
+            text = "k" 
+        intervals [5]:
+            xmin = 1.1449999999999998 
+            xmax = 1.1949999999999998 
+            text = "o" 
+        intervals [6]:
+            xmin = 1.1949999999999998 
+            xmax = 1.255 
+            text = "l" 
+        intervals [7]:
+            xmin = 1.255 
+            xmax = 1.345 
+            text = "a" 
+        intervals [8]:
+            xmin = 1.345 
+            xmax = 1.4549999999999998 
+            text = "t" 
+        intervals [9]:
+            xmin = 1.4549999999999998 
+            xmax = 1.595 
+            text = "e" 
+        intervals [10]:
+            xmin = 1.595 
+            xmax = 3.58 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 3.58 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.935 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.935 
+            xmax = 1.065 
+            text = "tSo" 
+        intervals [3]:
+            xmin = 1.065 
+            xmax = 1.1949999999999998 
+            text = "ko" 
+        intervals [4]:
+            xmin = 1.1949999999999998 
+            xmax = 1.345 
+            text = "la" 
+        intervals [5]:
+            xmin = 1.345 
+            xmax = 1.595 
+            text = "te" 
+        intervals [6]:
+            xmin = 1.595 
+            xmax = 3.58 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 3.58 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.935 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.935 
+            xmax = 1.595 
+            text = "chocolate" 
+        intervals [3]:
+            xmin = 1.595 
+            xmax = 3.58 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 3.58 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.935 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.935 
+            xmax = 3.58 
+            text = "tSo-ko-l'a-te" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 3.58 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.935 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.935 
+            xmax = 3.58 
+            text = "chocolate" 

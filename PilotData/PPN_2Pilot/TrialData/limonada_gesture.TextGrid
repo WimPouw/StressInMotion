@@ -1,0 +1,130 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.08 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.075 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.075 
+            xmax = 1.135 
+            text = "l" 
+        intervals [3]:
+            xmin = 1.135 
+            xmax = 1.1849999999999998 
+            text = "i" 
+        intervals [4]:
+            xmin = 1.1849999999999998 
+            xmax = 1.255 
+            text = "m" 
+        intervals [5]:
+            xmin = 1.255 
+            xmax = 1.365 
+            text = "o" 
+        intervals [6]:
+            xmin = 1.365 
+            xmax = 1.3949999999999998 
+            text = "n" 
+        intervals [7]:
+            xmin = 1.3949999999999998 
+            xmax = 1.555 
+            text = "a" 
+        intervals [8]:
+            xmin = 1.555 
+            xmax = 1.7349999999999999 
+            text = "D" 
+        intervals [9]:
+            xmin = 1.7349999999999999 
+            xmax = 1.785 
+            text = "a" 
+        intervals [10]:
+            xmin = 1.785 
+            xmax = 3.08 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.075 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.075 
+            xmax = 1.1849999999999998 
+            text = "li" 
+        intervals [3]:
+            xmin = 1.1849999999999998 
+            xmax = 1.365 
+            text = "mo" 
+        intervals [4]:
+            xmin = 1.365 
+            xmax = 1.555 
+            text = "na" 
+        intervals [5]:
+            xmin = 1.555 
+            xmax = 1.785 
+            text = "Da" 
+        intervals [6]:
+            xmin = 1.785 
+            xmax = 3.08 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.075 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.075 
+            xmax = 1.785 
+            text = "limonada" 
+        intervals [3]:
+            xmin = 1.785 
+            xmax = 3.08 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.075 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.075 
+            xmax = 3.08 
+            text = "li-mo-n'a-Da" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.075 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.075 
+            xmax = 3.08 
+            text = "limonada" 

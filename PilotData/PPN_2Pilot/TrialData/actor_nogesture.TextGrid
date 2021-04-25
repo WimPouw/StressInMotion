@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.08 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.9450000000000001 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.9450000000000001 
+            xmax = 0.985 
+            text = "a" 
+        intervals [3]:
+            xmin = 0.985 
+            xmax = 1.055 
+            text = "k" 
+        intervals [4]:
+            xmin = 1.055 
+            xmax = 1.135 
+            text = "t" 
+        intervals [5]:
+            xmin = 1.135 
+            xmax = 1.275 
+            text = "o" 
+        intervals [6]:
+            xmin = 1.275 
+            xmax = 1.355 
+            text = "4" 
+        intervals [7]:
+            xmin = 1.355 
+            xmax = 3.08 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 4 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.9450000000000001 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.9450000000000001 
+            xmax = 1.055 
+            text = "ak" 
+        intervals [3]:
+            xmin = 1.055 
+            xmax = 1.355 
+            text = "to4" 
+        intervals [4]:
+            xmin = 1.355 
+            xmax = 3.08 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.9450000000000001 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.9450000000000001 
+            xmax = 1.355 
+            text = "actor" 
+        intervals [3]:
+            xmin = 1.355 
+            xmax = 3.08 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.9450000000000001 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.9450000000000001 
+            xmax = 3.08 
+            text = "ak-t'o4" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 3.08 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.9450000000000001 
+            text = "_" 
+        intervals [2]:
+            xmin = 0.9450000000000001 
+            xmax = 3.08 
+            text = "actor" 

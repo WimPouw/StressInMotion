@@ -1,0 +1,146 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.09 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 13 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.105 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.105 
+            xmax = 1.1949999999999998 
+            text = "u" 
+        intervals [3]:
+            xmin = 1.1949999999999998 
+            xmax = 1.2249999999999999 
+            text = "n" 
+        intervals [4]:
+            xmin = 1.2249999999999999 
+            xmax = 1.315 
+            text = "i" 
+        intervals [5]:
+            xmin = 1.315 
+            xmax = 1.355 
+            text = "B" 
+        intervals [6]:
+            xmin = 1.355 
+            xmax = 1.3949999999999998 
+            text = "e" 
+        intervals [7]:
+            xmin = 1.3949999999999998 
+            xmax = 1.4249999999999998 
+            text = "4" 
+        intervals [8]:
+            xmin = 1.4249999999999998 
+            xmax = 1.565 
+            text = "s" 
+        intervals [9]:
+            xmin = 1.565 
+            xmax = 1.635 
+            text = "i" 
+        intervals [10]:
+            xmin = 1.635 
+            xmax = 1.6849999999999998 
+            text = "D" 
+        intervals [11]:
+            xmin = 1.6849999999999998 
+            xmax = 1.815 
+            text = "a" 
+        intervals [12]:
+            xmin = 1.815 
+            xmax = 1.8949999999999998 
+            text = "D" 
+        intervals [13]:
+            xmin = 1.8949999999999998 
+            xmax = 3.09 
+            text = "_" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "syll" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.105 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.105 
+            xmax = 1.1949999999999998 
+            text = "u" 
+        intervals [3]:
+            xmin = 1.1949999999999998 
+            xmax = 1.315 
+            text = "ni" 
+        intervals [4]:
+            xmin = 1.315 
+            xmax = 1.4249999999999998 
+            text = "Be4" 
+        intervals [5]:
+            xmin = 1.4249999999999998 
+            xmax = 1.635 
+            text = "si" 
+        intervals [6]:
+            xmin = 1.635 
+            xmax = 1.8949999999999998 
+            text = "DaD" 
+        intervals [7]:
+            xmin = 1.8949999999999998 
+            xmax = 3.09 
+            text = "_" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.105 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.105 
+            xmax = 1.8949999999999998 
+            text = "universidad" 
+        intervals [3]:
+            xmin = 1.8949999999999998 
+            xmax = 3.09 
+            text = "_" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "phono" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.105 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.105 
+            xmax = 3.09 
+            text = "u-ni-Be4-si-D'aD" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "ortho" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.105 
+            text = "_" 
+        intervals [2]:
+            xmin = 1.105 
+            xmax = 3.09 
+            text = "universidad" 
