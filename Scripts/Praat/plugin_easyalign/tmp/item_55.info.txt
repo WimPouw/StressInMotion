@@ -118,3 +118,443 @@ orthoTID 4 phonoTID 3
 Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
 Syllabify...
 Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier
+
+###EASYALIGN: Phonetize ortho tier
+###TG 1/1 item_55
+Saving text encodings prefs... (Will be restored if script does not stop in the meantime)
+Reading: try UTF-8, then Windows Latin-1
+Writing: try ASCII, then UTF-16
+Using tier #1 (ortho)with 1 intervals
+Language : spa
+lang\spa\saga.exe -MX  tmp\t.txt tmp\tout.txt
+
+###EASYALIGN: Segment in phones, sylls, words
+
+Using HMM file: lang/spa/spa.hmm
+wordsTID 2 phonesTID 1
+orthoTID 4 phonoTID 3
+
+1 utt. aligned
+Pre-PTK filter : 0 silences removed (threshold was --undefined-- ms)
+Syllabify...
+Creating syll tier

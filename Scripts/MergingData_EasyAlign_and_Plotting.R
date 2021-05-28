@@ -77,6 +77,12 @@ for(ppn in ppns)
     praat_run(script, package = "speakr", capture = FALSE) #run praat script
     #loop through all trials
     txtgrds <- list.files(paste0(parentfolder, "/PilotData/", ppn, "/TrialData/"), pattern = "*.TextGrid") #list txtgrd files
+    #prepare a dataset
+    D <- rbind(trialinfo, trialinfo) #each trial is performed twice
+    D$condition <- "gesture"                  #set to gesture
+    D$condition[1:nrow(D)/2] <- "nogesture"   #set half to no gesture
+    D$ppn <- D$syllables_detected <- D$stressed_syllable <- D$time_beat <-
+      D$time_stress <- D$time_syl_L1 <- D$time_syl_L2 <- D$asynchrony_L1L2 <-D$asynchrony <- D$correct <- D$stressed_mistimingL1L2 <- NA
     #loop through all txt.grids
     for(trs in unique(txtgrds)) #loop through txtgrids, merge, collect synchrony info, and plot
     {
@@ -153,12 +159,9 @@ for(ppn in ppns)
       write.csv(MTe, paste0(parentfolder, "/PilotData/", ppn, "/Processed_TrialData/", namesamp, "_merged.csv"))
       
       ###################################Make a dataset for analysis
-      D <- trialinfo
-      D$ppn <- D$condition <- D$syllables_detected <- D$stressed_syllable <- D$time_beat <-
-        D$time_stress <- D$time_syl_L1 <- D$time_syl_L2 <- D$asynchrony_L1L2 <-D$asynchrony <- D$correct <- D$stressed_mistimingL1L2 <- NA
       #collect information from time series data
-      indexD <- which(D$target==name)
-      D$condition[indexD] <- str_remove(namesamp, paste0(name, "_"))
+      condition <- str_remove(namesamp, paste0(name, "_"))
+      indexD <- which(D$target==name & D$condition == condition)
       D$ppn[indexD] <- paste0("Pilot_PPN_", p)
       D$syllables_detected[indexD] <- max(MTe$syllable_num, na.rm = TRUE) #what is the number of easyalign detected syllables
       D$stressed_syllable[indexD]  <- max(MTe$syllable_num[MTe$STRESS=="STRESSED SYLLABLE"], na.rm = TRUE) #what is the syllable number thats stressed
@@ -180,52 +183,55 @@ for(ppn in ppns)
       if(D$stressed_syllable[indexD]==D$stressed.syllable.L2[indexD]){correct <- "correct_L2_match"}
       if((D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])&(D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])){correct <- "incorrect_other"}
       D$correct[indexD] <- correct
-  
-      ###############################################do some plotting and save each trial
-      MTes <- MTe[!is.na(MTe$syllable_num),]
-      #plot amplitude envelope
-      plotenv <- ggplot(MTes) + geom_path(aes(x=time_ms, y=envelope), color = "purple", size = 2) + 
-        ggtitle(paste0(namesamp, "\n STRESS (peak envelope) = ", MTes$time_ms[!is.na(MTes$STRESS)], "milliseconds")) + 
-        geom_vline(xintercept=MTes$time_ms[!is.na(MTes$stresstime)], alpha = 0.3, size = 2) + theme_bw() 
-      #plot F0
-      MTes$F0[MTes$F0==0] <- NA
-      plotF0 <- ggplot(MTes) + geom_path(aes(x=time_ms, y=F0), color = "red", size = 2) + 
-        ggtitle(paste0(namesamp, "\n STRESS (peak envelope) = ", MTes$time_ms[!is.na(MTes$STRESS)], "milliseconds")) + 
-        geom_vline(xintercept=MTes$time_ms[!is.na(MTes$stresstime)], alpha = 0.3, size = 2) + theme_bw() 
-      #plot MT
-      peaktime <- MTes$time_ms[!is.na(MTes$peakz)]
-      plotMT <- ggplot(MTes) + geom_path(aes(x=time_ms, y=vertical_movement), color = "black", size = 2) + ggtitle(paste0(namesamp, "\n maximum extension = ", peaktime, "milliseconds")) +
-        theme_bw()
-      if(length(peaktime)>0)
-      {plotMT <-  plotMT+ geom_vline(xintercept=peaktime, alpha = 0.3, size = 2) }
       
-      #get the waveform
-      rel_ac <- readWave(soundloc)
-      snd = rel_ac@left
-      times <-  seq(from = 1000/44100, to = length(snd)*(1000/44100), by = 1000/44100) 
-      snd = (snd - mean(snd))/1000
-      d <- cbind.data.frame(times, snd)
-      d <- d[seq(1, nrow(d), 40), ]
-      minploty <- min(d$snd)
-      maxploty <- max(d$snd)
-      #plot the waveform with some added information about stressed, L1 and L2 stress competitors
-      plotsound <- ggplot(d) + geom_path(aes(x=times, y=snd), color = "black", alpha = 0.5) + theme_bw()+ ggtitle(paste0(namesamp, "  (", paste0(unique(MTes$syllable_name), ") \n Intonation performance: ", correct)))+ 
-        xlim(min(MTes$time_ms), max(MTes$time_ms))+
-        geom_rect(data=d, aes(xmin=min(MTes$time_ms[!is.na(MTes$STRESS)]),xmax=max(MTes$time_ms[!is.na(MTes$STRESS)])),
-                  ymin= minploty,ymax=maxploty, fill=NA, color = "red", size=1, alpha=0.5, linetype = "dashed")+
-        geom_rect(data=d, aes(xmin=min(MTes$time_ms[!is.na(MTes$STRESS_L2)]),xmax=max(MTes$time_ms[!is.na(MTes$STRESS_L2)])),
-                  ymin= minploty,ymax=maxploty, fill=NA, color = "green", size=0.5, alpha=0.5)+
-        geom_rect(data=d, aes(xmin=min(MTes$time_ms[!is.na(MTes$STRESS_L1)]),xmax=max(MTes$time_ms[!is.na(MTes$STRESS_L1)])),
-                  ymin= minploty,ymax=maxploty, fill=NA, color = "blue", size=0.5, alpha=0.5, linetype = "dashed")+
-        geom_text(aes(label ="STRESS L2", x = min(MTes$time_ms[!is.na(MTes$STRESS_L2)])+1, y =maxploty+1), color = "green", alpha = 0.5)+
-        geom_text(aes(label ="STRESS", x = min(MTes$time_ms[!is.na(MTes$STRESS)])+1, y = 0), color = "red")+
-        geom_text(aes(label ="STRESS L1", x = min(MTes$time_ms[!is.na(MTes$STRESS_L1)])+1, y = minploty+1), color = "blue", alpha = 0.5)
-      
-      print(paste0("working on plot for trial:", namesamp))
-      png(paste0(parentfolder,"/PilotData/", ppn, "/TrialData/Plots/", namesamp, ".png"),width=6,height=8,units="in",res=250)
-      if(D$condition[indexD]=="gesture"){print(grid.arrange(plotsound, plotenv, plotF0, plotMT, nrow = 4))}
-      if(D$condition[indexD]=="nogesture"){print(grid.arrange(plotsound, plotenv, plotF0, nrow = 3))}
-      dev.off()
+      print(trs)
+      print(D$condition[indexD])
+      ################################################do some plotting and save each trial #uncomment if not necessary
+      #MTes <- MTe[!is.na(MTe$syllable_num),]
+      ##plot amplitude envelope
+      #plotenv <- ggplot(MTes) + geom_path(aes(x=time_ms, y=envelope), color = "purple", size = 2) + 
+      #  ggtitle(paste0(namesamp, "\n STRESS (peak envelope) = ", MTes$time_ms[!is.na(MTes$STRESS)], "milliseconds")) + 
+      #  geom_vline(xintercept=MTes$time_ms[which(MTes$stresstime=="STRESS")], alpha = 0.3, size = 2) + theme_bw() 
+      ##plot F0
+      #MTes$F0[MTes$F0==0] <- NA
+      #plotF0 <- ggplot(MTes) + geom_path(aes(x=time_ms, y=F0), color = "red", size = 2) + 
+      #  ggtitle(paste0(namesamp, "\n STRESS (peak envelope) = ", MTes$time_ms[!is.na(MTes$STRESS)], "milliseconds")) + 
+      #  geom_vline(xintercept=MTes$time_ms[which(MTes$stresstime=="STRESS")], alpha = 0.3, size = 2) + theme_bw() 
+      ##plot MT
+      #peaktime <- MTes$time_ms[!is.na(MTes$peakz)]
+      #plotMT <- ggplot(MTes) + geom_path(aes(x=time_ms, y=vertical_movement), color = "black", size = 2) + ggtitle(paste0(namesamp, "\n maximum extension = ", peaktime, "milliseconds")) +
+      #  theme_bw()
+      #if(length(peaktime)>0)
+      #{plotMT <-  plotMT+ geom_vline(xintercept=peaktime, alpha = 0.3, size = 2) }
+      #
+      ##get the waveform
+      #rel_ac <- readWave(soundloc)
+      #snd = rel_ac@left
+      #times <-  seq(from = 1000/44100, to = length(snd)*(1000/44100), by = 1000/44100) 
+      #snd = (snd - mean(snd))/1000
+      #d <- cbind.data.frame(times, snd)
+      #d <- d[seq(1, nrow(d), 40), ]
+      #minploty <- min(d$snd)
+      #maxploty <- max(d$snd)
+      ##plot the waveform with some added information about stressed, L1 and L2 stress competitors
+      #plotsound <- ggplot(d) + geom_path(aes(x=times, y=snd), color = "black", alpha = 0.5) + theme_bw()+ ggtitle(paste0(namesamp, "  (", paste0(unique(MTes$syllable_name), ") \n Intonation performance: ", correct)))+ 
+      #  xlim(min(MTes$time_ms), max(MTes$time_ms))+
+      #  geom_rect(data=d, aes(xmin=min(MTes$time_ms[!is.na(MTes$STRESS)]),xmax=max(MTes$time_ms[!is.na(MTes$STRESS)])),
+      #            ymin= minploty,ymax=maxploty, fill=NA, color = "red", size=1, alpha=0.5, linetype = "dashed")+
+      #  geom_rect(data=d, aes(xmin=min(MTes$time_ms[!is.na(MTes$STRESS_L2)]),xmax=max(MTes$time_ms[!is.na(MTes$STRESS_L2)])),
+      #            ymin= minploty,ymax=maxploty, fill=NA, color = "green", size=0.5, alpha=0.5)+
+      #  geom_rect(data=d, aes(xmin=min(MTes$time_ms[!is.na(MTes$STRESS_L1)]),xmax=max(MTes$time_ms[!is.na(MTes$STRESS_L1)])),
+      #            ymin= minploty,ymax=maxploty, fill=NA, color = "blue", size=0.5, alpha=0.5, linetype = "dashed")+
+      #  geom_text(aes(label ="STRESS L2", x = min(MTes$time_ms[!is.na(MTes$STRESS_L2)])+1, y =maxploty+1), color = "green", alpha = 0.5)+
+      #  geom_text(aes(label ="STRESS", x = min(MTes$time_ms[!is.na(MTes$STRESS)])+1, y = 0), color = "red")+
+      #  geom_text(aes(label ="STRESS L1", x = min(MTes$time_ms[!is.na(MTes$STRESS_L1)])+1, y = minploty+1), color = "blue", alpha = 0.5)
+      #
+      #print(paste0("working on plot for trial:", namesamp))
+      #png(paste0(parentfolder,"/PilotData/", ppn, "/TrialData/Plots/", namesamp, ".png"),width=6,height=8,units="in",res=250)
+      #if(D$condition[indexD]=="gesture"){print(grid.arrange(plotsound, plotenv, plotF0, plotMT, nrow = 4))}
+      #if(D$condition[indexD]=="nogesture"){print(grid.arrange(plotsound, plotenv, plotF0, nrow = 3))}
+      #dev.off()
+
     }
     DD <- rbind(DD, D)
 }

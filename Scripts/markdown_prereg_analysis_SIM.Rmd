@@ -1,0 +1,59 @@
+---
+title: "PreRegAnalysisSIM"
+author: "Wim Pouw"
+date: "5/28/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(plotly)
+library(RColorBrewer)
+library(wesanderson)
+library(ggbeeswarm)
+
+curfolder <- getwd()
+D <- read.csv(paste0(dirname(curfolder), "/ProcessedTimingData/DD.csv"))
+D <- na.omit(D)
+
+D$accent <- ifelse(D$accent=="yes", "accent present", "no accent")
+D$accent <- factor(D$accent, levels=c("no accent", "accent present"))
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+So we have computed directed asynchrony measure, which transforms the asynchrony observed for when the correct L1 and L2 stress are differently placed, such that negative asynchronies indicate an asynchrony towards L2 and positive values indicate asynchrony towards L1 direction. So if a there very positive directed asynchronies, it seems that gesture is more attracted towards L1 relative to speech. This measure is especially informative for the mismatch trials, as for matched trials the asynchrony is not transformed. 
+```{r cars}
+
+a <- ggplot(D[D$condition == "gesture", ], aes(x= asynchrony, color = ppn)) + geom_density()+theme_bw()+facet_grid(.~accent)
+a <- a + scale_color_manual(values=wes_palette(n=2, name = "Darjeeling1"))
+ggplotly(a)
+
+
+a <- ggplot(D[D$condition == "gesture", ], aes(x = stress, y= asynchrony_L1L2, color=ppn)) +geom_boxplot(alpha = 0) + geom_quasirandom()+theme_bw()+ coord_flip()
+a <- a + scale_color_manual(values=wes_palette(n=2, name = "Darjeeling1"))
+ggplotly(a)
+
+
+a <- ggplot(D[D$stressed_mistimingL1L2!=0,], aes(x= stressed_mistimingL1L2, color = condition)) + geom_density()+theme_bw()
+a <- a + scale_color_manual(values=wes_palette(n=2, name = "BottleRocket2")) + facet_grid(stress~accent)
+ggplotly(a)
+```
+
+## Power analysis
+
+
+
+https://link.springer.com/article/10.3758/s13428-021-01546-0
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
