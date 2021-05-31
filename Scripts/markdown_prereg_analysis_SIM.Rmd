@@ -5,46 +5,116 @@ date: "5/28/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, echo=FALSE, warning = FALSE, message = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
 library(plotly)
 library(RColorBrewer)
 library(wesanderson)
 library(ggbeeswarm)
+library(papaja)
+library(nlme)
+library(plyr)
 
 curfolder <- getwd()
 D <- read.csv(paste0(dirname(curfolder), "/ProcessedTimingData/DD.csv"))
 D <- na.omit(D)
 
-D$accent <- ifelse(D$accent=="yes", "accent present", "no accent")
-D$accent <- factor(D$accent, levels=c("no accent", "accent present"))
+D$accent  <- ifelse(D$accent=="yes", "accent present", "no accent")
+D$accent  <- factor(D$accent, levels=c("no accent", "accent present"))
+D$correct <- factor(D$correct, levels=c("L2 match & L1 match", "L2 match & L1 mismatch", "L2 mismatch & L1 match", "L2 mismatch & L1 mismatch"))
+D$stress <-  factor(D$stress, levels=c("same", "difference"))
 ```
 
-## R Markdown
+## Descriptive checks
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Here we provide a descriptive overview of the syllable identifications relative to target (table 1). In the current data the number of syllables identified by EasyAlign perfectly matched the targeted number of syllables, i.e., in 100% of the trials there were 0 differences in the number of syllable detected versus target.
 
 
-So we have computed directed asynchrony measure, which transforms the asynchrony observed for when the correct L1 and L2 stress are differently placed, such that negative asynchronies indicate an asynchrony towards L2 and positive values indicate asynchrony towards L1 direction. So if a there very positive directed asynchronies, it seems that gesture is more attracted towards L1 relative to speech. This measure is especially informative for the mismatch trials, as for matched trials the asynchrony is not transformed. 
-```{r cars}
+Table 1. Percentage of syllable detection mismatches
+```{r table01, echo= FALSE, warning = FALSE, message = FALSE}
+tab01 <- data.frame(prop.table(table(D$Nsyllables-D$Nsyllables_correct))*100)
+colnames(tab01) <- c("syllable differences", "percentage")  
+  
+apa_table(
+  tab01
+  , align = c("l", rep("r", 3))
+  , caption = "A summary table of percentage of differences between syllables"
+)
+```
 
-a <- ggplot(D[D$condition == "gesture", ], aes(x= asynchrony, color = ppn)) + geom_density()+theme_bw()+facet_grid(.~accent)
+Table 2 provides the percentages of different type of L2 stress placement matches and mismatches.
+
+Table 2. Percentage of correct L2 placements
+```{r, echo = FALSE}
+tab02 <- data.frame(prop.table(table(D$correct))*100)
+colnames(tab02) <- c("stress mis/match type", "percentage")  
+  
+  
+apa_table(
+  tab02
+  , align = c("l", rep("r", 3))
+  , caption = "A summary table of percentage of stress match/mismatch types"
+)
+```
+
+## Main Confirmatory Analysis
+
+## Gesture vs. no gesture
+
+For the first analysis we simply assess whether the absolute difference in stress timing relative to the target stress time is different for the gesture or the no gesture condition.
+
+```{r, echo = FALSE}
+#stress correct
+a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2)+theme_bw()+ylim(1e-12, NA)
+a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1"))
+ggplotly(a)
+```
+
+
+```{r}
+D$accuracy <- abs(D$stressed_mistimingL2L1) #absolute deviation from stress from L2
+
+#basemodel predicting the overall mean accuracy
+model0 <- lme(accuracy~1, data = D, random = list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+
+#alternative model with gesture versus no gesture as predictor
+model1 <- lme(accuracy~condition, data = D, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+anova(model0, model1) #test difference basemodel versus model 1
+summary(model1) 
+```
+
+
+
+## L1 L2 competition and asynchrony
+
+For the second main analysis we assess only trials which indicate
+
+
+```{r, echo = FALSE}
+#for correct placement
+subD <- subset(D, condition == "gesture")
+
+
+a <- ggplot(D[D$condition == "gesture", ], aes(x = stress, y= asynchrony_L2L1)) + geom_quasirandom(color = "red", size = 0.1)+geom_boxplot(alpha = 0)+theme_bw()+ coord_flip()
 a <- a + scale_color_manual(values=wes_palette(n=2, name = "Darjeeling1"))
 ggplotly(a)
 
 
-a <- ggplot(D[D$condition == "gesture", ], aes(x = stress, y= asynchrony_L1L2, color=ppn)) +geom_boxplot(alpha = 0) + geom_quasirandom()+theme_bw()+ coord_flip()
-a <- a + scale_color_manual(values=wes_palette(n=2, name = "Darjeeling1"))
-ggplotly(a)
-
-
-a <- ggplot(D[D$stressed_mistimingL1L2!=0,], aes(x= stressed_mistimingL1L2, color = condition)) + geom_density()+theme_bw()
-a <- a + scale_color_manual(values=wes_palette(n=2, name = "BottleRocket2")) + facet_grid(stress~accent)
-ggplotly(a)
 ```
+
+
+```{r}
+#basemodel predicting the overall mean accuracy
+model0 <- lme(asynchrony_L2L1~1, data = subD, random = list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+
+#alternative model with gesture versus no gesture as predictor
+model1 <- lme(asynchrony_L2L1~stress, data = subD, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+anova(model0, model1) #test difference basemodel versus model 1
+summary(model1) 
+```
+
+
 
 ## Power analysis
 

@@ -1,385 +1,385 @@
-"","trial","accent","stress","type","target","stressed.syllable.L1","stressed.syllable.L2","L1.L2","condition","stressed_mistimingL1L2","correct","asynchrony","asynchrony_L1L2","time_syl_L2","time_syl_L1","time_stress","time_beat","stressed_syllable","syllables_detected","ppn"
-"1","C1.I.1","yes","difference","+written accent, +stress difference","análisis",3,2,1,"nogesture",0,"correct_L2_match",-647,647,1250,1346,1250,1897,2,4,"Pilot_PPN_1"
-"2","C1.I.2","yes","difference","+written accent, +stress difference","centímetro",3,2,1,"nogesture",-40,"incorrect_other",-401,401,1456,1496,1496,1897,3,4,"Pilot_PPN_1"
-"3","C1.I.3","yes","difference","+written accent, +stress difference","pirámide",3,2,1,"nogesture",0,"correct_L2_match",-215,215,1351,1366,1351,1566,2,4,"Pilot_PPN_1"
-"4","C1.I.4","yes","difference","+written accent, +stress difference","cardiólogo",3,2,1,"nogesture",-105,"incorrect_other",15,-15,1411,1516,1516,1501,3,4,"Pilot_PPN_1"
-"5","C1.I.5","yes","difference","+written accent, +stress difference","máquina",2,1,1,"nogesture",-340,"incorrect_other",15,-15,915,1210,1255,1240,3,3,"Pilot_PPN_1"
-"6","C1.I.6","yes","difference","+written accent, +stress difference","automóvil",4,3,1,"nogesture",0,"correct_L2_match",-150,150,1331,1526,1331,1481,3,4,"Pilot_PPN_1"
-"7","C1.I.7","yes","difference","+written accent, +stress difference","teléfono",3,2,1,"nogesture",-311,"incorrect_other",316,-316,1150,1451,1461,1145,4,4,"Pilot_PPN_1"
-"8","C1.I.8","yes","difference","+written accent, +stress difference","fórmula",2,1,1,"nogesture",-260,"incorrect_other",0,0,1065,1215,1325,1325,3,3,"Pilot_PPN_1"
-"9","C1.I.9","yes","difference","+written accent, +stress difference","acróbata",3,2,1,"nogesture",0,"correct_L2_match",-472,472,1320,1476,1320,1792,2,4,"Pilot_PPN_1"
-"10","C1.I.10","yes","difference","+written accent, +stress difference","satélito",3,2,1,"nogesture",0,"correct_L2_match",-266,266,1245,1381,1245,1511,2,4,"Pilot_PPN_1"
-"11","C1.I.11","yes","difference","+written accent, +stress difference","gráfico",2,1,1,"nogesture",0,"correct_L2_match",80,-80,1015,1320,1015,935,1,3,"Pilot_PPN_1"
-"12","C1.I.12","yes","difference","+written accent, +stress difference","océano",3,2,1,"nogesture",0,"correct_L2_match",-70,70,1230,1346,1230,1300,2,4,"Pilot_PPN_1"
-"13","C1.I.13","yes","difference","+written accent, +stress difference","carnívora",3,2,1,"nogesture",0,"correct_L2_match",-376,376,1506,1636,1506,1882,2,4,"Pilot_PPN_1"
-"14","C1.I.14","yes","difference","+written accent, +stress difference","católico",3,2,1,"nogesture",-55,"incorrect_other",330,-330,1170,1225,1225,895,3,4,"Pilot_PPN_1"
-"15","C1.I.15","yes","difference","+written accent, +stress difference","demócrata",3,2,1,"nogesture",0,"correct_L2_match",-506,506,2072,2358,2072,2578,2,4,"Pilot_PPN_1"
-"16","C1.I.16","yes","difference","+written accent, +stress difference","gramófono",3,2,1,"nogesture",266,"incorrect_other",-426,426,1561,1812,1295,1721,1,4,"Pilot_PPN_1"
-"17","C1.I.17","yes","difference","+written accent, +stress difference","micrófono",3,2,1,"nogesture",290,"incorrect_other",-601,601,1320,1586,1030,1631,1,4,"Pilot_PPN_1"
-"18","C1.I.18","yes","difference","+written accent, +stress difference","metáfora",3,2,1,"nogesture",195,"incorrect_other",-661,661,1200,1431,1005,1666,1,4,"Pilot_PPN_1"
-"19","C1.I.19","yes","difference","+written accent, +stress difference","catástrofe",3,2,1,"nogesture",-246,"incorrect_other",-311,311,1235,1481,1481,1792,3,4,"Pilot_PPN_1"
-"20","C1.I.20","yes","difference","+written accent, +stress difference","cafetería",3,4,-1,"nogesture",0,"correct_L2_match",-65,-65,1506,1376,1506,1571,4,5,"Pilot_PPN_1"
-"21","C1.E.21","yes","difference","+written accent, +stress difference","sofá",1,2,-1,"nogesture",0,"correct_L2_match",135,135,1195,1030,1195,1060,2,2,"Pilot_PPN_1"
-"22","C2.I.1","no","difference","-written accent, +stress difference","clima",2,1,1,"nogesture",-45,"incorrect_other",-241,241,1180,1225,1225,1466,2,2,"Pilot_PPN_1"
-"23","C2.I.2","no","difference","-written accent, +stress difference","vacaciones",2,3,-1,"nogesture",0,"correct_L2_match",-506,-506,1451,1245,1451,1957,3,4,"Pilot_PPN_1"
-"24","C2.I.3","no","difference","-written accent, +stress difference","profesor",2,3,-1,"nogesture",0,"correct_L2_match",-155,-155,1441,1250,1441,1596,3,3,"Pilot_PPN_1"
-"25","C2.I.4","no","difference","-written accent, +stress difference","ventilador",3,4,-1,"nogesture",-516,"incorrect_other",-491,-491,1606,1366,1090,1581,1,4,"Pilot_PPN_1"
-"26","C2.I.5","no","difference","-written accent, +stress difference","internet",1,3,-2,"nogesture",0,"correct_L2_match",-160,-160,1541,1175,1541,1701,3,3,"Pilot_PPN_1"
-"27","C2.I.6","no","difference","-written accent, +stress difference","mamut",1,2,-1,"nogesture",0,"correct_L2_match",-60,-60,1125,985,1125,1185,2,2,"Pilot_PPN_1"
-"28","C2.I.7","no","difference","-written accent, +stress difference","horizonte",1,3,-2,"nogesture",0,"correct_L2_match",86,86,1341,1020,1341,1255,3,4,"Pilot_PPN_1"
-"29","C2.I.8","no","difference","-written accent, +stress difference","doctor",1,2,-1,"nogesture",-316,"incorrect_other",-501,-501,1341,1025,1025,1526,1,2,"Pilot_PPN_1"
-"30","C2.I.9","no","difference","-written accent, +stress difference","radiador",2,3,-1,"nogesture",0,"correct_L2_match",50,50,1441,1290,1441,1391,3,3,"Pilot_PPN_1"
-"31","C2.I.10","no","difference","-written accent, +stress difference","ilustrador",3,4,-1,"nogesture",0,"correct_L2_match",-181,-181,1766,1596,1766,1947,4,4,"Pilot_PPN_1"
-"32","C2.I.11","no","difference","-written accent, +stress difference","color",1,2,-1,"nogesture",0,"correct_L2_match",-60,-60,1055,1020,1055,1115,2,2,"Pilot_PPN_1"
-"33","C2.I.12","no","difference","-written accent, +stress difference","error",1,2,-1,"nogesture",0,"correct_L2_match",40,40,1205,1025,1205,1165,2,2,"Pilot_PPN_1"
-"34","C2.I.13","no","difference","-written accent, +stress difference","factor",1,2,-1,"nogesture",0,"correct_L2_match",10,10,1411,1140,1411,1401,2,2,"Pilot_PPN_1"
-"35","C2.I.14","no","difference","-written accent, +stress difference","festival",1,3,-2,"nogesture",0,"correct_L2_match",85,85,1566,1230,1566,1481,3,3,"Pilot_PPN_1"
-"36","C2.I.15","no","difference","-written accent, +stress difference","uniforme",1,3,-2,"nogesture",-255,"incorrect_other",-476,-476,1621,1361,1366,1842,2,4,"Pilot_PPN_1"
-"37","C2.I.16","no","difference","-written accent, +stress difference","alcohol",1,3,-2,"nogesture",0,"correct_L2_match",166,166,1336,1055,1336,1170,3,3,"Pilot_PPN_1"
-"38","C2.I.17","no","difference","-written accent, +stress difference","actor",2,2,0,"nogesture",0,"correct_L2_match",-205,-205,1411,1411,1411,1616,2,2,"Pilot_PPN_1"
-"39","C2.I.18","no","difference","-written accent, +stress difference","alergia",3,2,1,"nogesture",0,"correct_L2_match",-351,351,1676,2062,1676,2027,2,3,"Pilot_PPN_1"
-"40","C2.I.19","no","difference","-written accent, +stress difference","farmacia",3,2,1,"nogesture",0,"correct_L2_match",-456,456,1180,1521,1180,1636,2,3,"Pilot_PPN_1"
-"41","C2.I.20","no","difference","-written accent, +stress difference","aristocracia",5,4,1,"nogesture",-265,"incorrect_other",-55,55,1792,2057,2057,2112,5,5,"Pilot_PPN_1"
-"42","C2.E.21","no","difference","-written accent, +stress difference","elefantes",1,3,-2,"nogesture",0,"correct_L2_match",-281,-281,1295,1030,1295,1576,3,4,"Pilot_PPN_1"
-"43","C3.I.1","yes","same","+written accent, -stress difference","brócoli",1,1,0,"nogesture",381,"incorrect_other",141,141,1040,1040,1421,1280,3,3,"Pilot_PPN_1"
-"44","C3.I.2","yes","same","+written accent, -stress difference","político",2,2,0,"nogesture",0,"correct_L2_match",90,90,1110,1110,1110,1020,2,4,"Pilot_PPN_1"
-"45","C3.I.3","yes","same","+written accent, -stress difference","cámara",1,1,0,"nogesture",60,"incorrect_other",-100,-100,1075,1075,1135,1235,2,3,"Pilot_PPN_1"
-"46","C3.I.4","yes","same","+written accent, -stress difference","número",1,1,0,"nogesture",0,"correct_L2_match",-380,-380,1361,1361,1361,1741,1,3,"Pilot_PPN_1"
-"47","C3.I.5","yes","same","+written accent, -stress difference","fútbol",1,1,0,"nogesture",185,"incorrect_other",-40,-40,1085,1085,1270,1310,2,2,"Pilot_PPN_1"
-"48","C3.I.6","yes","same","+written accent, -stress difference","saxofón",3,3,0,"nogesture",0,"correct_L2_match",546,546,1566,1566,1566,1020,3,3,"Pilot_PPN_1"
-"49","C3.I.7","yes","same","+written accent, -stress difference","carácter",2,2,0,"nogesture",0,"correct_L2_match",-100,-100,1105,1105,1105,1205,2,3,"Pilot_PPN_1"
-"50","C3.I.8","yes","same","+written accent, -stress difference","analítico",3,3,0,"nogesture",-215,"incorrect_other",-446,-446,1320,1320,1105,1551,2,5,"Pilot_PPN_1"
-"51","C3.I.9","yes","same","+written accent, -stress difference","círculo",1,1,0,"nogesture",301,"incorrect_other",361,361,1085,1085,1386,1025,3,3,"Pilot_PPN_1"
-"52","C3.I.10","yes","same","+written accent, -stress difference","álbum",1,1,0,"nogesture",0,"correct_L2_match",-386,-386,1070,1070,1070,1456,1,2,"Pilot_PPN_1"
-"53","C3.I.11","yes","same","+written accent, -stress difference","ángel",1,1,0,"nogesture",381,"incorrect_other",-95,-95,1020,1020,1401,1496,2,2,"Pilot_PPN_1"
-"54","C3.I.12","yes","same","+written accent, -stress difference","capitán",3,3,0,"nogesture",0,"correct_L2_match",236,236,1361,1361,1361,1125,3,3,"Pilot_PPN_1"
-"55","C3.I.13","yes","same","+written accent, -stress difference","pragmática",2,2,0,"nogesture",0,"correct_L2_match",-66,-66,1270,1270,1270,1336,2,4,"Pilot_PPN_1"
-"56","C3.I.14","yes","same","+written accent, -stress difference","volcán",2,2,0,"nogesture",0,"correct_L2_match",95,95,1325,1325,1325,1230,2,2,"Pilot_PPN_1"
-"57","C3.I.15","yes","same","+written accent, -stress difference","teoría",3,3,0,"nogesture",0,"correct_L2_match",40,40,1541,1541,1541,1501,3,4,"Pilot_PPN_1"
-"58","C3.I.16","yes","same","+written accent, -stress difference","geográfico",3,3,0,"nogesture",0,"correct_L2_match",190,190,1641,1641,1641,1451,3,5,"Pilot_PPN_1"
-"59","C3.I.17","yes","same","+written accent, -stress difference","académico",3,3,0,"nogesture",0,"correct_L2_match",-325,-325,1336,1336,1336,1661,3,5,"Pilot_PPN_1"
-"60","C3.I.18","yes","same","+written accent, -stress difference","romántico",2,2,0,"nogesture",0,"correct_L2_match",-116,-116,1270,1270,1270,1386,2,4,"Pilot_PPN_1"
-"61","C3.I.19","yes","same","+written accent, -stress difference","espárrago",2,2,0,"nogesture",0,"correct_L2_match",-36,-36,1756,1756,1756,1792,2,4,"Pilot_PPN_1"
-"62","C3.I.20","yes","same","+written accent, -stress difference","helicóptero",3,3,0,"nogesture",0,"correct_L2_match",70,70,1446,1446,1446,1376,3,5,"Pilot_PPN_1"
-"63","C3.E.21","yes","same","+written accent, -stress difference","histórico",2,2,0,"nogesture",0,"correct_L2_match",-456,-456,1401,1401,1401,1857,2,4,"Pilot_PPN_1"
-"64","C4.I.1","no","same","-written accent, -stress difference","parasol",3,3,0,"nogesture",0,"correct_L2_match",331,331,1461,1461,1461,1130,3,3,"Pilot_PPN_1"
-"65","C4.I.2","no","same","-written accent, -stress difference","universidad",5,5,0,"nogesture",-401,"incorrect_other",-571,-571,1516,1516,1115,1686,2,5,"Pilot_PPN_1"
-"66","C4.I.3","no","same","-written accent, -stress difference","formulario",3,3,0,"nogesture",80,"incorrect_other",245,245,3706,3706,3786,3541,4,4,"Pilot_PPN_1"
-"67","C4.I.4","no","same","-written accent, -stress difference","mango",1,1,0,"nogesture",0,"correct_L2_match",-45,-45,1000,1000,1000,1045,1,2,"Pilot_PPN_1"
-"68","C4.I.5","no","same","-written accent, -stress difference","tomate",2,2,0,"nogesture",0,"correct_L2_match",50,50,1200,1200,1200,1150,2,3,"Pilot_PPN_1"
-"69","C4.I.6","no","same","-written accent, -stress difference","princesa",2,2,0,"nogesture",-285,"incorrect_other",-491,-491,1290,1290,1005,1496,1,3,"Pilot_PPN_1"
-"70","C4.I.7","no","same","-written accent, -stress difference","cables",1,1,0,"nogesture",0,"correct_L2_match",-205,-205,1115,1115,1115,1320,1,2,"Pilot_PPN_1"
-"71","C4.I.8","no","same","-written accent, -stress difference","proceso",2,2,0,"nogesture",0,"correct_L2_match",-205,-205,1351,1351,1351,1556,2,3,"Pilot_PPN_1"
-"72","C4.I.9","no","same","-written accent, -stress difference","papel",2,2,0,"nogesture",0,"correct_L2_match",-241,-241,1325,1325,1325,1566,2,2,"Pilot_PPN_1"
-"73","C4.I.10","no","same","-written accent, -stress difference","programa",2,2,0,"nogesture",120,"incorrect_other",-235,-235,1341,1341,1461,1696,3,3,"Pilot_PPN_1"
-"74","C4.I.11","no","same","-written accent, -stress difference","ensalada",2,3,-1,"nogesture",0,"correct_L2_match",-326,-326,1521,1431,1521,1847,3,4,"Pilot_PPN_1"
-"75","C4.I.12","no","same","-written accent, -stress difference","chocolate",3,3,0,"nogesture",0,"correct_L2_match",-100,-100,1195,1195,1195,1295,3,4,"Pilot_PPN_1"
-"76","C4.I.13","no","same","-written accent, -stress difference","limonada",3,3,0,"nogesture",-416,"incorrect_other",-481,-481,1636,1636,1220,1701,1,4,"Pilot_PPN_1"
-"77","C4.I.14","no","same","-written accent, -stress difference","restaurante",3,3,0,"nogesture",0,"correct_L2_match",-386,-386,1671,1671,1671,2057,3,4,"Pilot_PPN_1"
-"78","C4.I.15","no","same","-written accent, -stress difference","blusa",1,1,0,"nogesture",0,"correct_L2_match",-361,-361,1005,1005,1005,1366,1,2,"Pilot_PPN_1"
-"79","C4.I.16","no","same","-written accent, -stress difference","cabina",2,2,0,"nogesture",0,"correct_L2_match",20,20,1361,1361,1361,1341,2,3,"Pilot_PPN_1"
-"80","C4.I.17","no","same","-written accent, -stress difference","familia",2,2,0,"nogesture",0,"correct_L2_match",-171,-171,1190,1190,1190,1361,2,3,"Pilot_PPN_1"
-"81","C4.I.18","no","same","-written accent, -stress difference","canal",2,2,0,"nogesture",0,"correct_L2_match",-50,-50,1155,1155,1155,1205,2,2,"Pilot_PPN_1"
-"82","C4.I.19","no","same","-written accent, -stress difference","centro",1,1,0,"nogesture",0,"correct_L2_match",-186,-186,1210,1210,1210,1396,1,2,"Pilot_PPN_1"
-"83","C4.I.20","no","same","-written accent, -stress difference","insectos",2,2,0,"nogesture",-255,"incorrect_other",-561,-561,1275,1275,1020,1581,1,3,"Pilot_PPN_1"
-"84","C4.E.21","no","same","-written accent, -stress difference","planeta",2,2,0,"nogesture",0,"correct_L2_match",-311,-311,1145,1145,1145,1456,2,3,"Pilot_PPN_1"
-"85","P.C1.1","yes","difference","+written accent, +stress difference","simpático",3,2,1,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"86","P.C1.2","yes","difference","+written accent, +stress difference","símbolo",2,1,1,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"87","P.C1.3","yes","difference","+written accent, +stress difference","kilómetro",3,2,1,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"88","P.C2.1","no","difference","-written accent, +stress difference","carnaval",1,3,-2,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"89","P.C2.2","no","difference","-written accent, +stress difference","democracia",4,3,1,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"90","P.C2.3","no","difference","-written accent, +stress difference","voleibol",1,3,-2,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"91","P.C3.1","yes","same","+written accent, -stress difference","económico",3,3,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"92","P.C3.2","yes","same","+written accent, -stress difference","energía",3,3,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"93","P.C3.3","yes","same","+written accent, -stress difference","ecología",4,4,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"94","P.C4.1","no","same","-written accent, -stress difference","mandarina",3,3,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"95","P.C4.2","no","same","-written accent, -stress difference","sistema",2,2,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"96","P.C4.3","no","same","-written accent, -stress difference","bailarina",3,3,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"97","C1.I.1","yes","difference","+written accent, +stress difference","análisis",3,2,1,"gesture",0,"correct_L2_match",-15,15,1280,1406,1280,1295,2,4,"Pilot_PPN_1"
-"98","C1.I.2","yes","difference","+written accent, +stress difference","centímetro",3,2,1,"gesture",0,"correct_L2_match",75,-75,1411,1496,1411,1336,2,4,"Pilot_PPN_1"
-"99","C1.I.3","yes","difference","+written accent, +stress difference","pirámide",3,2,1,"gesture",0,"correct_L2_match",150,-150,1531,1561,1531,1381,2,4,"Pilot_PPN_1"
-"100","C1.I.4","yes","difference","+written accent, +stress difference","cardiólogo",3,2,1,"gesture",0,"correct_L2_match",-61,61,1320,1456,1320,1381,2,4,"Pilot_PPN_1"
-"101","C1.I.5","yes","difference","+written accent, +stress difference","máquina",2,1,1,"gesture",0,"correct_L2_match",-70,70,1150,1481,1150,1220,1,3,"Pilot_PPN_1"
-"102","C1.I.6","yes","difference","+written accent, +stress difference","automóvil",4,3,1,"gesture",0,"correct_L2_match",170,-170,1576,1766,1576,1406,3,4,"Pilot_PPN_1"
-"103","C1.I.7","yes","difference","+written accent, +stress difference","teléfono",3,2,1,"gesture",0,"correct_L2_match",-85,85,1115,1471,1115,1200,2,4,"Pilot_PPN_1"
-"104","C1.I.8","yes","difference","+written accent, +stress difference","fórmula",2,1,1,"gesture",-190,"incorrect_other",155,-155,1135,1325,1325,1170,2,3,"Pilot_PPN_1"
-"105","C1.I.9","yes","difference","+written accent, +stress difference","acróbata",3,2,1,"gesture",0,"correct_L2_match",86,-86,1366,1566,1366,1280,2,4,"Pilot_PPN_1"
-"106","C1.I.10","yes","difference","+written accent, +stress difference","satélito",3,2,1,"gesture",0,"correct_L2_match",25,-25,1220,1391,1220,1195,2,4,"Pilot_PPN_1"
-"107","C1.I.11","yes","difference","+written accent, +stress difference","gráfico",2,1,1,"gesture",0,"correct_L2_match",-130,130,1135,1446,1135,1265,1,3,"Pilot_PPN_1"
-"108","C1.I.12","yes","difference","+written accent, +stress difference","océano",3,2,1,"gesture",0,"correct_L2_match",35,-35,1305,1521,1305,1270,2,4,"Pilot_PPN_1"
-"109","C1.I.13","yes","difference","+written accent, +stress difference","carnívora",3,2,1,"gesture",0,"correct_L2_match",30,-30,1466,1536,1466,1436,2,4,"Pilot_PPN_1"
-"110","C1.I.14","yes","difference","+written accent, +stress difference","católico",3,2,1,"gesture",0,"correct_L2_match",25,-25,1215,1285,1215,1190,2,4,"Pilot_PPN_1"
-"111","C1.I.15","yes","difference","+written accent, +stress difference","demócrata",3,2,1,"gesture",0,"correct_L2_match",-25,25,1371,1671,1371,1396,2,4,"Pilot_PPN_1"
-"112","C1.I.16","yes","difference","+written accent, +stress difference","gramófono",3,2,1,"gesture",0,"correct_L2_match",-81,81,1325,1661,1325,1406,2,4,"Pilot_PPN_1"
-"113","C1.I.17","yes","difference","+written accent, +stress difference","micrófono",3,2,1,"gesture",0,"correct_L2_match",-5,5,1270,1536,1270,1275,2,4,"Pilot_PPN_1"
-"114","C1.I.18","yes","difference","+written accent, +stress difference","metáfora",3,2,1,"gesture",230,"incorrect_other",-210,210,1280,1541,1050,1260,1,4,"Pilot_PPN_1"
-"115","C1.I.19","yes","difference","+written accent, +stress difference","catástrofe",3,2,1,"gesture",0,"correct_L2_match",-65,65,1215,1531,1215,1280,2,4,"Pilot_PPN_1"
-"116","C1.I.20","yes","difference","+written accent, +stress difference","cafetería",3,4,-1,"gesture",0,"correct_L2_match",311,311,1441,1255,1441,1130,4,5,"Pilot_PPN_1"
-"117","C1.E.21","yes","difference","+written accent, +stress difference","sofá",1,2,-1,"gesture",0,"correct_L2_match",130,130,1250,1080,1250,1120,2,2,"Pilot_PPN_1"
-"118","C2.I.1","no","difference","-written accent, +stress difference","clima",2,1,1,"gesture",-75,"incorrect_other",30,-30,1120,1195,1195,1165,2,2,"Pilot_PPN_1"
-"119","C2.I.2","no","difference","-written accent, +stress difference","vacaciones",2,3,-1,"gesture",0,"correct_L2_match",100,100,1471,1250,1471,1371,3,4,"Pilot_PPN_1"
-"120","C2.I.3","no","difference","-written accent, +stress difference","profesor",2,3,-1,"gesture",0,"correct_L2_match",60,60,1892,1706,1892,1832,3,3,"Pilot_PPN_1"
-"121","C2.I.4","no","difference","-written accent, +stress difference","ventilador",3,4,-1,"gesture",0,"correct_L2_match",106,106,1396,1135,1396,1290,4,4,"Pilot_PPN_1"
-"122","C2.I.5","no","difference","-written accent, +stress difference","internet",1,3,-2,"gesture",0,"correct_L2_match",30,30,1305,1045,1305,1275,3,3,"Pilot_PPN_1"
-"123","C2.I.6","no","difference","-written accent, +stress difference","mamut",1,2,-1,"gesture",0,"correct_L2_match",10,10,1120,1030,1120,1110,2,2,"Pilot_PPN_1"
-"124","C2.I.7","no","difference","-written accent, +stress difference","horizonte",1,3,-2,"gesture",0,"correct_L2_match",111,111,1396,1075,1396,1285,3,4,"Pilot_PPN_1"
-"125","C2.I.8","no","difference","-written accent, +stress difference","doctor",1,2,-1,"gesture",-271,"incorrect_other",-185,-185,1366,1095,1095,1280,1,2,"Pilot_PPN_1"
-"126","C2.I.9","no","difference","-written accent, +stress difference","radiador",2,3,-1,"gesture",-451,"incorrect_other",-626,-626,1566,1356,1115,1741,1,3,"Pilot_PPN_1"
-"127","C2.I.10","no","difference","-written accent, +stress difference","ilustrador",3,4,-1,"gesture",0,"correct_L2_match",5,5,1782,1621,1782,1777,4,4,"Pilot_PPN_1"
-"128","C2.I.11","no","difference","-written accent, +stress difference","color",1,2,-1,"gesture",0,"correct_L2_match",15,15,1235,1090,1235,1220,2,2,"Pilot_PPN_1"
-"129","C2.I.12","no","difference","-written accent, +stress difference","error",1,2,-1,"gesture",0,"correct_L2_match",10,10,1225,1100,1225,1215,2,2,"Pilot_PPN_1"
-"130","C2.I.13","no","difference","-written accent, +stress difference","factor",1,2,-1,"gesture",0,"correct_L2_match",261,261,1812,1556,1812,1551,2,2,"Pilot_PPN_1"
-"131","C2.I.14","no","difference","-written accent, +stress difference","festival",1,3,-2,"gesture",0,"correct_L2_match",10,10,1576,1356,1576,1566,3,3,"Pilot_PPN_1"
-"132","C2.I.15","no","difference","-written accent, +stress difference","uniforme",1,3,-2,"gesture",0,"correct_L2_match",-20,-20,1917,1556,1917,1937,3,4,"Pilot_PPN_1"
-"133","C2.I.16","no","difference","-written accent, +stress difference","alcohol",1,3,-2,"gesture",0,"correct_L2_match",126,126,1346,995,1346,1220,3,3,"Pilot_PPN_1"
-"134","C2.I.17","no","difference","-written accent, +stress difference","actor",2,2,0,"gesture",0,"correct_L2_match",15,15,1325,1325,1325,1310,2,2,"Pilot_PPN_1"
-"135","C2.I.18","no","difference","-written accent, +stress difference","alergia",3,2,1,"gesture",0,"correct_L2_match",25,-25,1381,1681,1381,1356,2,3,"Pilot_PPN_1"
-"136","C2.I.19","no","difference","-written accent, +stress difference","farmacia",3,2,1,"gesture",0,"correct_L2_match",-40,40,1255,1601,1255,1295,2,3,"Pilot_PPN_1"
-"137","C2.I.20","no","difference","-written accent, +stress difference","aristocracia",5,4,1,"gesture",0,"correct_L2_match",30,-30,2092,2363,2092,2062,4,5,"Pilot_PPN_1"
-"138","C2.E.21","no","difference","-written accent, +stress difference","elefantes",1,3,-2,"gesture",0,"correct_L2_match",10,10,1471,1185,1471,1461,3,4,"Pilot_PPN_1"
-"139","C3.I.1","yes","same","+written accent, -stress difference","brócoli",1,1,0,"gesture",0,"correct_L2_match",-175,-175,1055,1055,1055,1230,1,3,"Pilot_PPN_1"
-"140","C3.I.2","yes","same","+written accent, -stress difference","político",2,2,0,"gesture",0,"correct_L2_match",-15,-15,1120,1120,1120,1135,2,4,"Pilot_PPN_1"
-"141","C3.I.3","yes","same","+written accent, -stress difference","cámara",1,1,0,"gesture",0,"correct_L2_match",-15,-15,1190,1190,1190,1205,1,3,"Pilot_PPN_1"
-"142","C3.I.4","yes","same","+written accent, -stress difference","número",1,1,0,"gesture",0,"correct_L2_match",-31,-31,1300,1300,1300,1331,1,3,"Pilot_PPN_1"
-"143","C3.I.5","yes","same","+written accent, -stress difference","fútbol",1,1,0,"gesture",171,"incorrect_other",221,221,1235,1235,1406,1185,2,2,"Pilot_PPN_1"
-"144","C3.I.6","yes","same","+written accent, -stress difference","saxofón",3,3,0,"gesture",0,"correct_L2_match",166,166,1426,1426,1426,1260,3,3,"Pilot_PPN_1"
-"145","C3.I.7","yes","same","+written accent, -stress difference","carácter",2,2,0,"gesture",0,"correct_L2_match",30,30,1185,1185,1185,1155,2,3,"Pilot_PPN_1"
-"146","C3.I.8","yes","same","+written accent, -stress difference","analítico",3,3,0,"gesture",0,"correct_L2_match",115,115,1175,1175,1175,1060,3,5,"Pilot_PPN_1"
-"147","C3.I.9","yes","same","+written accent, -stress difference","círculo",1,1,0,"gesture",0,"correct_L2_match",-70,-70,1060,1060,1060,1130,1,3,"Pilot_PPN_1"
-"148","C3.I.10","yes","same","+written accent, -stress difference","álbum",1,1,0,"gesture",0,"correct_L2_match",-25,-25,1135,1135,1135,1160,1,2,"Pilot_PPN_1"
-"149","C3.I.11","yes","same","+written accent, -stress difference","ángel",1,1,0,"gesture",316,"incorrect_other",281,281,1240,1240,1556,1275,2,2,"Pilot_PPN_1"
-"150","C3.I.12","yes","same","+written accent, -stress difference","capitán",3,3,0,"gesture",0,"correct_L2_match",121,121,1421,1421,1421,1300,3,3,"Pilot_PPN_1"
-"151","C3.I.13","yes","same","+written accent, -stress difference","pragmática",2,2,0,"gesture",0,"correct_L2_match",-75,-75,1331,1331,1331,1406,2,4,"Pilot_PPN_1"
-"152","C3.I.14","yes","same","+written accent, -stress difference","volcán",2,2,0,"gesture",0,"correct_L2_match",90,90,1185,1185,1185,1095,2,2,"Pilot_PPN_1"
-"153","C3.I.15","yes","same","+written accent, -stress difference","teoría",3,3,0,"gesture",0,"correct_L2_match",46,46,1356,1356,1356,1310,3,4,"Pilot_PPN_1"
-"154","C3.I.16","yes","same","+written accent, -stress difference","geográfico",3,3,0,"gesture",0,"correct_L2_match",20,20,1942,1942,1942,1922,3,5,"Pilot_PPN_1"
-"155","C3.I.17","yes","same","+written accent, -stress difference","académico",3,3,0,"gesture",0,"correct_L2_match",-35,-35,1285,1285,1285,1320,3,5,"Pilot_PPN_1"
-"156","C3.I.18","yes","same","+written accent, -stress difference","romántico",2,2,0,"gesture",0,"correct_L2_match",-55,-55,1250,1250,1250,1305,2,4,"Pilot_PPN_1"
-"157","C3.I.19","yes","same","+written accent, -stress difference","espárrago",2,2,0,"gesture",0,"correct_L2_match",10,10,1280,1280,1280,1270,2,4,"Pilot_PPN_1"
-"158","C3.I.20","yes","same","+written accent, -stress difference","helicóptero",3,3,0,"gesture",360,"incorrect_other",330,330,1782,1782,2142,1812,5,5,"Pilot_PPN_1"
-"159","C3.E.21","yes","same","+written accent, -stress difference","histórico",2,2,0,"gesture",0,"correct_L2_match",-66,-66,1285,1285,1285,1351,2,4,"Pilot_PPN_1"
-"160","C4.I.1","no","same","-written accent, -stress difference","parasol",3,3,0,"gesture",0,"correct_L2_match",5,5,1431,1431,1431,1426,3,3,"Pilot_PPN_1"
-"161","C4.I.2","no","same","-written accent, -stress difference","universidad",5,5,0,"gesture",0,"correct_L2_match",30,30,1711,1711,1711,1681,5,5,"Pilot_PPN_1"
-"162","C4.I.3","no","same","-written accent, -stress difference","formulario",3,3,0,"gesture",0,"correct_L2_match",105,105,1441,1441,1441,1336,3,4,"Pilot_PPN_1"
-"163","C4.I.4","no","same","-written accent, -stress difference","mango",1,1,0,"gesture",0,"correct_L2_match",-20,-20,1080,1080,1080,1100,1,2,"Pilot_PPN_1"
-"164","C4.I.5","no","same","-written accent, -stress difference","tomate",2,2,0,"gesture",0,"correct_L2_match",-120,-120,1366,1366,1366,1486,2,3,"Pilot_PPN_1"
-"165","C4.I.6","no","same","-written accent, -stress difference","princesa",2,2,0,"gesture",-281,"incorrect_other",-236,-236,1391,1391,1110,1346,1,3,"Pilot_PPN_1"
-"166","C4.I.7","no","same","-written accent, -stress difference","cables",1,1,0,"gesture",161,"incorrect_other",125,125,1295,1295,1456,1331,2,2,"Pilot_PPN_1"
-"167","C4.I.8","no","same","-written accent, -stress difference","proceso",2,2,0,"gesture",0,"correct_L2_match",36,36,1331,1331,1331,1295,2,3,"Pilot_PPN_1"
-"168","C4.I.9","no","same","-written accent, -stress difference","papel",2,2,0,"gesture",0,"correct_L2_match",85,85,1320,1320,1320,1235,2,2,"Pilot_PPN_1"
-"169","C4.I.10","no","same","-written accent, -stress difference","programa",2,2,0,"gesture",0,"correct_L2_match",25,25,1225,1225,1225,1200,2,3,"Pilot_PPN_1"
-"170","C4.I.11","no","same","-written accent, -stress difference","ensalada",2,3,-1,"gesture",0,"correct_L2_match",75,75,1516,1255,1516,1441,3,4,"Pilot_PPN_1"
-"171","C4.I.12","no","same","-written accent, -stress difference","chocolate",3,3,0,"gesture",0,"correct_L2_match",-5,-5,1225,1225,1225,1230,3,4,"Pilot_PPN_1"
-"172","C4.I.13","no","same","-written accent, -stress difference","limonada",3,3,0,"gesture",-341,"incorrect_other",-205,-205,1426,1426,1085,1290,1,4,"Pilot_PPN_1"
-"173","C4.I.14","no","same","-written accent, -stress difference","restaurante",3,3,0,"gesture",0,"correct_L2_match",170,170,1661,1661,1661,1491,3,4,"Pilot_PPN_1"
-"174","C4.I.15","no","same","-written accent, -stress difference","blusa",1,1,0,"gesture",0,"correct_L2_match",-75,-75,1100,1100,1100,1175,1,2,"Pilot_PPN_1"
-"175","C4.I.16","no","same","-written accent, -stress difference","cabina",2,2,0,"gesture",40,"incorrect_other",146,146,1356,1356,1396,1250,3,3,"Pilot_PPN_1"
-"176","C4.I.17","no","same","-written accent, -stress difference","familia",2,2,0,"gesture",0,"correct_L2_match",0,0,1491,1491,1491,1491,2,3,"Pilot_PPN_1"
-"177","C4.I.18","no","same","-written accent, -stress difference","canal",2,2,0,"gesture",0,"correct_L2_match",-20,-20,1305,1305,1305,1325,2,2,"Pilot_PPN_1"
-"178","C4.I.19","no","same","-written accent, -stress difference","centro",1,1,0,"gesture",326,"incorrect_other",286,286,1090,1090,1416,1130,2,2,"Pilot_PPN_1"
-"179","C4.I.20","no","same","-written accent, -stress difference","insectos",2,2,0,"gesture",-246,"incorrect_other",-246,-246,1391,1391,1145,1391,1,3,"Pilot_PPN_1"
-"180","C4.E.21","no","same","-written accent, -stress difference","planeta",2,2,0,"gesture",0,"correct_L2_match",10,10,1230,1230,1230,1220,2,3,"Pilot_PPN_1"
-"181","P.C1.1","yes","difference","+written accent, +stress difference","simpático",3,2,1,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"182","P.C1.2","yes","difference","+written accent, +stress difference","símbolo",2,1,1,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"183","P.C1.3","yes","difference","+written accent, +stress difference","kilómetro",3,2,1,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"184","P.C2.1","no","difference","-written accent, +stress difference","carnaval",1,3,-2,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"185","P.C2.2","no","difference","-written accent, +stress difference","democracia",4,3,1,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"186","P.C2.3","no","difference","-written accent, +stress difference","voleibol",1,3,-2,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"187","P.C3.1","yes","same","+written accent, -stress difference","económico",3,3,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"188","P.C3.2","yes","same","+written accent, -stress difference","energía",3,3,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"189","P.C3.3","yes","same","+written accent, -stress difference","ecología",4,4,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"190","P.C4.1","no","same","-written accent, -stress difference","mandarina",3,3,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"191","P.C4.2","no","same","-written accent, -stress difference","sistema",2,2,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"192","P.C4.3","no","same","-written accent, -stress difference","bailarina",3,3,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"193","C1.I.1","yes","difference","+written accent, +stress difference","análisis",3,2,1,"nogesture",0,"correct_L2_match",-466,466,1130,1315,1130,1596,2,4,"Pilot_PPN_2"
-"194","C1.I.2","yes","difference","+written accent, +stress difference","centímetro",3,2,1,"nogesture",0,"correct_L2_match",-296,296,1616,1676,1616,1912,2,4,"Pilot_PPN_2"
-"195","C1.I.3","yes","difference","+written accent, +stress difference","pirámide",3,2,1,"nogesture",0,"correct_L2_match",-365,365,1827,2072,1827,2192,2,4,"Pilot_PPN_2"
-"196","C1.I.4","yes","difference","+written accent, +stress difference","cardiólogo",3,2,1,"nogesture",0,"correct_L2_match",-411,411,1421,1606,1421,1832,2,4,"Pilot_PPN_2"
-"197","C1.I.5","yes","difference","+written accent, +stress difference","máquina",2,1,1,"nogesture",-220,"incorrect_other",-56,56,1095,1280,1315,1371,3,3,"Pilot_PPN_2"
-"198","C1.I.6","yes","difference","+written accent, +stress difference","automóvil",4,3,1,"nogesture",0,"correct_L2_match",-10,10,2002,2137,2002,2012,3,4,"Pilot_PPN_2"
-"199","C1.I.7","yes","difference","+written accent, +stress difference","teléfono",3,2,1,"nogesture",0,"correct_L2_match",65,-65,1401,1721,1401,1336,2,4,"Pilot_PPN_2"
-"200","C1.I.8","yes","difference","+written accent, +stress difference","fórmula",2,1,1,"nogesture",0,"correct_L2_match",70,-70,1250,1396,1250,1180,1,3,"Pilot_PPN_2"
-"201","C1.I.9","yes","difference","+written accent, +stress difference","acróbata",3,2,1,"nogesture",0,"correct_L2_match",166,-166,1341,1456,1341,1175,2,4,"Pilot_PPN_2"
-"202","C1.I.10","yes","difference","+written accent, +stress difference","satélito",3,2,1,"nogesture",0,"correct_L2_match",316,-316,1481,1526,1481,1165,2,4,"Pilot_PPN_2"
-"203","C1.I.11","yes","difference","+written accent, +stress difference","gráfico",2,1,1,"nogesture",0,"correct_L2_match",95,-95,1471,1586,1471,1376,1,3,"Pilot_PPN_2"
-"204","C1.I.12","yes","difference","+written accent, +stress difference","océano",3,2,1,"nogesture",-80,"incorrect_other",-391,391,1476,1556,1556,1947,3,4,"Pilot_PPN_2"
-"205","C1.I.13","yes","difference","+written accent, +stress difference","carnívora",3,2,1,"nogesture",-115,"incorrect_other",-151,151,1516,1631,1631,1782,3,4,"Pilot_PPN_2"
-"206","C1.I.14","yes","difference","+written accent, +stress difference","católico",3,2,1,"nogesture",0,"correct_L2_match",-285,285,1406,1516,1406,1691,2,4,"Pilot_PPN_2"
-"207","C1.I.15","yes","difference","+written accent, +stress difference","demócrata",3,2,1,"nogesture",0,"correct_L2_match",205,-205,1320,1591,1320,1115,2,4,"Pilot_PPN_2"
-"208","C1.I.16","yes","difference","+written accent, +stress difference","gramófono",3,2,1,"nogesture",0,"correct_L2_match",-476,476,1331,1581,1331,1807,2,4,"Pilot_PPN_2"
-"209","C1.I.17","yes","difference","+written accent, +stress difference","micrófono",3,2,1,"nogesture",0,"correct_L2_match",-370,370,1376,1621,1376,1746,2,4,"Pilot_PPN_2"
-"210","C1.I.18","yes","difference","+written accent, +stress difference","metáfora",3,2,1,"nogesture",0,"correct_L2_match",-116,116,1280,1531,1280,1396,2,4,"Pilot_PPN_2"
-"211","C1.I.19","yes","difference","+written accent, +stress difference","catástrofe",3,2,1,"nogesture",-265,"incorrect_other",-110,110,1356,1621,1621,1731,3,4,"Pilot_PPN_2"
-"212","C1.I.20","yes","difference","+written accent, +stress difference","cafetería",3,4,-1,"nogesture",-35,"incorrect_other",296,296,1606,1571,1571,1275,3,5,"Pilot_PPN_2"
-"213","C1.E.21","yes","difference","+written accent, +stress difference","sofá",1,2,-1,"nogesture",0,"correct_L2_match",276,276,1341,1205,1341,1065,2,2,"Pilot_PPN_2"
-"214","C2.I.1","no","difference","-written accent, +stress difference","clima",2,1,1,"nogesture",-105,"incorrect_other",165,-165,1135,1240,1240,1075,2,2,"Pilot_PPN_2"
-"215","C2.I.2","no","difference","-written accent, +stress difference","vacaciones",2,3,-1,"nogesture",0,"correct_L2_match",10,10,1546,1361,1546,1536,3,4,"Pilot_PPN_2"
-"216","C2.I.3","no","difference","-written accent, +stress difference","profesor",2,3,-1,"nogesture",0,"correct_L2_match",-191,-191,1596,1441,1596,1787,3,3,"Pilot_PPN_2"
-"217","C2.I.4","no","difference","-written accent, +stress difference","ventilador",3,4,-1,"nogesture",0,"correct_L2_match",205,205,1591,1295,1591,1386,4,4,"Pilot_PPN_2"
-"218","C2.I.5","no","difference","-written accent, +stress difference","internet",1,3,-2,"nogesture",0,"correct_L2_match",-25,-25,1451,1185,1451,1476,3,3,"Pilot_PPN_2"
-"219","C2.I.6","no","difference","-written accent, +stress difference","mamut",1,2,-1,"nogesture",0,"correct_L2_match",170,170,1325,1220,1325,1155,2,2,"Pilot_PPN_2"
-"220","C2.I.7","no","difference","-written accent, +stress difference","horizonte",1,3,-2,"nogesture",0,"correct_L2_match",261,261,1476,1260,1476,1215,3,4,"Pilot_PPN_2"
-"221","C2.I.8","no","difference","-written accent, +stress difference","doctor",1,2,-1,"nogesture",0,"correct_L2_match",240,240,1225,1060,1225,985,2,2,"Pilot_PPN_2"
-"222","C2.I.9","no","difference","-written accent, +stress difference","radiador",2,3,-1,"nogesture",0,"correct_L2_match",-240,-240,1516,1300,1516,1756,3,3,"Pilot_PPN_2"
-"223","C2.I.10","no","difference","-written accent, +stress difference","ilustrador",3,4,-1,"nogesture",0,"correct_L2_match",150,150,1656,1481,1656,1506,4,4,"Pilot_PPN_2"
-"224","C2.I.11","no","difference","-written accent, +stress difference","color",1,2,-1,"nogesture",-131,"incorrect_other",190,190,1456,1325,1325,1135,1,2,"Pilot_PPN_2"
-"225","C2.I.12","no","difference","-written accent, +stress difference","error",1,2,-1,"nogesture",0,"correct_L2_match",-156,-156,1325,1165,1325,1481,2,2,"Pilot_PPN_2"
-"226","C2.I.13","no","difference","-written accent, +stress difference","factor",1,2,-1,"nogesture",0,"correct_L2_match",-20,-20,1521,1341,1521,1541,2,2,"Pilot_PPN_2"
-"227","C2.I.14","no","difference","-written accent, +stress difference","festival",1,3,-2,"nogesture",0,"correct_L2_match",361,361,1536,1290,1536,1175,3,3,"Pilot_PPN_2"
-"228","C2.I.15","no","difference","-written accent, +stress difference","uniforme",1,3,-2,"nogesture",0,"correct_L2_match",346,346,1481,1195,1481,1135,3,4,"Pilot_PPN_2"
-"229","C2.I.16","no","difference","-written accent, +stress difference","alcohol",1,3,-2,"nogesture",0,"correct_L2_match",-355,-355,1401,1260,1401,1756,3,3,"Pilot_PPN_2"
-"230","C2.I.17","no","difference","-written accent, +stress difference","actor",2,2,0,"nogesture",0,"correct_L2_match",215,215,1160,1160,1160,945,2,2,"Pilot_PPN_2"
-"231","C2.I.18","no","difference","-written accent, +stress difference","alergia",3,2,1,"nogesture",0,"correct_L2_match",-431,431,1305,1511,1305,1736,2,3,"Pilot_PPN_2"
-"232","C2.I.19","no","difference","-written accent, +stress difference","farmacia",3,2,1,"nogesture",0,"correct_L2_match",-471,471,1155,1426,1155,1626,2,3,"Pilot_PPN_2"
-"233","C2.I.20","no","difference","-written accent, +stress difference","aristocracia",5,4,1,"nogesture",0,"correct_L2_match",-176,176,1746,1817,1746,1922,4,5,"Pilot_PPN_2"
-"234","C2.E.21","no","difference","-written accent, +stress difference","elefantes",1,3,-2,"nogesture",0,"correct_L2_match",-426,-426,1431,1150,1431,1857,3,4,"Pilot_PPN_2"
-"235","C3.I.1","yes","same","+written accent, -stress difference","brócoli",1,1,0,"nogesture",0,"correct_L2_match",-266,-266,1295,1295,1295,1561,1,3,"Pilot_PPN_2"
-"236","C3.I.2","yes","same","+written accent, -stress difference","político",2,2,0,"nogesture",0,"correct_L2_match",-30,-30,1421,1421,1421,1451,2,4,"Pilot_PPN_2"
-"237","C3.I.3","yes","same","+written accent, -stress difference","cámara",1,1,0,"nogesture",86,"incorrect_other",86,86,1250,1250,1336,1250,2,3,"Pilot_PPN_2"
-"238","C3.I.4","yes","same","+written accent, -stress difference","número",1,1,0,"nogesture",0,"correct_L2_match",-346,-346,1125,1125,1125,1471,1,3,"Pilot_PPN_2"
-"239","C3.I.5","yes","same","+written accent, -stress difference","fútbol",1,1,0,"nogesture",200,"incorrect_other",355,355,1491,1491,1691,1336,2,2,"Pilot_PPN_2"
-"240","C3.I.6","yes","same","+written accent, -stress difference","saxofón",3,3,0,"nogesture",0,"correct_L2_match",441,441,1426,1426,1426,985,3,3,"Pilot_PPN_2"
-"241","C3.I.7","yes","same","+written accent, -stress difference","carácter",2,2,0,"nogesture",225,"incorrect_other",-196,-196,1366,1366,1591,1787,3,3,"Pilot_PPN_2"
-"242","C3.I.8","yes","same","+written accent, -stress difference","analítico",3,3,0,"nogesture",0,"correct_L2_match",-576,-576,1331,1331,1331,1907,3,5,"Pilot_PPN_2"
-"243","C3.I.9","yes","same","+written accent, -stress difference","círculo",1,1,0,"nogesture",0,"correct_L2_match",175,175,1200,1200,1200,1025,1,3,"Pilot_PPN_2"
-"244","C3.I.10","yes","same","+written accent, -stress difference","álbum",1,1,0,"nogesture",166,"incorrect_other",-205,-205,1310,1310,1476,1681,2,2,"Pilot_PPN_2"
-"245","C3.I.11","yes","same","+written accent, -stress difference","ángel",1,1,0,"nogesture",136,"incorrect_other",186,186,1275,1275,1411,1225,2,2,"Pilot_PPN_2"
-"246","C3.I.12","yes","same","+written accent, -stress difference","capitán",3,3,0,"nogesture",0,"correct_L2_match",221,221,1441,1441,1441,1220,3,3,"Pilot_PPN_2"
-"247","C3.I.13","yes","same","+written accent, -stress difference","pragmática",2,2,0,"nogesture",0,"correct_L2_match",230,230,1195,1195,1195,965,2,4,"Pilot_PPN_2"
-"248","C3.I.14","yes","same","+written accent, -stress difference","volcán",2,2,0,"nogesture",0,"correct_L2_match",366,366,1401,1401,1401,1035,2,2,"Pilot_PPN_2"
-"249","C3.I.15","yes","same","+written accent, -stress difference","teoría",3,3,0,"nogesture",-135,"incorrect_other",186,186,1556,1556,1421,1235,2,4,"Pilot_PPN_2"
-"250","C3.I.16","yes","same","+written accent, -stress difference","geográfico",3,3,0,"nogesture",0,"correct_L2_match",296,296,2042,2042,2042,1746,3,5,"Pilot_PPN_2"
-"251","C3.I.17","yes","same","+written accent, -stress difference","académico",3,3,0,"nogesture",0,"correct_L2_match",-281,-281,1531,1531,1531,1812,3,5,"Pilot_PPN_2"
-"252","C3.I.18","yes","same","+written accent, -stress difference","romántico",2,2,0,"nogesture",0,"correct_L2_match",-201,-201,1220,1220,1220,1421,2,4,"Pilot_PPN_2"
-"253","C3.I.19","yes","same","+written accent, -stress difference","espárrago",2,2,0,"nogesture",146,"incorrect_other",-295,-295,1280,1280,1426,1721,3,4,"Pilot_PPN_2"
-"254","C3.I.20","yes","same","+written accent, -stress difference","helicóptero",3,3,0,"nogesture",265,"incorrect_other",25,25,1361,1361,1626,1601,5,5,"Pilot_PPN_2"
-"255","C3.E.21","yes","same","+written accent, -stress difference","histórico",2,2,0,"nogesture",280,"incorrect_other",125,125,1386,1386,1666,1541,4,4,"Pilot_PPN_2"
-"256","C4.I.1","no","same","-written accent, -stress difference","parasol",3,3,0,"nogesture",0,"correct_L2_match",366,366,1531,1531,1531,1165,3,3,"Pilot_PPN_2"
-"257","C4.I.2","no","same","-written accent, -stress difference","universidad",5,5,0,"nogesture",0,"correct_L2_match",80,80,1621,1621,1621,1541,5,5,"Pilot_PPN_2"
-"258","C4.I.3","no","same","-written accent, -stress difference","formulario",3,3,0,"nogesture",0,"correct_L2_match",120,120,1731,1731,1731,1611,3,4,"Pilot_PPN_2"
-"259","C4.I.4","no","same","-written accent, -stress difference","mango",1,1,0,"nogesture",110,"incorrect_other",-15,-15,3726,3726,3836,3851,2,2,"Pilot_PPN_2"
-"260","C4.I.5","no","same","-written accent, -stress difference","tomate",2,2,0,"nogesture",296,"incorrect_other",-135,-135,1195,1195,1491,1626,3,3,"Pilot_PPN_2"
-"261","C4.I.6","no","same","-written accent, -stress difference","princesa",2,2,0,"nogesture",60,"incorrect_other",0,0,1386,1386,1446,1446,3,3,"Pilot_PPN_2"
-"262","C4.I.7","no","same","-written accent, -stress difference","cables",1,1,0,"nogesture",40,"incorrect_other",-356,-356,1255,1255,1295,1651,2,2,"Pilot_PPN_2"
-"263","C4.I.8","no","same","-written accent, -stress difference","proceso",2,2,0,"nogesture",30,"incorrect_other",-261,-261,1205,1205,1235,1496,3,3,"Pilot_PPN_2"
-"264","C4.I.9","no","same","-written accent, -stress difference","papel",2,2,0,"nogesture",0,"correct_L2_match",185,185,1270,1270,1270,1085,2,2,"Pilot_PPN_2"
-"265","C4.I.10","no","same","-written accent, -stress difference","programa",2,2,0,"nogesture",0,"correct_L2_match",-91,-91,1285,1285,1285,1376,2,3,"Pilot_PPN_2"
-"266","C4.I.11","no","same","-written accent, -stress difference","ensalada",2,3,-1,"nogesture",0,"correct_L2_match",-321,-321,1265,1150,1265,1586,3,4,"Pilot_PPN_2"
-"267","C4.I.12","no","same","-written accent, -stress difference","chocolate",3,3,0,"nogesture",-35,"incorrect_other",-355,-355,1426,1426,1391,1746,2,4,"Pilot_PPN_2"
-"268","C4.I.13","no","same","-written accent, -stress difference","limonada",3,3,0,"nogesture",0,"correct_L2_match",-316,-316,1275,1275,1275,1591,3,4,"Pilot_PPN_2"
-"269","C4.I.14","no","same","-written accent, -stress difference","restaurante",3,3,0,"nogesture",0,"correct_L2_match",-246,-246,1641,1641,1641,1887,3,4,"Pilot_PPN_2"
-"270","C4.I.15","no","same","-written accent, -stress difference","blusa",1,1,0,"nogesture",0,"correct_L2_match",-210,-210,1105,1105,1105,1315,1,2,"Pilot_PPN_2"
-"271","C4.I.16","no","same","-written accent, -stress difference","cabina",2,2,0,"nogesture",50,"incorrect_other",-231,-231,1205,1205,1255,1486,3,3,"Pilot_PPN_2"
-"272","C4.I.17","no","same","-written accent, -stress difference","familia",2,2,0,"nogesture",76,"incorrect_other",146,146,1310,1310,1386,1240,3,3,"Pilot_PPN_2"
-"273","C4.I.18","no","same","-written accent, -stress difference","canal",2,2,0,"nogesture",0,"correct_L2_match",-55,-55,1135,1135,1135,1190,2,2,"Pilot_PPN_2"
-"274","C4.I.19","no","same","-written accent, -stress difference","centro",1,1,0,"nogesture",171,"incorrect_other",201,201,1185,1185,1356,1155,2,2,"Pilot_PPN_2"
-"275","C4.I.20","no","same","-written accent, -stress difference","insectos",2,2,0,"nogesture",205,"incorrect_other",386,386,1471,1471,1676,1290,3,3,"Pilot_PPN_2"
-"276","C4.E.21","no","same","-written accent, -stress difference","planeta",2,2,0,"nogesture",201,"incorrect_other",411,411,1180,1180,1381,970,3,3,"Pilot_PPN_2"
-"277","P.C1.1","yes","difference","+written accent, +stress difference","simpático",3,2,1,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"278","P.C1.2","yes","difference","+written accent, +stress difference","símbolo",2,1,1,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"279","P.C1.3","yes","difference","+written accent, +stress difference","kilómetro",3,2,1,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"280","P.C2.1","no","difference","-written accent, +stress difference","carnaval",1,3,-2,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"281","P.C2.2","no","difference","-written accent, +stress difference","democracia",4,3,1,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"282","P.C2.3","no","difference","-written accent, +stress difference","voleibol",1,3,-2,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"283","P.C3.1","yes","same","+written accent, -stress difference","económico",3,3,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"284","P.C3.2","yes","same","+written accent, -stress difference","energía",3,3,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"285","P.C3.3","yes","same","+written accent, -stress difference","ecología",4,4,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"286","P.C4.1","no","same","-written accent, -stress difference","mandarina",3,3,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"287","P.C4.2","no","same","-written accent, -stress difference","sistema",2,2,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"288","P.C4.3","no","same","-written accent, -stress difference","bailarina",3,3,0,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"289","C1.I.1","yes","difference","+written accent, +stress difference","análisis",3,2,1,"gesture",0,"correct_L2_match",-155,155,1341,1586,1341,1496,2,4,"Pilot_PPN_2"
-"290","C1.I.2","yes","difference","+written accent, +stress difference","centímetro",3,2,1,"gesture",0,"correct_L2_match",80,-80,1426,1516,1426,1346,2,4,"Pilot_PPN_2"
-"291","C1.I.3","yes","difference","+written accent, +stress difference","pirámide",3,2,1,"gesture",0,"correct_L2_match",-25,25,1381,1406,1381,1406,2,4,"Pilot_PPN_2"
-"292","C1.I.4","yes","difference","+written accent, +stress difference","cardiólogo",3,2,1,"gesture",0,"correct_L2_match",30,-30,1295,1486,1295,1265,2,4,"Pilot_PPN_2"
-"293","C1.I.5","yes","difference","+written accent, +stress difference","máquina",2,1,1,"gesture",-286,"incorrect_other",311,-311,1210,1436,1496,1185,3,3,"Pilot_PPN_2"
-"294","C1.I.6","yes","difference","+written accent, +stress difference","automóvil",4,3,1,"gesture",0,"correct_L2_match",-385,385,1381,1546,1381,1766,3,4,"Pilot_PPN_2"
-"295","C1.I.7","yes","difference","+written accent, +stress difference","teléfono",3,2,1,"gesture",0,"correct_L2_match",-5,5,1361,1631,1361,1366,2,4,"Pilot_PPN_2"
-"296","C1.I.8","yes","difference","+written accent, +stress difference","fórmula",2,1,1,"gesture",0,"correct_L2_match",-30,30,1260,1411,1260,1290,1,3,"Pilot_PPN_2"
-"297","C1.I.9","yes","difference","+written accent, +stress difference","acróbata",3,2,1,"gesture",0,"correct_L2_match",50,-50,1205,1336,1205,1155,2,4,"Pilot_PPN_2"
-"298","C1.I.10","yes","difference","+written accent, +stress difference","satélito",3,2,1,"gesture",0,"correct_L2_match",15,-15,1446,1486,1446,1431,2,4,"Pilot_PPN_2"
-"299","C1.I.11","yes","difference","+written accent, +stress difference","gráfico",2,1,1,"gesture",0,"correct_L2_match",-20,20,1260,1315,1260,1280,1,3,"Pilot_PPN_2"
-"300","C1.I.12","yes","difference","+written accent, +stress difference","océano",3,2,1,"gesture",-221,"incorrect_other",241,-241,1626,1787,1847,1606,4,4,"Pilot_PPN_2"
-"301","C1.I.13","yes","difference","+written accent, +stress difference","carnívora",3,2,1,"gesture",-106,"incorrect_other",10,-10,1290,1396,1396,1386,3,4,"Pilot_PPN_2"
-"302","C1.I.14","yes","difference","+written accent, +stress difference","católico",3,2,1,"gesture",0,"correct_L2_match",25,-25,1416,1546,1416,1391,2,4,"Pilot_PPN_2"
-"303","C1.I.15","yes","difference","+written accent, +stress difference","demócrata",3,2,1,"gesture",0,"correct_L2_match",-45,45,1190,1476,1190,1235,2,4,"Pilot_PPN_2"
-"304","C1.I.16","yes","difference","+written accent, +stress difference","gramófono",3,2,1,"gesture",0,"correct_L2_match",-151,151,1265,1586,1265,1416,2,4,"Pilot_PPN_2"
-"305","C1.I.17","yes","difference","+written accent, +stress difference","micrófono",3,2,1,"gesture",0,"correct_L2_match",-95,95,1817,2202,1817,1912,2,4,"Pilot_PPN_2"
-"306","C1.I.18","yes","difference","+written accent, +stress difference","metáfora",3,2,1,"gesture",0,"correct_L2_match",-15,15,1396,1616,1396,1411,2,4,"Pilot_PPN_2"
-"307","C1.I.19","yes","difference","+written accent, +stress difference","catástrofe",3,2,1,"gesture",0,"correct_L2_match",75,-75,1315,1586,1315,1240,2,4,"Pilot_PPN_2"
-"308","C1.I.20","yes","difference","+written accent, +stress difference","cafetería",3,4,-1,"gesture",-356,"incorrect_other",-5,-5,1877,1716,1521,1526,2,5,"Pilot_PPN_2"
-"309","C1.E.21","yes","difference","+written accent, +stress difference","sofá",1,2,-1,"gesture",0,"correct_L2_match",150,150,1290,1120,1290,1140,2,2,"Pilot_PPN_2"
-"310","C2.I.1","no","difference","-written accent, +stress difference","clima",2,1,1,"gesture",-35,"incorrect_other",10,-10,1210,1245,1245,1235,2,2,"Pilot_PPN_2"
-"311","C2.I.2","no","difference","-written accent, +stress difference","vacaciones",2,3,-1,"gesture",0,"correct_L2_match",321,321,1601,1310,1601,1280,3,4,"Pilot_PPN_2"
-"312","C2.I.3","no","difference","-written accent, +stress difference","profesor",2,3,-1,"gesture",0,"correct_L2_match",130,130,1676,1486,1676,1546,3,3,"Pilot_PPN_2"
-"313","C2.I.4","no","difference","-written accent, +stress difference","ventilador",3,4,-1,"gesture",0,"correct_L2_match",185,185,1586,1396,1586,1401,4,4,"Pilot_PPN_2"
-"314","C2.I.5","no","difference","-written accent, +stress difference","internet",1,3,-2,"gesture",-296,"incorrect_other",-15,-15,1566,1270,1270,1285,1,3,"Pilot_PPN_2"
-"315","C2.I.6","no","difference","-written accent, +stress difference","mamut",1,2,-1,"gesture",0,"correct_L2_match",-20,-20,1185,1080,1185,1205,2,2,"Pilot_PPN_2"
-"316","C2.I.7","no","difference","-written accent, +stress difference","horizonte",1,3,-2,"gesture",0,"correct_L2_match",76,76,1391,1155,1391,1315,3,4,"Pilot_PPN_2"
-"317","C2.I.8","no","difference","-written accent, +stress difference","doctor",1,2,-1,"gesture",0,"correct_L2_match",205,205,1305,1095,1305,1100,2,2,"Pilot_PPN_2"
-"318","C2.I.9","no","difference","-written accent, +stress difference","radiador",2,3,-1,"gesture",0,"correct_L2_match",45,45,1516,1336,1516,1471,3,3,"Pilot_PPN_2"
-"319","C2.I.10","no","difference","-written accent, +stress difference","ilustrador",3,4,-1,"gesture",0,"correct_L2_match",371,371,1531,1320,1531,1160,4,4,"Pilot_PPN_2"
-"320","C2.I.11","no","difference","-written accent, +stress difference","color",1,2,-1,"gesture",0,"correct_L2_match",0,0,1190,1135,1190,1190,2,2,"Pilot_PPN_2"
-"321","C2.I.12","no","difference","-written accent, +stress difference","error",1,2,-1,"gesture",0,"correct_L2_match",0,0,1215,1160,1215,1215,2,2,"Pilot_PPN_2"
-"322","C2.I.13","no","difference","-written accent, +stress difference","factor",1,2,-1,"gesture",0,"correct_L2_match",161,161,1346,1105,1346,1185,2,2,"Pilot_PPN_2"
-"323","C2.I.14","no","difference","-written accent, +stress difference","festival",1,3,-2,"gesture",0,"correct_L2_match",205,205,1601,1346,1601,1396,3,3,"Pilot_PPN_2"
-"324","C2.I.15","no","difference","-written accent, +stress difference","uniforme",1,3,-2,"gesture",0,"correct_L2_match",25,25,1466,1220,1466,1441,3,4,"Pilot_PPN_2"
-"325","C2.I.16","no","difference","-written accent, +stress difference","alcohol",1,3,-2,"gesture",0,"correct_L2_match",176,176,1366,1100,1366,1190,3,3,"Pilot_PPN_2"
-"326","C2.I.17","no","difference","-written accent, +stress difference","actor",2,2,0,"gesture",0,"correct_L2_match",5,5,1406,1406,1406,1401,2,2,"Pilot_PPN_2"
-"327","C2.I.18","no","difference","-written accent, +stress difference","alergia",3,2,1,"gesture",0,"correct_L2_match",-20,20,1300,1556,1300,1320,2,3,"Pilot_PPN_2"
-"328","C2.I.19","no","difference","-written accent, +stress difference","farmacia",3,2,1,"gesture",25,"incorrect_other",-86,86,1315,1416,1290,1376,1,3,"Pilot_PPN_2"
-"329","C2.I.20","no","difference","-written accent, +stress difference","aristocracia",5,4,1,"gesture",0,"correct_L2_match",346,-346,1566,1782,1566,1220,4,5,"Pilot_PPN_2"
-"330","C2.E.21","no","difference","-written accent, +stress difference","elefantes",1,3,-2,"gesture",0,"correct_L2_match",196,196,1366,1070,1366,1170,3,4,"Pilot_PPN_2"
-"331","C3.I.1","yes","same","+written accent, -stress difference","brócoli",1,1,0,"gesture",0,"correct_L2_match",-105,-105,1506,1506,1506,1611,1,3,"Pilot_PPN_2"
-"332","C3.I.2","yes","same","+written accent, -stress difference","político",2,2,0,"gesture",0,"correct_L2_match",45,45,1265,1265,1265,1220,2,4,"Pilot_PPN_2"
-"333","C3.I.3","yes","same","+written accent, -stress difference","cámara",1,1,0,"gesture",100,"incorrect_other",-21,-21,1220,1220,1320,1341,2,3,"Pilot_PPN_2"
-"334","C3.I.4","yes","same","+written accent, -stress difference","número",1,1,0,"gesture",0,"correct_L2_match",-5,-5,1035,1035,1035,1040,1,3,"Pilot_PPN_2"
-"335","C3.I.5","yes","same","+written accent, -stress difference","fútbol",1,1,0,"gesture",80,"incorrect_other",20,20,1155,1155,1235,1215,2,2,"Pilot_PPN_2"
-"336","C3.I.6","yes","same","+written accent, -stress difference","saxofón",3,3,0,"gesture",0,"correct_L2_match",10,10,1616,1616,1616,1606,3,3,"Pilot_PPN_2"
-"337","C3.I.7","yes","same","+written accent, -stress difference","carácter",2,2,0,"gesture",291,"incorrect_other",326,326,1285,1285,1576,1250,3,3,"Pilot_PPN_2"
-"338","C3.I.8","yes","same","+written accent, -stress difference","analítico",3,3,0,"gesture",0,"correct_L2_match",-35,-35,1411,1411,1411,1446,3,5,"Pilot_PPN_2"
-"339","C3.I.9","yes","same","+written accent, -stress difference","círculo",1,1,0,"gesture",0,"correct_L2_match",-85,-85,1351,1351,1351,1436,1,3,"Pilot_PPN_2"
-"340","C3.I.10","yes","same","+written accent, -stress difference","álbum",1,1,0,"gesture",136,"incorrect_other",36,36,1200,1200,1336,1300,2,2,"Pilot_PPN_2"
-"341","C3.I.11","yes","same","+written accent, -stress difference","ángel",1,1,0,"gesture",26,"incorrect_other",-25,-25,1310,1310,1336,1361,2,2,"Pilot_PPN_2"
-"342","C3.I.12","yes","same","+written accent, -stress difference","capitán",3,3,0,"gesture",0,"correct_L2_match",55,55,1406,1406,1406,1351,3,3,"Pilot_PPN_2"
-"343","C3.I.13","yes","same","+written accent, -stress difference","pragmática",2,2,0,"gesture",0,"correct_L2_match",-15,-15,1250,1250,1250,1265,2,4,"Pilot_PPN_2"
-"344","C3.I.14","yes","same","+written accent, -stress difference","volcán",2,2,0,"gesture",0,"correct_L2_match",20,20,1280,1280,1280,1260,2,2,"Pilot_PPN_2"
-"345","C3.I.15","yes","same","+written accent, -stress difference","teoría",3,3,0,"gesture",-186,"incorrect_other",-75,-75,1341,1341,1155,1230,2,4,"Pilot_PPN_2"
-"346","C3.I.16","yes","same","+written accent, -stress difference","geográfico",3,3,0,"gesture",0,"correct_L2_match",20,20,1601,1601,1601,1581,3,5,"Pilot_PPN_2"
-"347","C3.I.17","yes","same","+written accent, -stress difference","académico",3,3,0,"gesture",0,"correct_L2_match",15,15,1356,1356,1356,1341,3,5,"Pilot_PPN_2"
-"348","C3.I.18","yes","same","+written accent, -stress difference","romántico",2,2,0,"gesture",0,"correct_L2_match",10,10,1356,1356,1356,1346,2,4,"Pilot_PPN_2"
-"349","C3.I.19","yes","same","+written accent, -stress difference","espárrago",2,2,0,"gesture",0,"correct_L2_match",0,0,1275,1275,1275,1275,2,4,"Pilot_PPN_2"
-"350","C3.I.20","yes","same","+written accent, -stress difference","helicóptero",3,3,0,"gesture",315,"incorrect_other",466,466,1401,1401,1716,1250,5,5,"Pilot_PPN_2"
-"351","C3.E.21","yes","same","+written accent, -stress difference","histórico",2,2,0,"gesture",0,"correct_L2_match",0,0,1255,1255,1255,1255,2,4,"Pilot_PPN_2"
-"352","C4.I.1","no","same","-written accent, -stress difference","parasol",3,3,0,"gesture",0,"correct_L2_match",140,140,1591,1591,1591,1451,3,3,"Pilot_PPN_2"
-"353","C4.I.2","no","same","-written accent, -stress difference","universidad",5,5,0,"gesture",0,"correct_L2_match",190,190,1536,1536,1536,1346,5,5,"Pilot_PPN_2"
-"354","C4.I.3","no","same","-written accent, -stress difference","formulario",3,3,0,"gesture",0,"correct_L2_match",-30,-30,1381,1381,1381,1411,3,4,"Pilot_PPN_2"
-"355","C4.I.4","no","same","-written accent, -stress difference","mango",1,1,0,"gesture",5,"incorrect_other",0,0,1320,1320,1325,1325,2,2,"Pilot_PPN_2"
-"356","C4.I.5","no","same","-written accent, -stress difference","tomate",2,2,0,"gesture",0,"correct_L2_match",6,6,1331,1331,1331,1325,2,3,"Pilot_PPN_2"
-"357","C4.I.6","no","same","-written accent, -stress difference","princesa",2,2,0,"gesture",-181,"incorrect_other",-176,-176,1426,1426,1245,1421,1,3,"Pilot_PPN_2"
-"358","C4.I.7","no","same","-written accent, -stress difference","cables",1,1,0,"gesture",0,"correct_L2_match",-21,-21,1325,1325,1325,1346,1,2,"Pilot_PPN_2"
-"359","C4.I.8","no","same","-written accent, -stress difference","proceso",2,2,0,"gesture",0,"correct_L2_match",70,70,1180,1180,1180,1110,2,3,"Pilot_PPN_2"
-"360","C4.I.9","no","same","-written accent, -stress difference","papel",2,2,0,"gesture",0,"correct_L2_match",-5,-5,1406,1406,1406,1411,2,2,"Pilot_PPN_2"
-"361","C4.I.10","no","same","-written accent, -stress difference","programa",2,2,0,"gesture",126,"incorrect_other",136,136,1245,1245,1371,1235,3,3,"Pilot_PPN_2"
-"362","C4.I.11","no","same","-written accent, -stress difference","ensalada",2,3,-1,"gesture",0,"correct_L2_match",20,20,1295,1260,1295,1275,3,4,"Pilot_PPN_2"
-"363","C4.I.12","no","same","-written accent, -stress difference","chocolate",3,3,0,"gesture",-226,"incorrect_other",-161,-161,1506,1506,1280,1441,1,4,"Pilot_PPN_2"
-"364","C4.I.13","no","same","-written accent, -stress difference","limonada",3,3,0,"gesture",-191,"incorrect_other",-20,-20,1376,1376,1185,1205,2,4,"Pilot_PPN_2"
-"365","C4.I.14","no","same","-written accent, -stress difference","restaurante",3,3,0,"gesture",0,"correct_L2_match",326,326,1611,1611,1611,1285,3,4,"Pilot_PPN_2"
-"366","C4.I.15","no","same","-written accent, -stress difference","blusa",1,1,0,"gesture",0,"correct_L2_match",30,30,1295,1295,1295,1265,1,2,"Pilot_PPN_2"
-"367","C4.I.16","no","same","-written accent, -stress difference","cabina",2,2,0,"gesture",0,"correct_L2_match",-10,-10,1240,1240,1240,1250,2,3,"Pilot_PPN_2"
-"368","C4.I.17","no","same","-written accent, -stress difference","familia",2,2,0,"gesture",0,"correct_L2_match",-25,-25,1341,1341,1341,1366,2,3,"Pilot_PPN_2"
-"369","C4.I.18","no","same","-written accent, -stress difference","canal",2,2,0,"gesture",0,"correct_L2_match",-31,-31,1305,1305,1305,1336,2,2,"Pilot_PPN_2"
-"370","C4.I.19","no","same","-written accent, -stress difference","centro",1,1,0,"gesture",226,"incorrect_other",191,191,1145,1145,1371,1180,2,2,"Pilot_PPN_2"
-"371","C4.I.20","no","same","-written accent, -stress difference","insectos",2,2,0,"gesture",0,"correct_L2_match",-20,-20,1250,1250,1250,1270,2,3,"Pilot_PPN_2"
-"372","C4.E.21","no","same","-written accent, -stress difference","planeta",2,2,0,"gesture",0,"correct_L2_match",-30,-30,1396,1396,1396,1426,2,3,"Pilot_PPN_2"
-"373","P.C1.1","yes","difference","+written accent, +stress difference","simpático",3,2,1,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"374","P.C1.2","yes","difference","+written accent, +stress difference","símbolo",2,1,1,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"375","P.C1.3","yes","difference","+written accent, +stress difference","kilómetro",3,2,1,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"376","P.C2.1","no","difference","-written accent, +stress difference","carnaval",1,3,-2,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"377","P.C2.2","no","difference","-written accent, +stress difference","democracia",4,3,1,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"378","P.C2.3","no","difference","-written accent, +stress difference","voleibol",1,3,-2,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"379","P.C3.1","yes","same","+written accent, -stress difference","económico",3,3,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"380","P.C3.2","yes","same","+written accent, -stress difference","energía",3,3,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"381","P.C3.3","yes","same","+written accent, -stress difference","ecología",4,4,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"382","P.C4.1","no","same","-written accent, -stress difference","mandarina",3,3,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"383","P.C4.2","no","same","-written accent, -stress difference","sistema",2,2,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"384","P.C4.3","no","same","-written accent, -stress difference","bailarina",3,3,0,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"","trial","accent","stress","type","target","stressed.syllable.L1","stressed.syllable.L2","L1.L2","Nsyllables_correct","condition","stressed_mistimingL2L1","correct","asynchrony","asynchrony_L2L1","time_syl_L2","time_syl_L1","time_stress","time_beat","stressed_syllable","syllables_detected","ppn","stressed_mistiming_raw"
+"1","C1.I.1","yes","difference","+written accent, +stress difference","análisis",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-647,647,1250,1346,1250,1897,2,4,"Pilot_PPN_1",0
+"2","C1.I.2","yes","difference","+written accent, +stress difference","centímetro",3,2,1,4,"nogesture",-40,"L2 mismatch & L1 match",-401,401,1456,1496,1496,1897,3,4,"Pilot_PPN_1",0
+"3","C1.I.3","yes","difference","+written accent, +stress difference","pirámide",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-215,215,1351,1366,1351,1566,2,4,"Pilot_PPN_1",0
+"4","C1.I.4","yes","difference","+written accent, +stress difference","cardiólogo",3,2,1,4,"nogesture",-105,"L2 mismatch & L1 match",15,-15,1411,1516,1516,1501,3,4,"Pilot_PPN_1",0
+"5","C1.I.5","yes","difference","+written accent, +stress difference","máquina",2,1,1,3,"nogesture",-340,"L2 mismatch & L1 mismatch",15,-15,915,1210,1255,1240,3,3,"Pilot_PPN_1",0
+"6","C1.I.6","yes","difference","+written accent, +stress difference","automóvil",4,3,1,4,"nogesture",0,"L2 match & L1 mismatch",-150,150,1331,1526,1331,1481,3,4,"Pilot_PPN_1",0
+"7","C1.I.7","yes","difference","+written accent, +stress difference","teléfono",3,2,1,4,"nogesture",-311,"L2 mismatch & L1 mismatch",316,-316,1150,1451,1461,1145,4,4,"Pilot_PPN_1",0
+"8","C1.I.8","yes","difference","+written accent, +stress difference","fórmula",2,1,1,3,"nogesture",-260,"L2 mismatch & L1 mismatch",0,0,1065,1215,1325,1325,3,3,"Pilot_PPN_1",0
+"9","C1.I.9","yes","difference","+written accent, +stress difference","acróbata",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-472,472,1320,1476,1320,1792,2,4,"Pilot_PPN_1",0
+"10","C1.I.10","yes","difference","+written accent, +stress difference","satélito",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-266,266,1245,1381,1245,1511,2,4,"Pilot_PPN_1",0
+"11","C1.I.11","yes","difference","+written accent, +stress difference","gráfico",2,1,1,3,"nogesture",0,"L2 match & L1 mismatch",80,-80,1015,1320,1015,935,1,3,"Pilot_PPN_1",0
+"12","C1.I.12","yes","difference","+written accent, +stress difference","océano",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-70,70,1230,1346,1230,1300,2,4,"Pilot_PPN_1",0
+"13","C1.I.13","yes","difference","+written accent, +stress difference","carnívora",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-376,376,1506,1636,1506,1882,2,4,"Pilot_PPN_1",0
+"14","C1.I.14","yes","difference","+written accent, +stress difference","católico",3,2,1,4,"nogesture",-55,"L2 mismatch & L1 match",330,-330,1170,1225,1225,895,3,4,"Pilot_PPN_1",0
+"15","C1.I.15","yes","difference","+written accent, +stress difference","demócrata",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-506,506,2072,2358,2072,2578,2,4,"Pilot_PPN_1",0
+"16","C1.I.16","yes","difference","+written accent, +stress difference","gramófono",3,2,1,4,"nogesture",266,"L2 mismatch & L1 mismatch",-426,426,1561,1812,1295,1721,1,4,"Pilot_PPN_1",0
+"17","C1.I.17","yes","difference","+written accent, +stress difference","micrófono",3,2,1,4,"nogesture",290,"L2 mismatch & L1 mismatch",-601,601,1320,1586,1030,1631,1,4,"Pilot_PPN_1",0
+"18","C1.I.18","yes","difference","+written accent, +stress difference","metáfora",3,2,1,4,"nogesture",195,"L2 mismatch & L1 mismatch",-661,661,1200,1431,1005,1666,1,4,"Pilot_PPN_1",0
+"19","C1.I.19","yes","difference","+written accent, +stress difference","catástrofe",3,2,1,4,"nogesture",-246,"L2 mismatch & L1 match",-311,311,1235,1481,1481,1792,3,4,"Pilot_PPN_1",0
+"20","C1.I.20","yes","difference","+written accent, +stress difference","cafetería",3,4,-1,5,"nogesture",0,"L2 match & L1 mismatch",-65,-65,1506,1376,1506,1571,4,5,"Pilot_PPN_1",0
+"21","C1.E.21","yes","difference","+written accent, +stress difference","sofá",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",135,135,1195,1030,1195,1060,2,2,"Pilot_PPN_1",0
+"22","C2.I.1","no","difference","-written accent, +stress difference","clima",2,1,1,2,"nogesture",-45,"L2 mismatch & L1 match",-241,241,1180,1225,1225,1466,2,2,"Pilot_PPN_1",0
+"23","C2.I.2","no","difference","-written accent, +stress difference","vacaciones",2,3,-1,4,"nogesture",0,"L2 match & L1 mismatch",-506,-506,1451,1245,1451,1957,3,4,"Pilot_PPN_1",0
+"24","C2.I.3","no","difference","-written accent, +stress difference","profesor",2,3,-1,3,"nogesture",0,"L2 match & L1 mismatch",-155,-155,1441,1250,1441,1596,3,3,"Pilot_PPN_1",0
+"25","C2.I.4","no","difference","-written accent, +stress difference","ventilador",3,4,-1,4,"nogesture",-516,"L2 mismatch & L1 mismatch",-491,-491,1606,1366,1090,1581,1,4,"Pilot_PPN_1",0
+"26","C2.I.5","no","difference","-written accent, +stress difference","internet",1,3,-2,3,"nogesture",0,"L2 match & L1 mismatch",-160,-160,1541,1175,1541,1701,3,3,"Pilot_PPN_1",0
+"27","C2.I.6","no","difference","-written accent, +stress difference","mamut",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",-60,-60,1125,985,1125,1185,2,2,"Pilot_PPN_1",0
+"28","C2.I.7","no","difference","-written accent, +stress difference","horizonte",1,3,-2,4,"nogesture",0,"L2 match & L1 mismatch",86,86,1341,1020,1341,1255,3,4,"Pilot_PPN_1",0
+"29","C2.I.8","no","difference","-written accent, +stress difference","doctor",1,2,-1,2,"nogesture",-316,"L2 mismatch & L1 match",-501,-501,1341,1025,1025,1526,1,2,"Pilot_PPN_1",0
+"30","C2.I.9","no","difference","-written accent, +stress difference","radiador",2,3,-1,3,"nogesture",0,"L2 match & L1 mismatch",50,50,1441,1290,1441,1391,3,3,"Pilot_PPN_1",0
+"31","C2.I.10","no","difference","-written accent, +stress difference","ilustrador",3,4,-1,4,"nogesture",0,"L2 match & L1 mismatch",-181,-181,1766,1596,1766,1947,4,4,"Pilot_PPN_1",0
+"32","C2.I.11","no","difference","-written accent, +stress difference","color",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",-60,-60,1055,1020,1055,1115,2,2,"Pilot_PPN_1",0
+"33","C2.I.12","no","difference","-written accent, +stress difference","error",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",40,40,1205,1025,1205,1165,2,2,"Pilot_PPN_1",0
+"34","C2.I.13","no","difference","-written accent, +stress difference","factor",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",10,10,1411,1140,1411,1401,2,2,"Pilot_PPN_1",0
+"35","C2.I.14","no","difference","-written accent, +stress difference","festival",1,3,-2,3,"nogesture",0,"L2 match & L1 mismatch",85,85,1566,1230,1566,1481,3,3,"Pilot_PPN_1",0
+"36","C2.I.15","no","difference","-written accent, +stress difference","uniforme",1,3,-2,4,"nogesture",-255,"L2 mismatch & L1 mismatch",-476,-476,1621,1361,1366,1842,2,4,"Pilot_PPN_1",0
+"37","C2.I.16","no","difference","-written accent, +stress difference","alcohol",1,3,-2,3,"nogesture",0,"L2 match & L1 mismatch",166,166,1336,1055,1336,1170,3,3,"Pilot_PPN_1",0
+"38","C2.I.17","no","difference","-written accent, +stress difference","actor",2,2,0,2,"nogesture",0,"L2 match & L1 match",-205,-205,1411,1411,1411,1616,2,2,"Pilot_PPN_1",0
+"39","C2.I.18","no","difference","-written accent, +stress difference","alergia",3,2,1,3,"nogesture",0,"L2 match & L1 mismatch",-351,351,1676,2062,1676,2027,2,3,"Pilot_PPN_1",0
+"40","C2.I.19","no","difference","-written accent, +stress difference","farmacia",3,2,1,3,"nogesture",0,"L2 match & L1 mismatch",-456,456,1180,1521,1180,1636,2,3,"Pilot_PPN_1",0
+"41","C2.I.20","no","difference","-written accent, +stress difference","aristocracia",5,4,1,5,"nogesture",-265,"L2 mismatch & L1 match",-55,55,1792,2057,2057,2112,5,5,"Pilot_PPN_1",0
+"42","C2.E.21","no","difference","-written accent, +stress difference","elefantes",1,3,-2,4,"nogesture",0,"L2 match & L1 mismatch",-281,-281,1295,1030,1295,1576,3,4,"Pilot_PPN_1",0
+"43","C3.I.1","yes","same","+written accent, -stress difference","brócoli",1,1,0,3,"nogesture",381,"L2 mismatch & L1 mismatch",141,141,1040,1040,1421,1280,3,3,"Pilot_PPN_1",0
+"44","C3.I.2","yes","same","+written accent, -stress difference","político",2,2,0,4,"nogesture",0,"L2 match & L1 match",90,90,1110,1110,1110,1020,2,4,"Pilot_PPN_1",0
+"45","C3.I.3","yes","same","+written accent, -stress difference","cámara",1,1,0,3,"nogesture",60,"L2 mismatch & L1 mismatch",-100,-100,1075,1075,1135,1235,2,3,"Pilot_PPN_1",0
+"46","C3.I.4","yes","same","+written accent, -stress difference","número",1,1,0,3,"nogesture",0,"L2 match & L1 match",-380,-380,1361,1361,1361,1741,1,3,"Pilot_PPN_1",0
+"47","C3.I.5","yes","same","+written accent, -stress difference","fútbol",1,1,0,2,"nogesture",185,"L2 mismatch & L1 mismatch",-40,-40,1085,1085,1270,1310,2,2,"Pilot_PPN_1",0
+"48","C3.I.6","yes","same","+written accent, -stress difference","saxofón",3,3,0,3,"nogesture",0,"L2 match & L1 match",546,546,1566,1566,1566,1020,3,3,"Pilot_PPN_1",0
+"49","C3.I.7","yes","same","+written accent, -stress difference","carácter",2,2,0,3,"nogesture",0,"L2 match & L1 match",-100,-100,1105,1105,1105,1205,2,3,"Pilot_PPN_1",0
+"50","C3.I.8","yes","same","+written accent, -stress difference","analítico",3,3,0,5,"nogesture",-215,"L2 mismatch & L1 mismatch",-446,-446,1320,1320,1105,1551,2,5,"Pilot_PPN_1",0
+"51","C3.I.9","yes","same","+written accent, -stress difference","círculo",1,1,0,3,"nogesture",301,"L2 mismatch & L1 mismatch",361,361,1085,1085,1386,1025,3,3,"Pilot_PPN_1",0
+"52","C3.I.10","yes","same","+written accent, -stress difference","álbum",1,1,0,2,"nogesture",0,"L2 match & L1 match",-386,-386,1070,1070,1070,1456,1,2,"Pilot_PPN_1",0
+"53","C3.I.11","yes","same","+written accent, -stress difference","ángel",1,1,0,2,"nogesture",381,"L2 mismatch & L1 mismatch",-95,-95,1020,1020,1401,1496,2,2,"Pilot_PPN_1",0
+"54","C3.I.12","yes","same","+written accent, -stress difference","capitán",3,3,0,3,"nogesture",0,"L2 match & L1 match",236,236,1361,1361,1361,1125,3,3,"Pilot_PPN_1",0
+"55","C3.I.13","yes","same","+written accent, -stress difference","pragmática",2,2,0,4,"nogesture",0,"L2 match & L1 match",-66,-66,1270,1270,1270,1336,2,4,"Pilot_PPN_1",0
+"56","C3.I.14","yes","same","+written accent, -stress difference","volcán",2,2,0,2,"nogesture",0,"L2 match & L1 match",95,95,1325,1325,1325,1230,2,2,"Pilot_PPN_1",0
+"57","C3.I.15","yes","same","+written accent, -stress difference","teoría",3,3,0,4,"nogesture",0,"L2 match & L1 match",40,40,1541,1541,1541,1501,3,4,"Pilot_PPN_1",0
+"58","C3.I.16","yes","same","+written accent, -stress difference","geográfico",3,3,0,5,"nogesture",0,"L2 match & L1 match",190,190,1641,1641,1641,1451,3,5,"Pilot_PPN_1",0
+"59","C3.I.17","yes","same","+written accent, -stress difference","académico",3,3,0,5,"nogesture",0,"L2 match & L1 match",-325,-325,1336,1336,1336,1661,3,5,"Pilot_PPN_1",0
+"60","C3.I.18","yes","same","+written accent, -stress difference","romántico",2,2,0,4,"nogesture",0,"L2 match & L1 match",-116,-116,1270,1270,1270,1386,2,4,"Pilot_PPN_1",0
+"61","C3.I.19","yes","same","+written accent, -stress difference","espárrago",2,2,0,4,"nogesture",0,"L2 match & L1 match",-36,-36,1756,1756,1756,1792,2,4,"Pilot_PPN_1",0
+"62","C3.I.20","yes","same","+written accent, -stress difference","helicóptero",3,3,0,5,"nogesture",0,"L2 match & L1 match",70,70,1446,1446,1446,1376,3,5,"Pilot_PPN_1",0
+"63","C3.E.21","yes","same","+written accent, -stress difference","histórico",2,2,0,4,"nogesture",0,"L2 match & L1 match",-456,-456,1401,1401,1401,1857,2,4,"Pilot_PPN_1",0
+"64","C4.I.1","no","same","-written accent, -stress difference","parasol",3,3,0,3,"nogesture",0,"L2 match & L1 match",331,331,1461,1461,1461,1130,3,3,"Pilot_PPN_1",0
+"65","C4.I.2","no","same","-written accent, -stress difference","universidad",5,5,0,5,"nogesture",-401,"L2 mismatch & L1 mismatch",-571,-571,1516,1516,1115,1686,2,5,"Pilot_PPN_1",0
+"66","C4.I.3","no","same","-written accent, -stress difference","formulario",3,3,0,4,"nogesture",80,"L2 mismatch & L1 mismatch",245,245,3706,3706,3786,3541,4,4,"Pilot_PPN_1",0
+"67","C4.I.4","no","same","-written accent, -stress difference","mango",1,1,0,2,"nogesture",0,"L2 match & L1 match",-45,-45,1000,1000,1000,1045,1,2,"Pilot_PPN_1",0
+"68","C4.I.5","no","same","-written accent, -stress difference","tomate",2,2,0,3,"nogesture",0,"L2 match & L1 match",50,50,1200,1200,1200,1150,2,3,"Pilot_PPN_1",0
+"69","C4.I.6","no","same","-written accent, -stress difference","princesa",2,2,0,3,"nogesture",-285,"L2 mismatch & L1 mismatch",-491,-491,1290,1290,1005,1496,1,3,"Pilot_PPN_1",0
+"70","C4.I.7","no","same","-written accent, -stress difference","cables",1,1,0,2,"nogesture",0,"L2 match & L1 match",-205,-205,1115,1115,1115,1320,1,2,"Pilot_PPN_1",0
+"71","C4.I.8","no","same","-written accent, -stress difference","proceso",2,2,0,3,"nogesture",0,"L2 match & L1 match",-205,-205,1351,1351,1351,1556,2,3,"Pilot_PPN_1",0
+"72","C4.I.9","no","same","-written accent, -stress difference","papel",2,2,0,2,"nogesture",0,"L2 match & L1 match",-241,-241,1325,1325,1325,1566,2,2,"Pilot_PPN_1",0
+"73","C4.I.10","no","same","-written accent, -stress difference","programa",2,2,0,3,"nogesture",120,"L2 mismatch & L1 mismatch",-235,-235,1341,1341,1461,1696,3,3,"Pilot_PPN_1",0
+"74","C4.I.11","no","same","-written accent, -stress difference","ensalada",2,3,-1,4,"nogesture",0,"L2 match & L1 mismatch",-326,-326,1521,1431,1521,1847,3,4,"Pilot_PPN_1",0
+"75","C4.I.12","no","same","-written accent, -stress difference","chocolate",3,3,0,4,"nogesture",0,"L2 match & L1 match",-100,-100,1195,1195,1195,1295,3,4,"Pilot_PPN_1",0
+"76","C4.I.13","no","same","-written accent, -stress difference","limonada",3,3,0,4,"nogesture",-416,"L2 mismatch & L1 mismatch",-481,-481,1636,1636,1220,1701,1,4,"Pilot_PPN_1",0
+"77","C4.I.14","no","same","-written accent, -stress difference","restaurante",3,3,0,4,"nogesture",0,"L2 match & L1 match",-386,-386,1671,1671,1671,2057,3,4,"Pilot_PPN_1",0
+"78","C4.I.15","no","same","-written accent, -stress difference","blusa",1,1,0,2,"nogesture",0,"L2 match & L1 match",-361,-361,1005,1005,1005,1366,1,2,"Pilot_PPN_1",0
+"79","C4.I.16","no","same","-written accent, -stress difference","cabina",2,2,0,3,"nogesture",0,"L2 match & L1 match",20,20,1361,1361,1361,1341,2,3,"Pilot_PPN_1",0
+"80","C4.I.17","no","same","-written accent, -stress difference","familia",2,2,0,3,"nogesture",0,"L2 match & L1 match",-171,-171,1190,1190,1190,1361,2,3,"Pilot_PPN_1",0
+"81","C4.I.18","no","same","-written accent, -stress difference","canal",2,2,0,2,"nogesture",0,"L2 match & L1 match",-50,-50,1155,1155,1155,1205,2,2,"Pilot_PPN_1",0
+"82","C4.I.19","no","same","-written accent, -stress difference","centro",1,1,0,2,"nogesture",0,"L2 match & L1 match",-186,-186,1210,1210,1210,1396,1,2,"Pilot_PPN_1",0
+"83","C4.I.20","no","same","-written accent, -stress difference","insectos",2,2,0,3,"nogesture",-255,"L2 mismatch & L1 mismatch",-561,-561,1275,1275,1020,1581,1,3,"Pilot_PPN_1",0
+"84","C4.E.21","no","same","-written accent, -stress difference","planeta",2,2,0,3,"nogesture",0,"L2 match & L1 match",-311,-311,1145,1145,1145,1456,2,3,"Pilot_PPN_1",0
+"85","P.C1.1","yes","difference","+written accent, +stress difference","simpático",3,2,1,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"86","P.C1.2","yes","difference","+written accent, +stress difference","símbolo",2,1,1,3,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"87","P.C1.3","yes","difference","+written accent, +stress difference","kilómetro",3,2,1,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"88","P.C2.1","no","difference","-written accent, +stress difference","carnaval",1,3,-2,3,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"89","P.C2.2","no","difference","-written accent, +stress difference","democracia",4,3,1,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"90","P.C2.3","no","difference","-written accent, +stress difference","voleibol",1,3,-2,3,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"91","P.C3.1","yes","same","+written accent, -stress difference","económico",3,3,0,5,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"92","P.C3.2","yes","same","+written accent, -stress difference","energía",3,3,0,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"93","P.C3.3","yes","same","+written accent, -stress difference","ecología",4,4,0,5,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"94","P.C4.1","no","same","-written accent, -stress difference","mandarina",3,3,0,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"95","P.C4.2","no","same","-written accent, -stress difference","sistema",2,2,0,3,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"96","P.C4.3","no","same","-written accent, -stress difference","bailarina",3,3,0,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"97","C1.I.1","yes","difference","+written accent, +stress difference","análisis",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-15,15,1280,1406,1280,1295,2,4,"Pilot_PPN_1",0
+"98","C1.I.2","yes","difference","+written accent, +stress difference","centímetro",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",75,-75,1411,1496,1411,1336,2,4,"Pilot_PPN_1",0
+"99","C1.I.3","yes","difference","+written accent, +stress difference","pirámide",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",150,-150,1531,1561,1531,1381,2,4,"Pilot_PPN_1",0
+"100","C1.I.4","yes","difference","+written accent, +stress difference","cardiólogo",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-61,61,1320,1456,1320,1381,2,4,"Pilot_PPN_1",0
+"101","C1.I.5","yes","difference","+written accent, +stress difference","máquina",2,1,1,3,"gesture",0,"L2 match & L1 mismatch",-70,70,1150,1481,1150,1220,1,3,"Pilot_PPN_1",0
+"102","C1.I.6","yes","difference","+written accent, +stress difference","automóvil",4,3,1,4,"gesture",0,"L2 match & L1 mismatch",170,-170,1576,1766,1576,1406,3,4,"Pilot_PPN_1",0
+"103","C1.I.7","yes","difference","+written accent, +stress difference","teléfono",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-85,85,1115,1471,1115,1200,2,4,"Pilot_PPN_1",0
+"104","C1.I.8","yes","difference","+written accent, +stress difference","fórmula",2,1,1,3,"gesture",-190,"L2 mismatch & L1 match",155,-155,1135,1325,1325,1170,2,3,"Pilot_PPN_1",0
+"105","C1.I.9","yes","difference","+written accent, +stress difference","acróbata",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",86,-86,1366,1566,1366,1280,2,4,"Pilot_PPN_1",0
+"106","C1.I.10","yes","difference","+written accent, +stress difference","satélito",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",25,-25,1220,1391,1220,1195,2,4,"Pilot_PPN_1",0
+"107","C1.I.11","yes","difference","+written accent, +stress difference","gráfico",2,1,1,3,"gesture",0,"L2 match & L1 mismatch",-130,130,1135,1446,1135,1265,1,3,"Pilot_PPN_1",0
+"108","C1.I.12","yes","difference","+written accent, +stress difference","océano",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",35,-35,1305,1521,1305,1270,2,4,"Pilot_PPN_1",0
+"109","C1.I.13","yes","difference","+written accent, +stress difference","carnívora",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",30,-30,1466,1536,1466,1436,2,4,"Pilot_PPN_1",0
+"110","C1.I.14","yes","difference","+written accent, +stress difference","católico",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",25,-25,1215,1285,1215,1190,2,4,"Pilot_PPN_1",0
+"111","C1.I.15","yes","difference","+written accent, +stress difference","demócrata",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-25,25,1371,1671,1371,1396,2,4,"Pilot_PPN_1",0
+"112","C1.I.16","yes","difference","+written accent, +stress difference","gramófono",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-81,81,1325,1661,1325,1406,2,4,"Pilot_PPN_1",0
+"113","C1.I.17","yes","difference","+written accent, +stress difference","micrófono",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-5,5,1270,1536,1270,1275,2,4,"Pilot_PPN_1",0
+"114","C1.I.18","yes","difference","+written accent, +stress difference","metáfora",3,2,1,4,"gesture",230,"L2 mismatch & L1 mismatch",-210,210,1280,1541,1050,1260,1,4,"Pilot_PPN_1",0
+"115","C1.I.19","yes","difference","+written accent, +stress difference","catástrofe",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-65,65,1215,1531,1215,1280,2,4,"Pilot_PPN_1",0
+"116","C1.I.20","yes","difference","+written accent, +stress difference","cafetería",3,4,-1,5,"gesture",0,"L2 match & L1 mismatch",311,311,1441,1255,1441,1130,4,5,"Pilot_PPN_1",0
+"117","C1.E.21","yes","difference","+written accent, +stress difference","sofá",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",130,130,1250,1080,1250,1120,2,2,"Pilot_PPN_1",0
+"118","C2.I.1","no","difference","-written accent, +stress difference","clima",2,1,1,2,"gesture",-75,"L2 mismatch & L1 match",30,-30,1120,1195,1195,1165,2,2,"Pilot_PPN_1",0
+"119","C2.I.2","no","difference","-written accent, +stress difference","vacaciones",2,3,-1,4,"gesture",0,"L2 match & L1 mismatch",100,100,1471,1250,1471,1371,3,4,"Pilot_PPN_1",0
+"120","C2.I.3","no","difference","-written accent, +stress difference","profesor",2,3,-1,3,"gesture",0,"L2 match & L1 mismatch",60,60,1892,1706,1892,1832,3,3,"Pilot_PPN_1",0
+"121","C2.I.4","no","difference","-written accent, +stress difference","ventilador",3,4,-1,4,"gesture",0,"L2 match & L1 mismatch",106,106,1396,1135,1396,1290,4,4,"Pilot_PPN_1",0
+"122","C2.I.5","no","difference","-written accent, +stress difference","internet",1,3,-2,3,"gesture",0,"L2 match & L1 mismatch",30,30,1305,1045,1305,1275,3,3,"Pilot_PPN_1",0
+"123","C2.I.6","no","difference","-written accent, +stress difference","mamut",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",10,10,1120,1030,1120,1110,2,2,"Pilot_PPN_1",0
+"124","C2.I.7","no","difference","-written accent, +stress difference","horizonte",1,3,-2,4,"gesture",0,"L2 match & L1 mismatch",111,111,1396,1075,1396,1285,3,4,"Pilot_PPN_1",0
+"125","C2.I.8","no","difference","-written accent, +stress difference","doctor",1,2,-1,2,"gesture",-271,"L2 mismatch & L1 match",-185,-185,1366,1095,1095,1280,1,2,"Pilot_PPN_1",0
+"126","C2.I.9","no","difference","-written accent, +stress difference","radiador",2,3,-1,3,"gesture",-451,"L2 mismatch & L1 mismatch",-626,-626,1566,1356,1115,1741,1,3,"Pilot_PPN_1",0
+"127","C2.I.10","no","difference","-written accent, +stress difference","ilustrador",3,4,-1,4,"gesture",0,"L2 match & L1 mismatch",5,5,1782,1621,1782,1777,4,4,"Pilot_PPN_1",0
+"128","C2.I.11","no","difference","-written accent, +stress difference","color",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",15,15,1235,1090,1235,1220,2,2,"Pilot_PPN_1",0
+"129","C2.I.12","no","difference","-written accent, +stress difference","error",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",10,10,1225,1100,1225,1215,2,2,"Pilot_PPN_1",0
+"130","C2.I.13","no","difference","-written accent, +stress difference","factor",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",261,261,1812,1556,1812,1551,2,2,"Pilot_PPN_1",0
+"131","C2.I.14","no","difference","-written accent, +stress difference","festival",1,3,-2,3,"gesture",0,"L2 match & L1 mismatch",10,10,1576,1356,1576,1566,3,3,"Pilot_PPN_1",0
+"132","C2.I.15","no","difference","-written accent, +stress difference","uniforme",1,3,-2,4,"gesture",0,"L2 match & L1 mismatch",-20,-20,1917,1556,1917,1937,3,4,"Pilot_PPN_1",0
+"133","C2.I.16","no","difference","-written accent, +stress difference","alcohol",1,3,-2,3,"gesture",0,"L2 match & L1 mismatch",126,126,1346,995,1346,1220,3,3,"Pilot_PPN_1",0
+"134","C2.I.17","no","difference","-written accent, +stress difference","actor",2,2,0,2,"gesture",0,"L2 match & L1 match",15,15,1325,1325,1325,1310,2,2,"Pilot_PPN_1",0
+"135","C2.I.18","no","difference","-written accent, +stress difference","alergia",3,2,1,3,"gesture",0,"L2 match & L1 mismatch",25,-25,1381,1681,1381,1356,2,3,"Pilot_PPN_1",0
+"136","C2.I.19","no","difference","-written accent, +stress difference","farmacia",3,2,1,3,"gesture",0,"L2 match & L1 mismatch",-40,40,1255,1601,1255,1295,2,3,"Pilot_PPN_1",0
+"137","C2.I.20","no","difference","-written accent, +stress difference","aristocracia",5,4,1,5,"gesture",0,"L2 match & L1 mismatch",30,-30,2092,2363,2092,2062,4,5,"Pilot_PPN_1",0
+"138","C2.E.21","no","difference","-written accent, +stress difference","elefantes",1,3,-2,4,"gesture",0,"L2 match & L1 mismatch",10,10,1471,1185,1471,1461,3,4,"Pilot_PPN_1",0
+"139","C3.I.1","yes","same","+written accent, -stress difference","brócoli",1,1,0,3,"gesture",0,"L2 match & L1 match",-175,-175,1055,1055,1055,1230,1,3,"Pilot_PPN_1",0
+"140","C3.I.2","yes","same","+written accent, -stress difference","político",2,2,0,4,"gesture",0,"L2 match & L1 match",-15,-15,1120,1120,1120,1135,2,4,"Pilot_PPN_1",0
+"141","C3.I.3","yes","same","+written accent, -stress difference","cámara",1,1,0,3,"gesture",0,"L2 match & L1 match",-15,-15,1190,1190,1190,1205,1,3,"Pilot_PPN_1",0
+"142","C3.I.4","yes","same","+written accent, -stress difference","número",1,1,0,3,"gesture",0,"L2 match & L1 match",-31,-31,1300,1300,1300,1331,1,3,"Pilot_PPN_1",0
+"143","C3.I.5","yes","same","+written accent, -stress difference","fútbol",1,1,0,2,"gesture",171,"L2 mismatch & L1 mismatch",221,221,1235,1235,1406,1185,2,2,"Pilot_PPN_1",0
+"144","C3.I.6","yes","same","+written accent, -stress difference","saxofón",3,3,0,3,"gesture",0,"L2 match & L1 match",166,166,1426,1426,1426,1260,3,3,"Pilot_PPN_1",0
+"145","C3.I.7","yes","same","+written accent, -stress difference","carácter",2,2,0,3,"gesture",0,"L2 match & L1 match",30,30,1185,1185,1185,1155,2,3,"Pilot_PPN_1",0
+"146","C3.I.8","yes","same","+written accent, -stress difference","analítico",3,3,0,5,"gesture",0,"L2 match & L1 match",115,115,1175,1175,1175,1060,3,5,"Pilot_PPN_1",0
+"147","C3.I.9","yes","same","+written accent, -stress difference","círculo",1,1,0,3,"gesture",0,"L2 match & L1 match",-70,-70,1060,1060,1060,1130,1,3,"Pilot_PPN_1",0
+"148","C3.I.10","yes","same","+written accent, -stress difference","álbum",1,1,0,2,"gesture",0,"L2 match & L1 match",-25,-25,1135,1135,1135,1160,1,2,"Pilot_PPN_1",0
+"149","C3.I.11","yes","same","+written accent, -stress difference","ángel",1,1,0,2,"gesture",316,"L2 mismatch & L1 mismatch",281,281,1240,1240,1556,1275,2,2,"Pilot_PPN_1",0
+"150","C3.I.12","yes","same","+written accent, -stress difference","capitán",3,3,0,3,"gesture",0,"L2 match & L1 match",121,121,1421,1421,1421,1300,3,3,"Pilot_PPN_1",0
+"151","C3.I.13","yes","same","+written accent, -stress difference","pragmática",2,2,0,4,"gesture",0,"L2 match & L1 match",-75,-75,1331,1331,1331,1406,2,4,"Pilot_PPN_1",0
+"152","C3.I.14","yes","same","+written accent, -stress difference","volcán",2,2,0,2,"gesture",0,"L2 match & L1 match",90,90,1185,1185,1185,1095,2,2,"Pilot_PPN_1",0
+"153","C3.I.15","yes","same","+written accent, -stress difference","teoría",3,3,0,4,"gesture",0,"L2 match & L1 match",46,46,1356,1356,1356,1310,3,4,"Pilot_PPN_1",0
+"154","C3.I.16","yes","same","+written accent, -stress difference","geográfico",3,3,0,5,"gesture",0,"L2 match & L1 match",20,20,1942,1942,1942,1922,3,5,"Pilot_PPN_1",0
+"155","C3.I.17","yes","same","+written accent, -stress difference","académico",3,3,0,5,"gesture",0,"L2 match & L1 match",-35,-35,1285,1285,1285,1320,3,5,"Pilot_PPN_1",0
+"156","C3.I.18","yes","same","+written accent, -stress difference","romántico",2,2,0,4,"gesture",0,"L2 match & L1 match",-55,-55,1250,1250,1250,1305,2,4,"Pilot_PPN_1",0
+"157","C3.I.19","yes","same","+written accent, -stress difference","espárrago",2,2,0,4,"gesture",0,"L2 match & L1 match",10,10,1280,1280,1280,1270,2,4,"Pilot_PPN_1",0
+"158","C3.I.20","yes","same","+written accent, -stress difference","helicóptero",3,3,0,5,"gesture",360,"L2 mismatch & L1 mismatch",330,330,1782,1782,2142,1812,5,5,"Pilot_PPN_1",0
+"159","C3.E.21","yes","same","+written accent, -stress difference","histórico",2,2,0,4,"gesture",0,"L2 match & L1 match",-66,-66,1285,1285,1285,1351,2,4,"Pilot_PPN_1",0
+"160","C4.I.1","no","same","-written accent, -stress difference","parasol",3,3,0,3,"gesture",0,"L2 match & L1 match",5,5,1431,1431,1431,1426,3,3,"Pilot_PPN_1",0
+"161","C4.I.2","no","same","-written accent, -stress difference","universidad",5,5,0,5,"gesture",0,"L2 match & L1 match",30,30,1711,1711,1711,1681,5,5,"Pilot_PPN_1",0
+"162","C4.I.3","no","same","-written accent, -stress difference","formulario",3,3,0,4,"gesture",0,"L2 match & L1 match",105,105,1441,1441,1441,1336,3,4,"Pilot_PPN_1",0
+"163","C4.I.4","no","same","-written accent, -stress difference","mango",1,1,0,2,"gesture",0,"L2 match & L1 match",-20,-20,1080,1080,1080,1100,1,2,"Pilot_PPN_1",0
+"164","C4.I.5","no","same","-written accent, -stress difference","tomate",2,2,0,3,"gesture",0,"L2 match & L1 match",-120,-120,1366,1366,1366,1486,2,3,"Pilot_PPN_1",0
+"165","C4.I.6","no","same","-written accent, -stress difference","princesa",2,2,0,3,"gesture",-281,"L2 mismatch & L1 mismatch",-236,-236,1391,1391,1110,1346,1,3,"Pilot_PPN_1",0
+"166","C4.I.7","no","same","-written accent, -stress difference","cables",1,1,0,2,"gesture",161,"L2 mismatch & L1 mismatch",125,125,1295,1295,1456,1331,2,2,"Pilot_PPN_1",0
+"167","C4.I.8","no","same","-written accent, -stress difference","proceso",2,2,0,3,"gesture",0,"L2 match & L1 match",36,36,1331,1331,1331,1295,2,3,"Pilot_PPN_1",0
+"168","C4.I.9","no","same","-written accent, -stress difference","papel",2,2,0,2,"gesture",0,"L2 match & L1 match",85,85,1320,1320,1320,1235,2,2,"Pilot_PPN_1",0
+"169","C4.I.10","no","same","-written accent, -stress difference","programa",2,2,0,3,"gesture",0,"L2 match & L1 match",25,25,1225,1225,1225,1200,2,3,"Pilot_PPN_1",0
+"170","C4.I.11","no","same","-written accent, -stress difference","ensalada",2,3,-1,4,"gesture",0,"L2 match & L1 mismatch",75,75,1516,1255,1516,1441,3,4,"Pilot_PPN_1",0
+"171","C4.I.12","no","same","-written accent, -stress difference","chocolate",3,3,0,4,"gesture",0,"L2 match & L1 match",-5,-5,1225,1225,1225,1230,3,4,"Pilot_PPN_1",0
+"172","C4.I.13","no","same","-written accent, -stress difference","limonada",3,3,0,4,"gesture",-341,"L2 mismatch & L1 mismatch",-205,-205,1426,1426,1085,1290,1,4,"Pilot_PPN_1",0
+"173","C4.I.14","no","same","-written accent, -stress difference","restaurante",3,3,0,4,"gesture",0,"L2 match & L1 match",170,170,1661,1661,1661,1491,3,4,"Pilot_PPN_1",0
+"174","C4.I.15","no","same","-written accent, -stress difference","blusa",1,1,0,2,"gesture",0,"L2 match & L1 match",-75,-75,1100,1100,1100,1175,1,2,"Pilot_PPN_1",0
+"175","C4.I.16","no","same","-written accent, -stress difference","cabina",2,2,0,3,"gesture",40,"L2 mismatch & L1 mismatch",146,146,1356,1356,1396,1250,3,3,"Pilot_PPN_1",0
+"176","C4.I.17","no","same","-written accent, -stress difference","familia",2,2,0,3,"gesture",0,"L2 match & L1 match",0,0,1491,1491,1491,1491,2,3,"Pilot_PPN_1",0
+"177","C4.I.18","no","same","-written accent, -stress difference","canal",2,2,0,2,"gesture",0,"L2 match & L1 match",-20,-20,1305,1305,1305,1325,2,2,"Pilot_PPN_1",0
+"178","C4.I.19","no","same","-written accent, -stress difference","centro",1,1,0,2,"gesture",326,"L2 mismatch & L1 mismatch",286,286,1090,1090,1416,1130,2,2,"Pilot_PPN_1",0
+"179","C4.I.20","no","same","-written accent, -stress difference","insectos",2,2,0,3,"gesture",-246,"L2 mismatch & L1 mismatch",-246,-246,1391,1391,1145,1391,1,3,"Pilot_PPN_1",0
+"180","C4.E.21","no","same","-written accent, -stress difference","planeta",2,2,0,3,"gesture",0,"L2 match & L1 match",10,10,1230,1230,1230,1220,2,3,"Pilot_PPN_1",0
+"181","P.C1.1","yes","difference","+written accent, +stress difference","simpático",3,2,1,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"182","P.C1.2","yes","difference","+written accent, +stress difference","símbolo",2,1,1,3,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"183","P.C1.3","yes","difference","+written accent, +stress difference","kilómetro",3,2,1,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"184","P.C2.1","no","difference","-written accent, +stress difference","carnaval",1,3,-2,3,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"185","P.C2.2","no","difference","-written accent, +stress difference","democracia",4,3,1,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"186","P.C2.3","no","difference","-written accent, +stress difference","voleibol",1,3,-2,3,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"187","P.C3.1","yes","same","+written accent, -stress difference","económico",3,3,0,5,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"188","P.C3.2","yes","same","+written accent, -stress difference","energía",3,3,0,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"189","P.C3.3","yes","same","+written accent, -stress difference","ecología",4,4,0,5,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"190","P.C4.1","no","same","-written accent, -stress difference","mandarina",3,3,0,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"191","P.C4.2","no","same","-written accent, -stress difference","sistema",2,2,0,3,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"192","P.C4.3","no","same","-written accent, -stress difference","bailarina",3,3,0,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"193","C1.I.1","yes","difference","+written accent, +stress difference","análisis",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-466,466,1130,1315,1130,1596,2,4,"Pilot_PPN_2",0
+"194","C1.I.2","yes","difference","+written accent, +stress difference","centímetro",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-296,296,1616,1676,1616,1912,2,4,"Pilot_PPN_2",0
+"195","C1.I.3","yes","difference","+written accent, +stress difference","pirámide",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-365,365,1827,2072,1827,2192,2,4,"Pilot_PPN_2",0
+"196","C1.I.4","yes","difference","+written accent, +stress difference","cardiólogo",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-411,411,1421,1606,1421,1832,2,4,"Pilot_PPN_2",0
+"197","C1.I.5","yes","difference","+written accent, +stress difference","máquina",2,1,1,3,"nogesture",-220,"L2 mismatch & L1 mismatch",-56,56,1095,1280,1315,1371,3,3,"Pilot_PPN_2",0
+"198","C1.I.6","yes","difference","+written accent, +stress difference","automóvil",4,3,1,4,"nogesture",0,"L2 match & L1 mismatch",-10,10,2002,2137,2002,2012,3,4,"Pilot_PPN_2",0
+"199","C1.I.7","yes","difference","+written accent, +stress difference","teléfono",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",65,-65,1401,1721,1401,1336,2,4,"Pilot_PPN_2",0
+"200","C1.I.8","yes","difference","+written accent, +stress difference","fórmula",2,1,1,3,"nogesture",0,"L2 match & L1 mismatch",70,-70,1250,1396,1250,1180,1,3,"Pilot_PPN_2",0
+"201","C1.I.9","yes","difference","+written accent, +stress difference","acróbata",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",166,-166,1341,1456,1341,1175,2,4,"Pilot_PPN_2",0
+"202","C1.I.10","yes","difference","+written accent, +stress difference","satélito",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",316,-316,1481,1526,1481,1165,2,4,"Pilot_PPN_2",0
+"203","C1.I.11","yes","difference","+written accent, +stress difference","gráfico",2,1,1,3,"nogesture",0,"L2 match & L1 mismatch",95,-95,1471,1586,1471,1376,1,3,"Pilot_PPN_2",0
+"204","C1.I.12","yes","difference","+written accent, +stress difference","océano",3,2,1,4,"nogesture",-80,"L2 mismatch & L1 match",-391,391,1476,1556,1556,1947,3,4,"Pilot_PPN_2",0
+"205","C1.I.13","yes","difference","+written accent, +stress difference","carnívora",3,2,1,4,"nogesture",-115,"L2 mismatch & L1 match",-151,151,1516,1631,1631,1782,3,4,"Pilot_PPN_2",0
+"206","C1.I.14","yes","difference","+written accent, +stress difference","católico",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-285,285,1406,1516,1406,1691,2,4,"Pilot_PPN_2",0
+"207","C1.I.15","yes","difference","+written accent, +stress difference","demócrata",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",205,-205,1320,1591,1320,1115,2,4,"Pilot_PPN_2",0
+"208","C1.I.16","yes","difference","+written accent, +stress difference","gramófono",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-476,476,1331,1581,1331,1807,2,4,"Pilot_PPN_2",0
+"209","C1.I.17","yes","difference","+written accent, +stress difference","micrófono",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-370,370,1376,1621,1376,1746,2,4,"Pilot_PPN_2",0
+"210","C1.I.18","yes","difference","+written accent, +stress difference","metáfora",3,2,1,4,"nogesture",0,"L2 match & L1 mismatch",-116,116,1280,1531,1280,1396,2,4,"Pilot_PPN_2",0
+"211","C1.I.19","yes","difference","+written accent, +stress difference","catástrofe",3,2,1,4,"nogesture",-265,"L2 mismatch & L1 match",-110,110,1356,1621,1621,1731,3,4,"Pilot_PPN_2",0
+"212","C1.I.20","yes","difference","+written accent, +stress difference","cafetería",3,4,-1,5,"nogesture",-35,"L2 mismatch & L1 match",296,296,1606,1571,1571,1275,3,5,"Pilot_PPN_2",0
+"213","C1.E.21","yes","difference","+written accent, +stress difference","sofá",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",276,276,1341,1205,1341,1065,2,2,"Pilot_PPN_2",0
+"214","C2.I.1","no","difference","-written accent, +stress difference","clima",2,1,1,2,"nogesture",-105,"L2 mismatch & L1 match",165,-165,1135,1240,1240,1075,2,2,"Pilot_PPN_2",0
+"215","C2.I.2","no","difference","-written accent, +stress difference","vacaciones",2,3,-1,4,"nogesture",0,"L2 match & L1 mismatch",10,10,1546,1361,1546,1536,3,4,"Pilot_PPN_2",0
+"216","C2.I.3","no","difference","-written accent, +stress difference","profesor",2,3,-1,3,"nogesture",0,"L2 match & L1 mismatch",-191,-191,1596,1441,1596,1787,3,3,"Pilot_PPN_2",0
+"217","C2.I.4","no","difference","-written accent, +stress difference","ventilador",3,4,-1,4,"nogesture",0,"L2 match & L1 mismatch",205,205,1591,1295,1591,1386,4,4,"Pilot_PPN_2",0
+"218","C2.I.5","no","difference","-written accent, +stress difference","internet",1,3,-2,3,"nogesture",0,"L2 match & L1 mismatch",-25,-25,1451,1185,1451,1476,3,3,"Pilot_PPN_2",0
+"219","C2.I.6","no","difference","-written accent, +stress difference","mamut",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",170,170,1325,1220,1325,1155,2,2,"Pilot_PPN_2",0
+"220","C2.I.7","no","difference","-written accent, +stress difference","horizonte",1,3,-2,4,"nogesture",0,"L2 match & L1 mismatch",261,261,1476,1260,1476,1215,3,4,"Pilot_PPN_2",0
+"221","C2.I.8","no","difference","-written accent, +stress difference","doctor",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",240,240,1225,1060,1225,985,2,2,"Pilot_PPN_2",0
+"222","C2.I.9","no","difference","-written accent, +stress difference","radiador",2,3,-1,3,"nogesture",0,"L2 match & L1 mismatch",-240,-240,1516,1300,1516,1756,3,3,"Pilot_PPN_2",0
+"223","C2.I.10","no","difference","-written accent, +stress difference","ilustrador",3,4,-1,4,"nogesture",0,"L2 match & L1 mismatch",150,150,1656,1481,1656,1506,4,4,"Pilot_PPN_2",0
+"224","C2.I.11","no","difference","-written accent, +stress difference","color",1,2,-1,2,"nogesture",-131,"L2 mismatch & L1 match",190,190,1456,1325,1325,1135,1,2,"Pilot_PPN_2",0
+"225","C2.I.12","no","difference","-written accent, +stress difference","error",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",-156,-156,1325,1165,1325,1481,2,2,"Pilot_PPN_2",0
+"226","C2.I.13","no","difference","-written accent, +stress difference","factor",1,2,-1,2,"nogesture",0,"L2 match & L1 mismatch",-20,-20,1521,1341,1521,1541,2,2,"Pilot_PPN_2",0
+"227","C2.I.14","no","difference","-written accent, +stress difference","festival",1,3,-2,3,"nogesture",0,"L2 match & L1 mismatch",361,361,1536,1290,1536,1175,3,3,"Pilot_PPN_2",0
+"228","C2.I.15","no","difference","-written accent, +stress difference","uniforme",1,3,-2,4,"nogesture",0,"L2 match & L1 mismatch",346,346,1481,1195,1481,1135,3,4,"Pilot_PPN_2",0
+"229","C2.I.16","no","difference","-written accent, +stress difference","alcohol",1,3,-2,3,"nogesture",0,"L2 match & L1 mismatch",-355,-355,1401,1260,1401,1756,3,3,"Pilot_PPN_2",0
+"230","C2.I.17","no","difference","-written accent, +stress difference","actor",2,2,0,2,"nogesture",0,"L2 match & L1 match",215,215,1160,1160,1160,945,2,2,"Pilot_PPN_2",0
+"231","C2.I.18","no","difference","-written accent, +stress difference","alergia",3,2,1,3,"nogesture",0,"L2 match & L1 mismatch",-431,431,1305,1511,1305,1736,2,3,"Pilot_PPN_2",0
+"232","C2.I.19","no","difference","-written accent, +stress difference","farmacia",3,2,1,3,"nogesture",0,"L2 match & L1 mismatch",-471,471,1155,1426,1155,1626,2,3,"Pilot_PPN_2",0
+"233","C2.I.20","no","difference","-written accent, +stress difference","aristocracia",5,4,1,5,"nogesture",0,"L2 match & L1 mismatch",-176,176,1746,1817,1746,1922,4,5,"Pilot_PPN_2",0
+"234","C2.E.21","no","difference","-written accent, +stress difference","elefantes",1,3,-2,4,"nogesture",0,"L2 match & L1 mismatch",-426,-426,1431,1150,1431,1857,3,4,"Pilot_PPN_2",0
+"235","C3.I.1","yes","same","+written accent, -stress difference","brócoli",1,1,0,3,"nogesture",0,"L2 match & L1 match",-266,-266,1295,1295,1295,1561,1,3,"Pilot_PPN_2",0
+"236","C3.I.2","yes","same","+written accent, -stress difference","político",2,2,0,4,"nogesture",0,"L2 match & L1 match",-30,-30,1421,1421,1421,1451,2,4,"Pilot_PPN_2",0
+"237","C3.I.3","yes","same","+written accent, -stress difference","cámara",1,1,0,3,"nogesture",86,"L2 mismatch & L1 mismatch",86,86,1250,1250,1336,1250,2,3,"Pilot_PPN_2",0
+"238","C3.I.4","yes","same","+written accent, -stress difference","número",1,1,0,3,"nogesture",0,"L2 match & L1 match",-346,-346,1125,1125,1125,1471,1,3,"Pilot_PPN_2",0
+"239","C3.I.5","yes","same","+written accent, -stress difference","fútbol",1,1,0,2,"nogesture",200,"L2 mismatch & L1 mismatch",355,355,1491,1491,1691,1336,2,2,"Pilot_PPN_2",0
+"240","C3.I.6","yes","same","+written accent, -stress difference","saxofón",3,3,0,3,"nogesture",0,"L2 match & L1 match",441,441,1426,1426,1426,985,3,3,"Pilot_PPN_2",0
+"241","C3.I.7","yes","same","+written accent, -stress difference","carácter",2,2,0,3,"nogesture",225,"L2 mismatch & L1 mismatch",-196,-196,1366,1366,1591,1787,3,3,"Pilot_PPN_2",0
+"242","C3.I.8","yes","same","+written accent, -stress difference","analítico",3,3,0,5,"nogesture",0,"L2 match & L1 match",-576,-576,1331,1331,1331,1907,3,5,"Pilot_PPN_2",0
+"243","C3.I.9","yes","same","+written accent, -stress difference","círculo",1,1,0,3,"nogesture",0,"L2 match & L1 match",175,175,1200,1200,1200,1025,1,3,"Pilot_PPN_2",0
+"244","C3.I.10","yes","same","+written accent, -stress difference","álbum",1,1,0,2,"nogesture",166,"L2 mismatch & L1 mismatch",-205,-205,1310,1310,1476,1681,2,2,"Pilot_PPN_2",0
+"245","C3.I.11","yes","same","+written accent, -stress difference","ángel",1,1,0,2,"nogesture",136,"L2 mismatch & L1 mismatch",186,186,1275,1275,1411,1225,2,2,"Pilot_PPN_2",0
+"246","C3.I.12","yes","same","+written accent, -stress difference","capitán",3,3,0,3,"nogesture",0,"L2 match & L1 match",221,221,1441,1441,1441,1220,3,3,"Pilot_PPN_2",0
+"247","C3.I.13","yes","same","+written accent, -stress difference","pragmática",2,2,0,4,"nogesture",0,"L2 match & L1 match",230,230,1195,1195,1195,965,2,4,"Pilot_PPN_2",0
+"248","C3.I.14","yes","same","+written accent, -stress difference","volcán",2,2,0,2,"nogesture",0,"L2 match & L1 match",366,366,1401,1401,1401,1035,2,2,"Pilot_PPN_2",0
+"249","C3.I.15","yes","same","+written accent, -stress difference","teoría",3,3,0,4,"nogesture",-135,"L2 mismatch & L1 mismatch",186,186,1556,1556,1421,1235,2,4,"Pilot_PPN_2",0
+"250","C3.I.16","yes","same","+written accent, -stress difference","geográfico",3,3,0,5,"nogesture",0,"L2 match & L1 match",296,296,2042,2042,2042,1746,3,5,"Pilot_PPN_2",0
+"251","C3.I.17","yes","same","+written accent, -stress difference","académico",3,3,0,5,"nogesture",0,"L2 match & L1 match",-281,-281,1531,1531,1531,1812,3,5,"Pilot_PPN_2",0
+"252","C3.I.18","yes","same","+written accent, -stress difference","romántico",2,2,0,4,"nogesture",0,"L2 match & L1 match",-201,-201,1220,1220,1220,1421,2,4,"Pilot_PPN_2",0
+"253","C3.I.19","yes","same","+written accent, -stress difference","espárrago",2,2,0,4,"nogesture",146,"L2 mismatch & L1 mismatch",-295,-295,1280,1280,1426,1721,3,4,"Pilot_PPN_2",0
+"254","C3.I.20","yes","same","+written accent, -stress difference","helicóptero",3,3,0,5,"nogesture",265,"L2 mismatch & L1 mismatch",25,25,1361,1361,1626,1601,5,5,"Pilot_PPN_2",0
+"255","C3.E.21","yes","same","+written accent, -stress difference","histórico",2,2,0,4,"nogesture",280,"L2 mismatch & L1 mismatch",125,125,1386,1386,1666,1541,4,4,"Pilot_PPN_2",0
+"256","C4.I.1","no","same","-written accent, -stress difference","parasol",3,3,0,3,"nogesture",0,"L2 match & L1 match",366,366,1531,1531,1531,1165,3,3,"Pilot_PPN_2",0
+"257","C4.I.2","no","same","-written accent, -stress difference","universidad",5,5,0,5,"nogesture",0,"L2 match & L1 match",80,80,1621,1621,1621,1541,5,5,"Pilot_PPN_2",0
+"258","C4.I.3","no","same","-written accent, -stress difference","formulario",3,3,0,4,"nogesture",0,"L2 match & L1 match",120,120,1731,1731,1731,1611,3,4,"Pilot_PPN_2",0
+"259","C4.I.4","no","same","-written accent, -stress difference","mango",1,1,0,2,"nogesture",110,"L2 mismatch & L1 mismatch",-15,-15,3726,3726,3836,3851,2,2,"Pilot_PPN_2",0
+"260","C4.I.5","no","same","-written accent, -stress difference","tomate",2,2,0,3,"nogesture",296,"L2 mismatch & L1 mismatch",-135,-135,1195,1195,1491,1626,3,3,"Pilot_PPN_2",0
+"261","C4.I.6","no","same","-written accent, -stress difference","princesa",2,2,0,3,"nogesture",60,"L2 mismatch & L1 mismatch",0,0,1386,1386,1446,1446,3,3,"Pilot_PPN_2",0
+"262","C4.I.7","no","same","-written accent, -stress difference","cables",1,1,0,2,"nogesture",40,"L2 mismatch & L1 mismatch",-356,-356,1255,1255,1295,1651,2,2,"Pilot_PPN_2",0
+"263","C4.I.8","no","same","-written accent, -stress difference","proceso",2,2,0,3,"nogesture",30,"L2 mismatch & L1 mismatch",-261,-261,1205,1205,1235,1496,3,3,"Pilot_PPN_2",0
+"264","C4.I.9","no","same","-written accent, -stress difference","papel",2,2,0,2,"nogesture",0,"L2 match & L1 match",185,185,1270,1270,1270,1085,2,2,"Pilot_PPN_2",0
+"265","C4.I.10","no","same","-written accent, -stress difference","programa",2,2,0,3,"nogesture",0,"L2 match & L1 match",-91,-91,1285,1285,1285,1376,2,3,"Pilot_PPN_2",0
+"266","C4.I.11","no","same","-written accent, -stress difference","ensalada",2,3,-1,4,"nogesture",0,"L2 match & L1 mismatch",-321,-321,1265,1150,1265,1586,3,4,"Pilot_PPN_2",0
+"267","C4.I.12","no","same","-written accent, -stress difference","chocolate",3,3,0,4,"nogesture",-35,"L2 mismatch & L1 mismatch",-355,-355,1426,1426,1391,1746,2,4,"Pilot_PPN_2",0
+"268","C4.I.13","no","same","-written accent, -stress difference","limonada",3,3,0,4,"nogesture",0,"L2 match & L1 match",-316,-316,1275,1275,1275,1591,3,4,"Pilot_PPN_2",0
+"269","C4.I.14","no","same","-written accent, -stress difference","restaurante",3,3,0,4,"nogesture",0,"L2 match & L1 match",-246,-246,1641,1641,1641,1887,3,4,"Pilot_PPN_2",0
+"270","C4.I.15","no","same","-written accent, -stress difference","blusa",1,1,0,2,"nogesture",0,"L2 match & L1 match",-210,-210,1105,1105,1105,1315,1,2,"Pilot_PPN_2",0
+"271","C4.I.16","no","same","-written accent, -stress difference","cabina",2,2,0,3,"nogesture",50,"L2 mismatch & L1 mismatch",-231,-231,1205,1205,1255,1486,3,3,"Pilot_PPN_2",0
+"272","C4.I.17","no","same","-written accent, -stress difference","familia",2,2,0,3,"nogesture",76,"L2 mismatch & L1 mismatch",146,146,1310,1310,1386,1240,3,3,"Pilot_PPN_2",0
+"273","C4.I.18","no","same","-written accent, -stress difference","canal",2,2,0,2,"nogesture",0,"L2 match & L1 match",-55,-55,1135,1135,1135,1190,2,2,"Pilot_PPN_2",0
+"274","C4.I.19","no","same","-written accent, -stress difference","centro",1,1,0,2,"nogesture",171,"L2 mismatch & L1 mismatch",201,201,1185,1185,1356,1155,2,2,"Pilot_PPN_2",0
+"275","C4.I.20","no","same","-written accent, -stress difference","insectos",2,2,0,3,"nogesture",205,"L2 mismatch & L1 mismatch",386,386,1471,1471,1676,1290,3,3,"Pilot_PPN_2",0
+"276","C4.E.21","no","same","-written accent, -stress difference","planeta",2,2,0,3,"nogesture",201,"L2 mismatch & L1 mismatch",411,411,1180,1180,1381,970,3,3,"Pilot_PPN_2",0
+"277","P.C1.1","yes","difference","+written accent, +stress difference","simpático",3,2,1,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"278","P.C1.2","yes","difference","+written accent, +stress difference","símbolo",2,1,1,3,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"279","P.C1.3","yes","difference","+written accent, +stress difference","kilómetro",3,2,1,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"280","P.C2.1","no","difference","-written accent, +stress difference","carnaval",1,3,-2,3,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"281","P.C2.2","no","difference","-written accent, +stress difference","democracia",4,3,1,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"282","P.C2.3","no","difference","-written accent, +stress difference","voleibol",1,3,-2,3,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"283","P.C3.1","yes","same","+written accent, -stress difference","económico",3,3,0,5,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"284","P.C3.2","yes","same","+written accent, -stress difference","energía",3,3,0,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"285","P.C3.3","yes","same","+written accent, -stress difference","ecología",4,4,0,5,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"286","P.C4.1","no","same","-written accent, -stress difference","mandarina",3,3,0,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"287","P.C4.2","no","same","-written accent, -stress difference","sistema",2,2,0,3,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"288","P.C4.3","no","same","-written accent, -stress difference","bailarina",3,3,0,4,"nogesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"289","C1.I.1","yes","difference","+written accent, +stress difference","análisis",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-155,155,1341,1586,1341,1496,2,4,"Pilot_PPN_2",0
+"290","C1.I.2","yes","difference","+written accent, +stress difference","centímetro",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",80,-80,1426,1516,1426,1346,2,4,"Pilot_PPN_2",0
+"291","C1.I.3","yes","difference","+written accent, +stress difference","pirámide",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-25,25,1381,1406,1381,1406,2,4,"Pilot_PPN_2",0
+"292","C1.I.4","yes","difference","+written accent, +stress difference","cardiólogo",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",30,-30,1295,1486,1295,1265,2,4,"Pilot_PPN_2",0
+"293","C1.I.5","yes","difference","+written accent, +stress difference","máquina",2,1,1,3,"gesture",-286,"L2 mismatch & L1 mismatch",311,-311,1210,1436,1496,1185,3,3,"Pilot_PPN_2",0
+"294","C1.I.6","yes","difference","+written accent, +stress difference","automóvil",4,3,1,4,"gesture",0,"L2 match & L1 mismatch",-385,385,1381,1546,1381,1766,3,4,"Pilot_PPN_2",0
+"295","C1.I.7","yes","difference","+written accent, +stress difference","teléfono",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-5,5,1361,1631,1361,1366,2,4,"Pilot_PPN_2",0
+"296","C1.I.8","yes","difference","+written accent, +stress difference","fórmula",2,1,1,3,"gesture",0,"L2 match & L1 mismatch",-30,30,1260,1411,1260,1290,1,3,"Pilot_PPN_2",0
+"297","C1.I.9","yes","difference","+written accent, +stress difference","acróbata",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",50,-50,1205,1336,1205,1155,2,4,"Pilot_PPN_2",0
+"298","C1.I.10","yes","difference","+written accent, +stress difference","satélito",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",15,-15,1446,1486,1446,1431,2,4,"Pilot_PPN_2",0
+"299","C1.I.11","yes","difference","+written accent, +stress difference","gráfico",2,1,1,3,"gesture",0,"L2 match & L1 mismatch",-20,20,1260,1315,1260,1280,1,3,"Pilot_PPN_2",0
+"300","C1.I.12","yes","difference","+written accent, +stress difference","océano",3,2,1,4,"gesture",-221,"L2 mismatch & L1 mismatch",241,-241,1626,1787,1847,1606,4,4,"Pilot_PPN_2",0
+"301","C1.I.13","yes","difference","+written accent, +stress difference","carnívora",3,2,1,4,"gesture",-106,"L2 mismatch & L1 match",10,-10,1290,1396,1396,1386,3,4,"Pilot_PPN_2",0
+"302","C1.I.14","yes","difference","+written accent, +stress difference","católico",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",25,-25,1416,1546,1416,1391,2,4,"Pilot_PPN_2",0
+"303","C1.I.15","yes","difference","+written accent, +stress difference","demócrata",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-45,45,1190,1476,1190,1235,2,4,"Pilot_PPN_2",0
+"304","C1.I.16","yes","difference","+written accent, +stress difference","gramófono",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-151,151,1265,1586,1265,1416,2,4,"Pilot_PPN_2",0
+"305","C1.I.17","yes","difference","+written accent, +stress difference","micrófono",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-95,95,1817,2202,1817,1912,2,4,"Pilot_PPN_2",0
+"306","C1.I.18","yes","difference","+written accent, +stress difference","metáfora",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",-15,15,1396,1616,1396,1411,2,4,"Pilot_PPN_2",0
+"307","C1.I.19","yes","difference","+written accent, +stress difference","catástrofe",3,2,1,4,"gesture",0,"L2 match & L1 mismatch",75,-75,1315,1586,1315,1240,2,4,"Pilot_PPN_2",0
+"308","C1.I.20","yes","difference","+written accent, +stress difference","cafetería",3,4,-1,5,"gesture",-356,"L2 mismatch & L1 mismatch",-5,-5,1877,1716,1521,1526,2,5,"Pilot_PPN_2",0
+"309","C1.E.21","yes","difference","+written accent, +stress difference","sofá",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",150,150,1290,1120,1290,1140,2,2,"Pilot_PPN_2",0
+"310","C2.I.1","no","difference","-written accent, +stress difference","clima",2,1,1,2,"gesture",-35,"L2 mismatch & L1 match",10,-10,1210,1245,1245,1235,2,2,"Pilot_PPN_2",0
+"311","C2.I.2","no","difference","-written accent, +stress difference","vacaciones",2,3,-1,4,"gesture",0,"L2 match & L1 mismatch",321,321,1601,1310,1601,1280,3,4,"Pilot_PPN_2",0
+"312","C2.I.3","no","difference","-written accent, +stress difference","profesor",2,3,-1,3,"gesture",0,"L2 match & L1 mismatch",130,130,1676,1486,1676,1546,3,3,"Pilot_PPN_2",0
+"313","C2.I.4","no","difference","-written accent, +stress difference","ventilador",3,4,-1,4,"gesture",0,"L2 match & L1 mismatch",185,185,1586,1396,1586,1401,4,4,"Pilot_PPN_2",0
+"314","C2.I.5","no","difference","-written accent, +stress difference","internet",1,3,-2,3,"gesture",-296,"L2 mismatch & L1 match",-15,-15,1566,1270,1270,1285,1,3,"Pilot_PPN_2",0
+"315","C2.I.6","no","difference","-written accent, +stress difference","mamut",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",-20,-20,1185,1080,1185,1205,2,2,"Pilot_PPN_2",0
+"316","C2.I.7","no","difference","-written accent, +stress difference","horizonte",1,3,-2,4,"gesture",0,"L2 match & L1 mismatch",76,76,1391,1155,1391,1315,3,4,"Pilot_PPN_2",0
+"317","C2.I.8","no","difference","-written accent, +stress difference","doctor",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",205,205,1305,1095,1305,1100,2,2,"Pilot_PPN_2",0
+"318","C2.I.9","no","difference","-written accent, +stress difference","radiador",2,3,-1,3,"gesture",0,"L2 match & L1 mismatch",45,45,1516,1336,1516,1471,3,3,"Pilot_PPN_2",0
+"319","C2.I.10","no","difference","-written accent, +stress difference","ilustrador",3,4,-1,4,"gesture",0,"L2 match & L1 mismatch",371,371,1531,1320,1531,1160,4,4,"Pilot_PPN_2",0
+"320","C2.I.11","no","difference","-written accent, +stress difference","color",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",0,0,1190,1135,1190,1190,2,2,"Pilot_PPN_2",0
+"321","C2.I.12","no","difference","-written accent, +stress difference","error",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",0,0,1215,1160,1215,1215,2,2,"Pilot_PPN_2",0
+"322","C2.I.13","no","difference","-written accent, +stress difference","factor",1,2,-1,2,"gesture",0,"L2 match & L1 mismatch",161,161,1346,1105,1346,1185,2,2,"Pilot_PPN_2",0
+"323","C2.I.14","no","difference","-written accent, +stress difference","festival",1,3,-2,3,"gesture",0,"L2 match & L1 mismatch",205,205,1601,1346,1601,1396,3,3,"Pilot_PPN_2",0
+"324","C2.I.15","no","difference","-written accent, +stress difference","uniforme",1,3,-2,4,"gesture",0,"L2 match & L1 mismatch",25,25,1466,1220,1466,1441,3,4,"Pilot_PPN_2",0
+"325","C2.I.16","no","difference","-written accent, +stress difference","alcohol",1,3,-2,3,"gesture",0,"L2 match & L1 mismatch",176,176,1366,1100,1366,1190,3,3,"Pilot_PPN_2",0
+"326","C2.I.17","no","difference","-written accent, +stress difference","actor",2,2,0,2,"gesture",0,"L2 match & L1 match",5,5,1406,1406,1406,1401,2,2,"Pilot_PPN_2",0
+"327","C2.I.18","no","difference","-written accent, +stress difference","alergia",3,2,1,3,"gesture",0,"L2 match & L1 mismatch",-20,20,1300,1556,1300,1320,2,3,"Pilot_PPN_2",0
+"328","C2.I.19","no","difference","-written accent, +stress difference","farmacia",3,2,1,3,"gesture",25,"L2 mismatch & L1 mismatch",-86,86,1315,1416,1290,1376,1,3,"Pilot_PPN_2",0
+"329","C2.I.20","no","difference","-written accent, +stress difference","aristocracia",5,4,1,5,"gesture",0,"L2 match & L1 mismatch",346,-346,1566,1782,1566,1220,4,5,"Pilot_PPN_2",0
+"330","C2.E.21","no","difference","-written accent, +stress difference","elefantes",1,3,-2,4,"gesture",0,"L2 match & L1 mismatch",196,196,1366,1070,1366,1170,3,4,"Pilot_PPN_2",0
+"331","C3.I.1","yes","same","+written accent, -stress difference","brócoli",1,1,0,3,"gesture",0,"L2 match & L1 match",-105,-105,1506,1506,1506,1611,1,3,"Pilot_PPN_2",0
+"332","C3.I.2","yes","same","+written accent, -stress difference","político",2,2,0,4,"gesture",0,"L2 match & L1 match",45,45,1265,1265,1265,1220,2,4,"Pilot_PPN_2",0
+"333","C3.I.3","yes","same","+written accent, -stress difference","cámara",1,1,0,3,"gesture",100,"L2 mismatch & L1 mismatch",-21,-21,1220,1220,1320,1341,2,3,"Pilot_PPN_2",0
+"334","C3.I.4","yes","same","+written accent, -stress difference","número",1,1,0,3,"gesture",0,"L2 match & L1 match",-5,-5,1035,1035,1035,1040,1,3,"Pilot_PPN_2",0
+"335","C3.I.5","yes","same","+written accent, -stress difference","fútbol",1,1,0,2,"gesture",80,"L2 mismatch & L1 mismatch",20,20,1155,1155,1235,1215,2,2,"Pilot_PPN_2",0
+"336","C3.I.6","yes","same","+written accent, -stress difference","saxofón",3,3,0,3,"gesture",0,"L2 match & L1 match",10,10,1616,1616,1616,1606,3,3,"Pilot_PPN_2",0
+"337","C3.I.7","yes","same","+written accent, -stress difference","carácter",2,2,0,3,"gesture",291,"L2 mismatch & L1 mismatch",326,326,1285,1285,1576,1250,3,3,"Pilot_PPN_2",0
+"338","C3.I.8","yes","same","+written accent, -stress difference","analítico",3,3,0,5,"gesture",0,"L2 match & L1 match",-35,-35,1411,1411,1411,1446,3,5,"Pilot_PPN_2",0
+"339","C3.I.9","yes","same","+written accent, -stress difference","círculo",1,1,0,3,"gesture",0,"L2 match & L1 match",-85,-85,1351,1351,1351,1436,1,3,"Pilot_PPN_2",0
+"340","C3.I.10","yes","same","+written accent, -stress difference","álbum",1,1,0,2,"gesture",136,"L2 mismatch & L1 mismatch",36,36,1200,1200,1336,1300,2,2,"Pilot_PPN_2",0
+"341","C3.I.11","yes","same","+written accent, -stress difference","ángel",1,1,0,2,"gesture",26,"L2 mismatch & L1 mismatch",-25,-25,1310,1310,1336,1361,2,2,"Pilot_PPN_2",0
+"342","C3.I.12","yes","same","+written accent, -stress difference","capitán",3,3,0,3,"gesture",0,"L2 match & L1 match",55,55,1406,1406,1406,1351,3,3,"Pilot_PPN_2",0
+"343","C3.I.13","yes","same","+written accent, -stress difference","pragmática",2,2,0,4,"gesture",0,"L2 match & L1 match",-15,-15,1250,1250,1250,1265,2,4,"Pilot_PPN_2",0
+"344","C3.I.14","yes","same","+written accent, -stress difference","volcán",2,2,0,2,"gesture",0,"L2 match & L1 match",20,20,1280,1280,1280,1260,2,2,"Pilot_PPN_2",0
+"345","C3.I.15","yes","same","+written accent, -stress difference","teoría",3,3,0,4,"gesture",-186,"L2 mismatch & L1 mismatch",-75,-75,1341,1341,1155,1230,2,4,"Pilot_PPN_2",0
+"346","C3.I.16","yes","same","+written accent, -stress difference","geográfico",3,3,0,5,"gesture",0,"L2 match & L1 match",20,20,1601,1601,1601,1581,3,5,"Pilot_PPN_2",0
+"347","C3.I.17","yes","same","+written accent, -stress difference","académico",3,3,0,5,"gesture",0,"L2 match & L1 match",15,15,1356,1356,1356,1341,3,5,"Pilot_PPN_2",0
+"348","C3.I.18","yes","same","+written accent, -stress difference","romántico",2,2,0,4,"gesture",0,"L2 match & L1 match",10,10,1356,1356,1356,1346,2,4,"Pilot_PPN_2",0
+"349","C3.I.19","yes","same","+written accent, -stress difference","espárrago",2,2,0,4,"gesture",0,"L2 match & L1 match",0,0,1275,1275,1275,1275,2,4,"Pilot_PPN_2",0
+"350","C3.I.20","yes","same","+written accent, -stress difference","helicóptero",3,3,0,5,"gesture",315,"L2 mismatch & L1 mismatch",466,466,1401,1401,1716,1250,5,5,"Pilot_PPN_2",0
+"351","C3.E.21","yes","same","+written accent, -stress difference","histórico",2,2,0,4,"gesture",0,"L2 match & L1 match",0,0,1255,1255,1255,1255,2,4,"Pilot_PPN_2",0
+"352","C4.I.1","no","same","-written accent, -stress difference","parasol",3,3,0,3,"gesture",0,"L2 match & L1 match",140,140,1591,1591,1591,1451,3,3,"Pilot_PPN_2",0
+"353","C4.I.2","no","same","-written accent, -stress difference","universidad",5,5,0,5,"gesture",0,"L2 match & L1 match",190,190,1536,1536,1536,1346,5,5,"Pilot_PPN_2",0
+"354","C4.I.3","no","same","-written accent, -stress difference","formulario",3,3,0,4,"gesture",0,"L2 match & L1 match",-30,-30,1381,1381,1381,1411,3,4,"Pilot_PPN_2",0
+"355","C4.I.4","no","same","-written accent, -stress difference","mango",1,1,0,2,"gesture",5,"L2 mismatch & L1 mismatch",0,0,1320,1320,1325,1325,2,2,"Pilot_PPN_2",0
+"356","C4.I.5","no","same","-written accent, -stress difference","tomate",2,2,0,3,"gesture",0,"L2 match & L1 match",6,6,1331,1331,1331,1325,2,3,"Pilot_PPN_2",0
+"357","C4.I.6","no","same","-written accent, -stress difference","princesa",2,2,0,3,"gesture",-181,"L2 mismatch & L1 mismatch",-176,-176,1426,1426,1245,1421,1,3,"Pilot_PPN_2",0
+"358","C4.I.7","no","same","-written accent, -stress difference","cables",1,1,0,2,"gesture",0,"L2 match & L1 match",-21,-21,1325,1325,1325,1346,1,2,"Pilot_PPN_2",0
+"359","C4.I.8","no","same","-written accent, -stress difference","proceso",2,2,0,3,"gesture",0,"L2 match & L1 match",70,70,1180,1180,1180,1110,2,3,"Pilot_PPN_2",0
+"360","C4.I.9","no","same","-written accent, -stress difference","papel",2,2,0,2,"gesture",0,"L2 match & L1 match",-5,-5,1406,1406,1406,1411,2,2,"Pilot_PPN_2",0
+"361","C4.I.10","no","same","-written accent, -stress difference","programa",2,2,0,3,"gesture",126,"L2 mismatch & L1 mismatch",136,136,1245,1245,1371,1235,3,3,"Pilot_PPN_2",0
+"362","C4.I.11","no","same","-written accent, -stress difference","ensalada",2,3,-1,4,"gesture",0,"L2 match & L1 mismatch",20,20,1295,1260,1295,1275,3,4,"Pilot_PPN_2",0
+"363","C4.I.12","no","same","-written accent, -stress difference","chocolate",3,3,0,4,"gesture",-226,"L2 mismatch & L1 mismatch",-161,-161,1506,1506,1280,1441,1,4,"Pilot_PPN_2",0
+"364","C4.I.13","no","same","-written accent, -stress difference","limonada",3,3,0,4,"gesture",-191,"L2 mismatch & L1 mismatch",-20,-20,1376,1376,1185,1205,2,4,"Pilot_PPN_2",0
+"365","C4.I.14","no","same","-written accent, -stress difference","restaurante",3,3,0,4,"gesture",0,"L2 match & L1 match",326,326,1611,1611,1611,1285,3,4,"Pilot_PPN_2",0
+"366","C4.I.15","no","same","-written accent, -stress difference","blusa",1,1,0,2,"gesture",0,"L2 match & L1 match",30,30,1295,1295,1295,1265,1,2,"Pilot_PPN_2",0
+"367","C4.I.16","no","same","-written accent, -stress difference","cabina",2,2,0,3,"gesture",0,"L2 match & L1 match",-10,-10,1240,1240,1240,1250,2,3,"Pilot_PPN_2",0
+"368","C4.I.17","no","same","-written accent, -stress difference","familia",2,2,0,3,"gesture",0,"L2 match & L1 match",-25,-25,1341,1341,1341,1366,2,3,"Pilot_PPN_2",0
+"369","C4.I.18","no","same","-written accent, -stress difference","canal",2,2,0,2,"gesture",0,"L2 match & L1 match",-31,-31,1305,1305,1305,1336,2,2,"Pilot_PPN_2",0
+"370","C4.I.19","no","same","-written accent, -stress difference","centro",1,1,0,2,"gesture",226,"L2 mismatch & L1 mismatch",191,191,1145,1145,1371,1180,2,2,"Pilot_PPN_2",0
+"371","C4.I.20","no","same","-written accent, -stress difference","insectos",2,2,0,3,"gesture",0,"L2 match & L1 match",-20,-20,1250,1250,1250,1270,2,3,"Pilot_PPN_2",0
+"372","C4.E.21","no","same","-written accent, -stress difference","planeta",2,2,0,3,"gesture",0,"L2 match & L1 match",-30,-30,1396,1396,1396,1426,2,3,"Pilot_PPN_2",0
+"373","P.C1.1","yes","difference","+written accent, +stress difference","simpático",3,2,1,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"374","P.C1.2","yes","difference","+written accent, +stress difference","símbolo",2,1,1,3,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"375","P.C1.3","yes","difference","+written accent, +stress difference","kilómetro",3,2,1,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"376","P.C2.1","no","difference","-written accent, +stress difference","carnaval",1,3,-2,3,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"377","P.C2.2","no","difference","-written accent, +stress difference","democracia",4,3,1,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"378","P.C2.3","no","difference","-written accent, +stress difference","voleibol",1,3,-2,3,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"379","P.C3.1","yes","same","+written accent, -stress difference","económico",3,3,0,5,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"380","P.C3.2","yes","same","+written accent, -stress difference","energía",3,3,0,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"381","P.C3.3","yes","same","+written accent, -stress difference","ecología",4,4,0,5,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"382","P.C4.1","no","same","-written accent, -stress difference","mandarina",3,3,0,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"383","P.C4.2","no","same","-written accent, -stress difference","sistema",2,2,0,3,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"384","P.C4.3","no","same","-written accent, -stress difference","bailarina",3,3,0,4,"gesture",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0

@@ -82,7 +82,8 @@ for(ppn in ppns)
     D$condition <- "gesture"                  #set to gesture
     D$condition[1:nrow(D)/2] <- "nogesture"   #set half to no gesture
     D$ppn <- D$syllables_detected <- D$stressed_syllable <- D$time_beat <-
-      D$time_stress <- D$time_syl_L1 <- D$time_syl_L2 <- D$asynchrony_L1L2 <-D$asynchrony <- D$correct <- D$stressed_mistimingL1L2 <- NA
+      D$time_stress <- D$time_syl_L1 <- D$time_syl_L2 <- D$asynchrony_L2L1 <-
+      D$asynchrony <- D$correct <- D$stressed_mistimingL2L1 <-stressed_mistiming_raw<- NA
     #loop through all txt.grids
     for(trs in unique(txtgrds)) #loop through txtgrids, merge, collect synchrony info, and plot
     {
@@ -147,9 +148,9 @@ for(ppn in ppns)
       maxF0_z       <- ave(MTe$F0_z, MTe$syllable_num, FUN= function(x) max(x))       #max F0 for each syllable
       MTe$stress_score <- (weights[1]*maxenvelope_z)+(weights[2]*maxF0_z)+(weights[3]*MTe$duration_z)
       MTe$STRESS[MTe$syllable_num==MTe$syllable_num[which.max(MTe$stress_score)]]       <- "STRESSED SYLLABLE"
-      MTe$stresstime[which.max(MTe$envelope[MTe$STRESS=="STRESSED SYLLABLE"])] <- "STRESS"
-      MTe$stresstimeL1[which.max(MTe$envelope[MTe$STRESS_L1=="STRESS L1"])] <- "L1 peak"
-      MTe$stresstimeL2[which.max(MTe$envelope[MTe$STRESS_L2=="STRESS L2"])] <- "L2 peak"
+      MTe$stresstime[MTe$STRESS=="STRESSED SYLLABLE" & !is.na(MTe$STRESS)][which.max(MTe$envelope[MTe$STRESS=="STRESSED SYLLABLE"& !is.na(MTe$STRESS)])] <- "STRESS"
+      MTe$stresstimeL1[MTe$STRESS_L1=="STRESS L1" & !is.na(MTe$STRESS_L1)][which.max(MTe$envelope[MTe$STRESS_L1=="STRESS L1"& !is.na(MTe$STRESS_L1) ])] <- "L1 peak"
+      MTe$stresstimeL2[MTe$STRESS_L2=="STRESS L2" & !is.na(MTe$STRESS_L2)][which.max(MTe$envelope[MTe$STRESS_L2=="STRESS L2"& !is.na(MTe$STRESS_L2)])] <- "L2 peak"
       
       #get maximum extension
       MTe$peakz <- NA
@@ -171,19 +172,21 @@ for(ppn in ppns)
       D$time_syl_L2[indexD]        <- MTe$time_ms[!is.na(MTe$stresstimeL2)] #time of L2 syllable occurence
       #raw asynchrony
       D$asynchrony[indexD]         <-  D$time_stress[indexD]-D$time_beat[indexD] #just capture the asynchrony
-      #compute an asynchrony measure duch that negative values indicate overshoot in direction L2
-      #and positive vlues indicate asynchrony towards L1 direction
-      D$asynchrony_L1L2[indexD]             <- ifelse(D$L1.L2[indexD]!=0, 
+      #compute an asynchrony measure such that negative values indicate overshoot in direction L2
+      #and positive values indicate asynchrony towards L1 direction
+      D$asynchrony_L2L1[indexD]             <- ifelse(D$L1.L2[indexD]!=0, 
                                                      ifelse(D$L1.L2[indexD]>0, (D$time_stress[indexD]-D$time_beat[indexD])*-1,(D$time_stress[indexD]-D$time_beat[indexD])),
                                                      D$time_stress[indexD]-D$time_beat[indexD])
-      D$stressed_mistimingL1L2[indexD]      <- ifelse(D$L1.L2[indexD]!=0, 
+      D$stressed_mistiming_raw              <- D$time_stress[indexD]-D$time_syl_L2[indexD]
+      D$stressed_mistimingL2L1[indexD]      <- ifelse(D$L1.L2[indexD]!=0, 
                                              ifelse(D$L1.L2[indexD]>0, (D$time_stress[indexD]-D$time_syl_L2[indexD])*-1,(D$time_stress[indexD]-D$time_syl_L2[indexD])),
                                              D$time_stress[indexD]-D$time_syl_L2[indexD])
-      if(D$stressed_syllable[indexD]==D$stressed.syllable.L1[indexD]){correct <- "incorrect_L1_match"}
-      if(D$stressed_syllable[indexD]==D$stressed.syllable.L2[indexD]){correct <- "correct_L2_match"}
-      if((D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])&(D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])){correct <- "incorrect_other"}
-      D$correct[indexD] <- correct
+      if((D$stressed_syllable[indexD]==D$stressed.syllable.L1[indexD]) & (D$stressed_syllable[indexD]==D$stressed.syllable.L2[indexD]) ){correct <- "L2 match & L1 match"}
+      if(D$stressed_syllable[indexD]==D$stressed.syllable.L2[indexD] & (D$stressed_syllable[indexD]!=D$stressed.syllable.L1[indexD])){correct <- "L2 match & L1 mismatch"}
+      if((D$stressed_syllable[indexD]==D$stressed.syllable.L1[indexD])& (D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])){correct <- "L2 mismatch & L1 match"}
+      if((D$stressed_syllable[indexD]!=D$stressed.syllable.L1[indexD])& (D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])){correct <- "L2 mismatch & L1 mismatch"}
       
+      D$correct[indexD] <- correct
       print(trs)
       print(D$condition[indexD])
       ################################################do some plotting and save each trial #uncomment if not necessary
