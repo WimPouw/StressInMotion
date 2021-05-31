@@ -181,11 +181,9 @@ for(ppn in ppns)
       D$stressed_mistimingL2L1[indexD]      <- ifelse(D$L1.L2[indexD]!=0, 
                                              ifelse(D$L1.L2[indexD]>0, (D$time_stress[indexD]-D$time_syl_L2[indexD])*-1,(D$time_stress[indexD]-D$time_syl_L2[indexD])),
                                              D$time_stress[indexD]-D$time_syl_L2[indexD])
-      if((D$stressed_syllable[indexD]==D$stressed.syllable.L1[indexD]) & (D$stressed_syllable[indexD]==D$stressed.syllable.L2[indexD]) ){correct <- "L2 match & L1 match"}
-      if(D$stressed_syllable[indexD]==D$stressed.syllable.L2[indexD] & (D$stressed_syllable[indexD]!=D$stressed.syllable.L1[indexD])){correct <- "L2 match & L1 mismatch"}
-      if((D$stressed_syllable[indexD]==D$stressed.syllable.L1[indexD])& (D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])){correct <- "L2 mismatch & L1 match"}
-      if((D$stressed_syllable[indexD]!=D$stressed.syllable.L1[indexD])& (D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])){correct <- "L2 mismatch & L1 mismatch"}
-      
+      if((D$stressed_syllable[indexD]==D$stressed.syllable.L2[indexD]) ){correct <- "L2 correct"}
+      if((D$stressed_syllable[indexD]==D$stressed.syllable.L2[indexD]) & (D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])){correct <- "L2 incorrect & L1 match"}
+      if((D$stressed_syllable[indexD]!=D$stressed.syllable.L1[indexD]) & (D$stressed_syllable[indexD]!=D$stressed.syllable.L2[indexD])){correct <- "L2 incorrect & L1 mismatch"}
       D$correct[indexD] <- correct
       print(trs)
       print(D$condition[indexD])

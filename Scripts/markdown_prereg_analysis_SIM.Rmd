@@ -15,6 +15,7 @@ library(ggbeeswarm)
 library(papaja)
 library(nlme)
 library(plyr)
+library(lsmeans)
 
 curfolder <- getwd()
 D <- read.csv(paste0(dirname(curfolder), "/ProcessedTimingData/DD.csv"))
@@ -22,13 +23,13 @@ D <- na.omit(D)
 
 D$accent  <- ifelse(D$accent=="yes", "accent present", "no accent")
 D$accent  <- factor(D$accent, levels=c("no accent", "accent present"))
-D$correct <- factor(D$correct, levels=c("L2 match & L1 match", "L2 match & L1 mismatch", "L2 mismatch & L1 match", "L2 mismatch & L1 mismatch"))
+D$correct <- factor(D$correct, levels=c("L2 correct", "L2 incorrect & L1 match", "L2 incorrect & L1 mismatch"))
 D$stress <-  factor(D$stress, levels=c("same", "difference"))
 ```
 
 ## Descriptive checks
 
-Here we provide a descriptive overview of the syllable identifications relative to target (table 1). In the current data the number of syllables identified by EasyAlign perfectly matched the targeted number of syllables, i.e., in 100% of the trials there were 0 differences in the number of syllable detected versus target.
+Here we provide a descriptive overview of the syllable identifications relative to target (table 1). In the current data the number of syllables identified by EasyAlign perfectly matched the targeted number of syllables, i.e., in 100% of the trials there were 0 differences in the number of syllable detected versus target. Note however that we will manually check the EasyAllign syllable detections for the final dataset.
 
 
 Table 1. Percentage of syllable detection mismatches
@@ -47,8 +48,8 @@ Table 2 provides the percentages of different type of L2 stress placement matche
 
 Table 2. Percentage of correct L2 placements
 ```{r, echo = FALSE}
-tab02 <- data.frame(prop.table(table(D$correct))*100)
-colnames(tab02) <- c("stress mis/match type", "percentage")  
+tab02 <- data.frame(prop.table(table(D$correct, D$stress))*100)
+colnames(tab02) <- c("stress mis/match type", "stress difference", "percentage")  
   
   
 apa_table(
@@ -84,23 +85,95 @@ anova(model0, model1) #test difference basemodel versus model 1
 summary(model1) 
 ```
 
+It is of course possible that there is a contextual effect of gesture, depending on whether there is a stress difference or a presence of an accent (see Figure 2)
+
+Figure 2.
+```{r, echo = FALSE}
+#stress correct
+a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2)+theme_bw()+ylim(1e-12, NA)+facet_grid(.~stress)
+a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1")) + ggtitle("effect gesture vs. no gesture ~ stress difference")
+ggplotly(a)
+
+#stress correct
+a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2)+theme_bw()+ylim(1e-12, NA)+facet_grid(.~accent)
+a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1")) + ggtitle("effect gesture vs. no gesture ~ accent")
+ggplotly(a)
+```
+
+We will further assess this in a complex model we expand our analysis with the relevant stimuli conditions, as well as their interactions with the gesture condition. If the interactions are statistically reliable we will perform a post-hoc comparisons with R-package "lsmeans" with a bonferroni correction.
+
+```{r, eval = TRUE}
+#alternative model with gesture versus no gesture as predictor
+model2 <- lme(accuracy~condition+stress+accent, data = D, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+model3 <- lme(accuracy~condition+stress+accent+
+                condition*stress+
+                condition*accent, 
+              data = D, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
 
 
-## L1 L2 competition and asynchrony
+anova(model1, model2, model3) #test difference basemodel versus model 1
 
-For the second main analysis we assess only trials which indicate
+#summary model 3 post hoc
+sum3 <- summary(model3)
+posthoc3a <- lsmeans(model3, list(pairwise ~ condition|stress),  adjust="bonferroni")
+posthoc3b <- lsmeans(model3, list(pairwise ~ condition|accent),  adjust="bonferroni")
+```
+```{r, echo=FALSE, eval = FALSE}
+    sum3
+    posthoc3a
+    posthoc3b
+```
 
+
+  <summary><font size="14"><span style="color:orange">**Click for model results**</font></span></summary>
+    ```{r, eval=TRUE}
+    sum3
+    posthoc3a
+    posthoc3b
+    ```
+
+
+## Gesture-speech asynchrony as a function of trial conditions
+
+In the previous analyses we know whether speech prosody performance increases or decreases as a function of gesture, stress difference, and accentedness. A further question is whether gesture-speech synchrony is affected by stress difference and accentedness.
+
+Figure 3.
+```{r, echo = FALSE}
+subD <- subset(D, condition == "gesture")
+a <- ggplot(subD, aes(x= asynchrony, color = stress)) + geom_density(size= 2)+theme_bw()+ylim(1e-12, NA)+facet_grid(.~accent)
+a <- a + scale_color_manual(values=wes_palette(n=2, name = "BottleRocket2")) + ggtitle("asynchrony as a function of stress difference and accent")
+ggplotly(a)
+```
+
+It seems that synchrony between gesture and speech is best in the accented and stress match condition.
+    ```{r, echo=FALSE, eval=TRUE}
+subD$abs_asynchrony <- abs(subD$asynchrony)
+#alternative model with gesture versus no gesture as predictor
+model0 <- lme(abs_asynchrony~1, data = subD, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+model1 <- lme(abs_asynchrony~stress+accent, data = subD, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+model2 <- lme(abs_asynchrony~stress*accent, data = subD, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+
+anova(model0, model1, model2) #test difference basemodel versus model 1
+sum2 <- summary(model2)
+posthoc2 <- lsmeans(model2, list(pairwise ~ stress|accent),  adjust="bonferroni")
+```
+
+```{r, echo = FALSE, eval=FALSE}
+sum2
+posthoc2
+```
+
+
+## Gesture-speech asynchrony and the directionality of error
+
+Now we should know whether gesture-speech synchrony can be affected by trial condition that may complicate correct stress placement. If indeed gesture-speech synchrony is affected, we can wonder about how gesture and speech diverge when they are more asynchronous. Firstly assess whether gestures
 
 ```{r, echo = FALSE}
 #for correct placement
-subD <- subset(D, condition == "gesture")
-
-
-a <- ggplot(D[D$condition == "gesture", ], aes(x = stress, y= asynchrony_L2L1)) + geom_quasirandom(color = "red", size = 0.1)+geom_boxplot(alpha = 0)+theme_bw()+ coord_flip()
-a <- a + scale_color_manual(values=wes_palette(n=2, name = "Darjeeling1"))
+Dsub <- subset(D, condition != "gesture")
+a <- ggplot(Dsub, aes(x = stress, y= asynchrony_L2L1)) + geom_quasirandom(color = "red", size = 0.1)+geom_boxplot(alpha = 0)+theme_bw()+ coord_flip()
+a <- a + scale_color_manual(values=wes_palette(n=2, name = "Darjeeling1"))+facet_grid(.~correct)
 ggplotly(a)
-
-
 ```
 
 
@@ -109,7 +182,7 @@ ggplotly(a)
 model0 <- lme(asynchrony_L2L1~1, data = subD, random = list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
 
 #alternative model with gesture versus no gesture as predictor
-model1 <- lme(asynchrony_L2L1~stress, data = subD, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+model1 <- lme(asynchrony_L2L1~stress*correct, data = subD, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
 anova(model0, model1) #test difference basemodel versus model 1
 summary(model1) 
 ```
@@ -118,12 +191,4 @@ summary(model1)
 
 ## Power analysis
 
-
-
 https://link.springer.com/article/10.3758/s13428-021-01546-0
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
