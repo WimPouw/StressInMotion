@@ -16,6 +16,7 @@ library(papaja)
 library(nlme)
 library(plyr)
 library(lsmeans)
+library(tidyr)
 
 curfolder <- getwd()
 D <- read.csv(paste0(dirname(curfolder), "/ProcessedTimingData/DD.csv"))
@@ -25,6 +26,7 @@ D$accent  <- ifelse(D$accent=="yes", "accent present", "no accent")
 D$accent  <- factor(D$accent, levels=c("no accent", "accent present"))
 D$correct <- factor(D$correct, levels=c("L2 correct", "L2 incorrect & L1 match", "L2 incorrect & L1 mismatch"))
 D$stress <-  factor(D$stress, levels=c("same", "difference"))
+D$condition <-  factor(D$condition, levels=c("nogesture", "gesture"))
 ```
 
 ## Descriptive checks
@@ -67,7 +69,7 @@ For the first analysis we simply assess whether the absolute difference in stres
 
 ```{r, echo = FALSE}
 #stress correct
-a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2)+theme_bw()+ylim(1e-12, NA)
+a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2, alpha = 0.75)+theme_bw()+ylim(1e-12, NA)
 a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1"))
 ggplotly(a)
 ```
@@ -82,25 +84,35 @@ model0 <- lme(accuracy~1, data = D, random = list(~1|ppn, ~1|target), method = "
 #alternative model with gesture versus no gesture as predictor
 model1 <- lme(accuracy~condition, data = D, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
 anova(model0, model1) #test difference basemodel versus model 1
-summary(model1) 
+sum1 <- summary(model1) 
 ```
+
+<details><summary>Click here for model 1 summary</summary>
+    ```{r, eval=TRUE}
+    sum1
+    ```
+</details>
+  
+  
+  
 
 It is of course possible that there is a contextual effect of gesture, depending on whether there is a stress difference or a presence of an accent (see Figure 2)
 
 Figure 2.
 ```{r, echo = FALSE}
 #stress correct
-a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2)+theme_bw()+ylim(1e-12, NA)+facet_grid(.~stress)
+a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2, alpha = 0.75)+theme_bw()+ylim(1e-12, NA)+facet_grid(.~stress)
 a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1")) + ggtitle("effect gesture vs. no gesture ~ stress difference")
 ggplotly(a)
 
 #stress correct
-a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2)+theme_bw()+ylim(1e-12, NA)+facet_grid(.~accent)
+a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2, alpha = 0.75)+theme_bw()+ylim(1e-12, NA)+facet_grid(.~accent)
 a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1")) + ggtitle("effect gesture vs. no gesture ~ accent")
 ggplotly(a)
 ```
 
 We will further assess this in a complex model we expand our analysis with the relevant stimuli conditions, as well as their interactions with the gesture condition. If the interactions are statistically reliable we will perform a post-hoc comparisons with R-package "lsmeans" with a bonferroni correction.
+
 
 ```{r, eval = TRUE}
 #alternative model with gesture versus no gesture as predictor
@@ -118,20 +130,62 @@ sum3 <- summary(model3)
 posthoc3a <- lsmeans(model3, list(pairwise ~ condition|stress),  adjust="bonferroni")
 posthoc3b <- lsmeans(model3, list(pairwise ~ condition|accent),  adjust="bonferroni")
 ```
-```{r, echo=FALSE, eval = FALSE}
-    sum3
-    posthoc3a
-    posthoc3b
-```
 
-
-  <summary><font size="14"><span style="color:orange">**Click for model results**</font></span></summary>
+<details><summary>Click here for model 3 summary</summary>
     ```{r, eval=TRUE}
     sum3
-    posthoc3a
-    posthoc3b
     ```
+</details>
+<details><summary>Click here for posth-hoc3a output</summary>
+    ```{r, eval=TRUE}
+    posthoc3a
+    ```
+</details>
+<details><summary>Click here for posth-hoc3b output</summary>
+    ```{r, eval=TRUE}
+    posthoc3a
+    ```
+</details>
 
+## Prosodic modulation of gesture
+
+We perform a mixed linear regression with normalized acoustic markers as DV, and acoustic marker (peak F0, peak envelope, and duration) x condition as independent variable.
+
+
+Figure x. 
+```{r, echo = FALSE, message= FALSE, warning = FALSE, fig.width = 7}
+a <- ggplot(D, aes(x = condition, y = D$peakF0z, color = condition)) + geom_quasirandom(alpha=0.2) + geom_boxplot(alpha = 0, color = "black") + scale_color_manual(values=wes_palette(n=2, name = "Royal1"))+ylab("peak F0 (normalized)")+theme_bw()+theme(legend.position = "none")+ theme(axis.text.x=element_text(angle = -70, hjust = 0))
+b <- ggplot(D, aes(x = condition, y = D$peakAMPz, color = condition)) + geom_quasirandom(alpha=0.2) + geom_boxplot(alpha = 0, color = "black") + scale_color_manual(values=wes_palette(n=2, name = "Royal1"))+ylab("peak envelope (normalized)")+theme_bw()+theme(legend.position = "none")+ theme(axis.text.x=element_text(angle = -70, hjust = 0))
+c <- ggplot(D, aes(x = condition, y = D$sDURz, color = condition)) + geom_quasirandom(alpha=0.2) + geom_boxplot(alpha = 0, color = "black") + scale_color_manual(values=wes_palette(n=2, name = "Royal1"))+ylab("vocal duration (normalized)")+theme_bw()+theme(legend.position = "none")+ theme(axis.text.x=element_text(angle = -70, hjust = 0))
+d <- ggplot(D, aes(x = condition, y = stressSCORE, color = condition)) + geom_quasirandom(alpha=0.2) + geom_boxplot(alpha = 0, color = "black") + scale_color_manual(values=wes_palette(n=2, name = "Royal1"))+ylab("stress score (normalized)")+theme_bw()+theme(legend.position = "none")+ theme(axis.text.x=element_text(angle = -70, hjust = 0))
+
+subplot(ggplotly(a), ggplotly(b), ggplotly(c), ggplotly(d), titleY = TRUE,margin = 0.07)
+
+```
+
+```{r, eval = TRUE}
+Dlong <- gather(D, "marker", "acoust_out", 13:15)
+
+#alternative model with gesture versus no gesture as predictor
+model0 <- lme(acoust_out~1, data = Dlong, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+model1 <- lme(acoust_out~marker*condition, data = Dlong, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+anova(model0, model1) #test difference basemodel versus model 1
+
+#summary model 3 post hoc
+sum1 <- summary(model1)
+posthocsum1 <- lsmeans(model1, list(pairwise ~ condition|marker),  adjust="bonferroni")
+
+```
+<details><summary>Click here for model 1 summary</summary>
+    ```{r, eval=TRUE}
+    sum1
+    ```
+</details>
+<details><summary>Click here for posthoc model 1</summary>
+    ```{r, eval=TRUE}
+    posthoc3a
+    ```
+</details>
 
 ## Gesture-speech asynchrony as a function of trial conditions
 
@@ -171,8 +225,8 @@ Now we should know whether gesture-speech synchrony can be affected by trial con
 ```{r, echo = FALSE}
 #for correct placement
 Dsub <- subset(D, condition != "gesture")
-a <- ggplot(Dsub, aes(x = stress, y= asynchrony_L2L1)) + geom_quasirandom(color = "red", size = 0.1)+geom_boxplot(alpha = 0)+theme_bw()+ coord_flip()
-a <- a + scale_color_manual(values=wes_palette(n=2, name = "Darjeeling1"))+facet_grid(.~correct)
+a <- ggplot(Dsub, aes(x = stress, y= asynchrony_L2L1))+geom_hline(yintercept = 0, color = "red", size = 0.5)+geom_violin(fill=NA) + geom_quasirandom(color = "black", size = 0.7, alpha = 0.5)+geom_boxplot(alpha = 0)+theme_bw() + coord_flip()
+a <- a +facet_grid(correct~.)
 ggplotly(a)
 ```
 
@@ -186,7 +240,6 @@ model1 <- lme(asynchrony_L2L1~stress*correct, data = subD, random =  list(~1|ppn
 anova(model0, model1) #test difference basemodel versus model 1
 summary(model1) 
 ```
-
 
 
 ## Power analysis
