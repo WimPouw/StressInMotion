@@ -18,6 +18,9 @@ library(plyr)
 library(lsmeans)
 library(tidyr)
 library(EMAtools)
+library(lme4)
+library(simr)
+library(mixedpower)
 
 curfolder <- getwd()
 D <- read.csv(paste0(dirname(curfolder), "/ProcessedTimingData/DD.csv"))
@@ -282,45 +285,79 @@ apa_table(
 
 ## Gesture-speech asynchrony and the directionality of error
 
-From the previous analysis we will know if gesture-speech synchrony can be affected by trial conditions that may complicate correct stress placement. If indeed gesture-speech synchrony is affected, we can wonder about how gesture and speech diverge when they are more asynchronous.
+From the previous analysis we will know if gesture-speech synchrony can be affected by trial conditions that may complicate correct stress placement. If indeed gesture-speech (a)synchrony is affected, we can wonder about how gesture and speech temporally diverge when they are more asynchronous. We will assess this by looking at the gesture-speech asynchrony when speech stress peak is correctly placed a) on the L2 target, b) when placed incorrectly on L1 target, or c) incorrectly placed on any other syllable. Figure 6 provides an example of our pilot data results where we report directional gesture-speech (a)synchrony when acoustic stress is correctly placed on the L2 target. We will assess whether gesture is attracted to be asynchronous with speech in the direction of the L1 stress competitor. We compare this directional (a)synchrony when there is a L1/L2 stress difference, versus when there is no stress difference. If there is an attraction of gesture towards L1, we would predict the positive effect of stress difference on the directional gesture-speech (a)synchrony as compared to no stress difference condition.   
+The current analysis is conditional on whether we find a) obtained an effect on gesture-speech synchrony for confirmatory analysis 3, and b) that we have at least 33% of the total responses for a particular response type (at least 33% of the trials of L2 correct, L2 incorrect-L1 match, and L1-L2 incorrect). In the current pilot data, for example, we have primarily L2 correct responses (~78%), so we would only analyze this response type. For each conditional analysis we perform a linear mixed regression analysis with participant and trial ID as random intercept, and stress difference as IV, and directional gesture-speech (a)synchrony as DV.
+
 
 ```{r, echo = FALSE}
 #for correct placement
-Dsub <- subset(D, condition != "gesture")
+Dsub <- subset(D, (condition != "gesture") & (correct == "L2 correct"))
 a <- ggplot(Dsub, aes(x = stress, y= asynchrony_L2L1))+geom_hline(yintercept = 0, color = "red", size = 0.5)+geom_violin(fill=NA) + geom_quasirandom(color = "black", size = 0.7, alpha = 0.5)+geom_boxplot(alpha = 0)+theme_bw() + coord_flip()
 a <- a +facet_grid(correct~.)
 ggplotly(a)
 ```
 
-
+Code Chunk 4. Conditional analysis 3a/3b
 ```{r}
 #basemodel predicting the overall mean accuracy
 model0 <- lme(asynchrony_L2L1~1, data = subD, random = list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
 
 #alternative model with gesture versus no gesture as predictor
-model1 <- lme(asynchrony_L2L1~stress*correct, data = subD, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+model1 <- lme(asynchrony_L2L1~stress, data = subD, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
 anova(model0, model1) #test difference basemodel versus model 1
 summary(model1) 
 ```
 
 
 ## Power analysis
-  To provide some indication on the amount of data we need to collect to get meaningful results, we will perform a power analysis concerning the first research question. We will assess a complex three way interaction model, and identify how many subjects we need to detect a main and interaction effects including gesture condition at a power of 80%. We use R-package mixedpower to determine this 
+  To provide some indication on the amount of data we need to collect to get meaningful results, we perform a power analysis concerning the first confirmatory research question. We will assess the power of a model with three main effects ( stress difference, accentedness, and gesture condition) on directional stress timing at an adjusted alpha of .05/3, and identify how many subjects we need to detect a main effects at a power of 80%. We use R-package 'mixedpower' that is designed to simulate data and power of linear mixed effects models from pilot data (see Kumle et al. 2021 for a tutorial). Table 5 shows the power estimates for the effects for N of 20 to 60 participants. It can be seen that for the effect of gesture and stress we already have enough power to detect an actual effect at N = 20 and higher. Given that accentedness is not as important of a variable as gesture condition and stress differences, we can conclude from this that an absolute minimum of 20 participants would suffice for ensuring a meaningful test of our confirmatory research question 1. Note however, that we will aim to collect 40 participants.  
+  We further report in Table 6 the power calculations are given for a more complex model with a three-way interaction, and the lower order interaction effects between stress, accentedness, and gesture condition. It can be seen that three-way interactions are likely to have low power, but that two-way interactions could become more meaningful at N = 60. Therefore we will set our ideal upper bound at N = 60.
 
-```{r, eval = FALSE, cache = TRUE}
+Table 5. Power analysis simple model
+```{r,cache = TRUE}
 #for details on this power analysis see
-https://link.springer.com/article/10.3758/s13428-021-01546-0
+#https://link.springer.com/article/10.3758/s13428-021-01546-0
 
-# load library
-library(mixedpower)
-library(doParallel)
 #main DV of interest
 D$accuracy <- abs(D$stressed_mistimingL2L1) #absolute deviation from stress from L2
 D$ppn <- as.numeric(as.factor(D$ppn)) #random variable to extend 
 
-#lme4 model instead of lme
+#make a lme4 model instead of lme
 model1 <- lmer(accuracy~accent+stress+condition +(1|ppn) + (1|target), data = D, na.action = na.exclude)
 
 
+#Power analysis
+power_model1 <- mixedpower(model = model1, data = D,
+                        fixed_effects = c("condition", "stress", "accent"),
+                        simvar = "ppn", steps = c(20,30,40,50, 60),
+                        critical_value = 2.14441, n_sim = 500)
+
+#plot power analysis results
+tab05 <- power_model1
+  
+apa_table(
+  tab05
+  , caption = "Power fixed effects for number of participants"
+)
 ```
 
+Table 6. Three way interaction model
+```{r, cache = TRUE}
+#make a more complex lme4 model with three way interaction
+model2 <- lmer(accuracy~accent*stress*condition +(1|ppn) + (1|target), data = D, na.action = na.exclude)
+
+
+#Power analysis 2
+power_model2 <- mixedpower(model = model2, data = D,
+                        fixed_effects = c("condition", "stress", "accent"),
+                        simvar = "ppn", steps = c(20,30,40,50, 60),
+                        critical_value = 2.14441, n_sim = 500)
+
+
+tab06 <- power_model2
+  
+apa_table(
+  tab06
+  , caption = "Power fixed effects for number of participants"
+)
+```
