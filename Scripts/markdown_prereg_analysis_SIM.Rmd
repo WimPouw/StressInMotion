@@ -7,47 +7,62 @@ output: html_document
 
 ```{r setup, echo=FALSE, warning = FALSE, message = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(ggplot2)
-library(plotly)
-library(RColorBrewer)
-library(wesanderson)
-library(ggbeeswarm)
-library(papaja)
-library(nlme)
-library(plyr)
-library(lsmeans)
-library(tidyr)
-library(EMAtools)
-library(lme4)
-library(simr)
-library(mixedpower)
+library(ggplot2)      #plotting
+library(plotly)       #plotting
+library(RColorBrewer) #plotting
+library(wesanderson)  #plotting
+library(ggbeeswarm)   #plotting
+library(papaja)       #markdownfeatures
+library(nlme)         #linear mixed regression
+library(plyr)         #data wrangling
+library(lsmeans)      #post-hoc linear mixed regression
+library(tidyr)        #data wrangling
+library(EMAtools)     #linear mixed regression (effect size)
+library(lme4)         #linear mixed regression
+library(simr)       #power analysis
+library(mixedpower) #power analysis
+library(plyr)       #data wrangling
+library(gridExtra)  #plotting
 
+#load in the timing data
 curfolder <- getwd()
 D <- read.csv(paste0(dirname(curfolder), "/ProcessedTimingData/DD.csv"))
 D <- na.omit(D)
 
-D$accent  <- ifelse(D$accent=="yes", "accent present", "no accent")
-D$accent  <- factor(D$accent, levels=c("no accent", "accent present"))
+#rename/code some variables
+D$accent  <- ifelse(D$accent=="yes", "stress mark present", "stress mark absent")
+D$accent  <- factor(D$accent, levels=c("stress mark absent", "stress mark present"))
 D$correct <- factor(D$correct, levels=c("L2 correct", "L2 incorrect & L1 match", "L2 incorrect & L1 mismatch"))
 D$stress <-  factor(D$stress, levels=c("same", "difference"))
 D$condition <-  factor(D$condition, levels=c("nogesture", "gesture"))
+
+#add an accuracy variable
+D$accuracy <- ifelse(D$correct== "L2 correct", 1, 0)
 ```
 
 ## Goal of this Rmarkdown document
 
-This Rmarkdown notebook contains a detailed documentation of how the analysis will be performed, provided with R code when informative. It not only contains the statistical model codes, but also the results they produce when applied to the pilot data. At the end of the section we report on a power analysis, providing some insights on how many participants we need to test.
+This Rmarkdown notebook contains a more detailed documentation of how the analysis will be performed, provided with R code when informative. It not only contains the statistical model code, but also the results they produce when applied to the pilot data. At the end of the section we report on a power analysis, providing some insights on how many participants we need to test.
 
 ## Main Research Questions
 
 Each of the analysis are tailored to provide statistically informed conclusions about the following research questions:
 
-* 1. Does the production of a gesture by Dutch learners of Spanish improve their L2 acoustic stress placement (i.e., are they more likely to stress the L2 target syllable)? (confirmatory)
+* 1. How does gesturing influence the acoustic production of stress by L2 learners?
 
-* 2. Does the production of a gesture by Dutch learners of Spanish affect their acoustic markers of L2 stress production (i.e., do they mark prominence more saliently)? (confirmatory)
+* * 1A. Does gesturing makes learners more accurate in L2 stress placement?
 
-* 3. When L2 stress placement is especially taxing (i.e., when stress is orthographically marked and/or there is an L1/L2 stress mismatch), is gesture-speech synchrony affected? (confirmatory)
-** 3a. If lexical stress in L2 is incorrectly placed, is the timing of gesture still temporally attracted to the L2 target? (exploratory)
-** 3b. If lexical stress in L2 is correctly placed, is the timing of gesture still temporally attracted to the L1 target?  (exploratory)
+* * 1B. Does gesture gesturing boost the acoustic markers of stress?
+
+* 2. How is gesture-prosody coupling in L2 influenced by competition from the speaker’s L1?
+
+* * 2A. Is gesture-prosody sycnhrony affected by stress-match/mismatch?
+
+* * 2B. Do correct L2 productions still demonstrate evidence of L1 temporal attraction 
+
+Note that we will only provide an analysis for 2B, but will also perform another analysis in the eventual study.
+
+* * 2C. Do ‘incorrect L1-like productions’ still demonstrate evidence of L2 temporal attraction in the form of a temporal bias in gestural timing in the direction of the L2 syllable.
 
 ## Initial descriptive checks of the data
 
@@ -82,91 +97,79 @@ apa_table(
 
 For all analysis we will use mixed linear regressions with maximum likelihood estimation using R-package nlme. Our models will always have participant and trial ID as random variables. We will always try to fit random slopes, next to random intercepts. With the current pilot data however, adding random slopes resulted in non-converging models. Thus for all models reported we have participant and trial ID as random intercepts. We further report a Cohen's *D* for our model predictors using R-package EMAtools. For interaction effects we will follow up with a post-hoc contrast analysis using R-package lsmeans, and we apply a Bonferroni correction for such multiple comparison tests.
 
-## Research question 1:  Effect of gesture on stress timing  
-  For the first analysis we simply assess whether the absolute difference in directional stress timing is different for the gesture versus no gesture condition, while also accounting for effects on timing due to stress L1/L2 difference and accentedness. If gesture improves stress timing, lower absolutized stress timings are to be expected (i.e., lower deviances from perfect synchrony).
+## Research question 1A:  Effect of gesture on stress placement 
+  For the first analysis we simply assess whether the absolute difference in directional stress timing is different for the gesture versus no gesture condition, while also accounting for effects on timing due to stress L1/L2 difference and stress mark presence. If gesture improves stress timing, lower absolutized stress timings are to be expected (i.e., lower deviances from perfect synchrony).
 
 Figure 3 upper panel. Effect of gesture versus no gesture on stress timing
 ```{r, echo = FALSE}
+
+cdat <- ddply(D, c("condition", "ppn"), summarise, acc.percentage=sum(accuracy)/length(accuracy)) 
+
 #stress correct
-a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2, alpha = 0.75)+theme_bw()+ylim(1e-12, NA)+ xlab("L2 <- Directional Stress timing -> L1")+geom_vline(xintercept = 0, color = "black")
-a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1"))
-ggplotly(a)
+a <- ggplot(cdat, aes(x= condition, color = condition, y = acc.percentage))+geom_boxplot(alpha=0.1, size= 0.1) + geom_point(size = 4)+theme_bw()+geom_line(aes(group=ppn), color = "black")
+a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1")) 
+a <- a + ylab("percentage of trials correct")
+
+
+#stress correct x stress difference and stress mark present
+cdat2 <- ddply(D, c("condition", "ppn", "stress", "accent"), summarise, acc.percentage=sum(accuracy)/length(accuracy)) 
+
+b <- ggplot(cdat2, aes(x= condition, color = condition, y = acc.percentage))+geom_boxplot(alpha=0.1, size= 0.1) + geom_point(size = 4)+theme_bw()+geom_line(aes(group=ppn), color = "black")+facet_grid(stress~accent)
+b <- b + scale_color_manual(values=wes_palette(n=2, name = "Royal1")) + ylab("percentage of trials correct")
+
+grid.arrange(a, b, nrow=2)
+
 ```
   
   We first construct a base model predicting the overall mean, with participant and trial ID random variables, and absolute stress timing as the dependent variable. This model is then compared to a model with stress difference + accentedness + gesture condition as main effects.  
 
 Code chunk 1. Model research question 1
-```{r}
-D$accuracy <- abs(D$stressed_mistimingL2L1) #absolute deviation stress timing
+```{r, warning = FALSE}
+library(lme4)
 
+D$ppn <- as.factor(D$ppn)
 #basemodel predicting the overall mean stress timing
-model0 <- lme(accuracy~1, data = D, random = list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
+model0 <- glmer(accuracy ~  1 + (1 | ppn)+(1|target), data = D, family = binomial(link="logit"))
 
 #alternative model with, stress, accentedness, and gesture versus no gesture as predictors
-model1 <- lme(accuracy~stress+accent+condition, data = D, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
-anovcomp01 <- anova(model0, model1) #test difference basemodel versus model 1
-sum1 <- summary(model1) 
-Dmod1 <- lme.dscore(model1, D, type="nlme")
+model1 <- glmer(accuracy ~  condition  + (1 | ppn)+(1|target),data = D, family = binomial(link="logit"))
 
+#alternative model with, stress, accentedness, and gesture versus no gesture as predictors
+
+model2 <- glmer(accuracy ~  condition*accent*stress + (1|ppn) + (1|target), data = D, family = binomial(link="logit"))
+
+#compare models
+anovcomp01 <- anova(model0, model1, model2) #test difference basemodel versus model 1
+
+#save model 1 (only gesture condition) results 
+sum1 <- summary(model1) 
+Dmod1 <- lme.dscore(model1, D, type="lme4")
+
+#save model 2 (3way interaction gesture, stress, accent) results 
+sum2 <- summary(model2)
+Dmod2 <- lme.dscore(model2, D, type="lme4")
+posthoc2 <- lsmeans(model2, list(pairwise ~ condition|accent|stress),  adjust="bonferroni")
 
 ```
   
-  <details><summary>Click here for model 1 R output</summary>
+  <details><summary>Click here for model 1 R output(model coefficients, effect sizes)</summary>
     ```{r, eval=TRUE}
-    model1
     sum1
     Dmod1
     ```
   </details>
-
-  <details><summary>Click here for model 1 summary</summary>
   
-  In our pilot data, the model with stress, accentedness, and gesture conditions as predictors outperformed the base model, change in Chi-sq (3) = `r printnum(anovcomp01$L.Ratio[2], digits= 3)`, *p* = `r printnum(anovcomp01$'p-value'[2],  digits=3 )`. The models results indicate a statistically reliable main effect of gesture vs. no gesture, *b* = `r printnum(sum1$tTable[4,1],  digits=4 )`, *t* (`r printnum(sum1$tTable[4,3], digits=0 )`) = `r printnum(sum1$tTable[4,4],  digits=4 )`, *p* = `r printnum(sum1$tTable[4,5],  digits=3 )`, Cohen's *D* = `r printnum(round(Dmod1$d[3],  digits=3))`. Stress difference was not a reliable  main effect, *b* = `r printnum(sum1$tTable[2,1],  digits=3 )`, *t* (`r printnum(sum1$tTable[2,3], digits=0 )`) = `r printnum(sum1$tTable[2,4], digits= 4 )`, *p* = `r printnum(sum1$tTable[2,5],  digits=3 )`, Cohen's *D* = `r printnum(Dmod1$d[1], digits = 3)`. Accent was not a reliable main effect, *b* = `r printnum(sum1$tTable[3,1],  digits=4 )`, *t* (`r printnum(sum1$tTable[3,3],  digits=0 )`) = `r printnum(sum1$tTable[3,4],  digits=3 )`, *p* = `r printnum(sum1$tTable[3,5],  digits=3 )`, Cohen's *D* = `r printnum(Dmod1$d[2],  digits=3)`.
+  <details><summary>Click here for more complex model 2 R output (model coefficients, effect sizes, and posthoc)</summary>
+    ```{r, eval=TRUE}
+    sum2
+    Dmod2
+    posthoc2
+    ```
   </details>
-    
-Figure 3 lower panels. Effect of gesture versus no gesture ~ stress and accent
-```{r, echo = FALSE}
-#stress correct
-a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2, alpha = 0.75)+theme_bw()+ylim(1e-12, NA)+facet_grid(.~stress)
-a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1")) + xlab("L2 <- Directional Stress timing -> L1") + ggtitle("effect gesture vs. no gesture ~ stress difference")+geom_vline(xintercept = 0, color = "black")
-ggplotly(a)
-
-#stress correct
-a <- ggplot(D, aes(x= stressed_mistimingL2L1, color = condition)) + geom_density(size= 2, alpha = 0.75)+theme_bw()+ylim(1e-12, NA)+facet_grid(.~accent)
-a <- a + scale_color_manual(values=wes_palette(n=2, name = "Royal1"))+ xlab("L2 <- Directional Stress timing -> L1")  + ggtitle("effect gesture vs. no gesture ~ accent")+geom_vline(xintercept = 0, color = "black")
-ggplotly(a)
-```
-
-We will further assess this in a complex model we expand our analysis with the relevant stimuli conditions, as well as their interactions with the gesture condition. If the interactions are statistically reliable we will perform a post-hoc comparisons with R-package "lsmeans" with a bonferroni correction.
-
-Code chunk 2. Model research question 1, with three way interaction
-```{r, eval = TRUE}
-#alternative model with gesture versus no gesture as predictor
-model2 <- lme(accuracy~condition*stress*accent, 
-              data = D, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
-
-anova(model1, model2) #test difference basemodel versus model 1
-
-#summary model 3 post hoc
-sum3 <- summary(model2)
-posthoc3 <- lsmeans(model2, list(pairwise ~ condition|accent|stress),  adjust="bonferroni")
-```
-
-<details><summary>Click here for model 3 summary</summary>
-    ```{r, eval=TRUE}
-    sum3
-    ```
-</details>
-<details><summary>Click here for posth-hoc3 output</summary>
-    ```{r, eval=TRUE}
-    posthoc3
-    ```
-</details>
-
-## Prosodic modulation of gesture
+  
+## 1B: Does gesture gesturing boost the acoustic markers of stress?
 
 Does gesture vs. no gesture affect acoustic markers of stress? We perform a mixed linear regression with normalized acoustic markers as DV, and acoustic marker (peak F0, peak envelope, and duration) x condition as independent variable. 
-
 
 Figure 4. Effect of gesture vs. no gesture on acoustic markers of stress 
 ```{r, echo = FALSE, message= FALSE, warning = FALSE, fig.width = 7}
@@ -203,8 +206,7 @@ Dmod1 <- lme.dscore(model1, Dlong, type="nlme")
 
 <details><summary>Click here for model 1 summary for research question 2</summary>
 
-  Does gesture vs. no gesture affect acoustic markers of stress? We perform a mixed linear regression with normalized acoustic output as DV, and acoustic marker (peak F0z, peak envelope, and duration) x condition as independent variable. We again test this model against a base model predicting the overall mean.  
-  The model with acoustic markers x condition was a more reliable model than the base model predicting the overall mean of the acoustic output, Chi-sq (5) = `r printnum(anovamod0mod1$L.Ratio[2], digits = 3)`, *p* = `r printnum(anovamod0mod1$'p-value'[2], digits = 3)`. Table 3 provides an overview of the model predictors.
+  We again test this model against a base model predicting the overall mean. The model with acoustic markers x condition was a more reliable model than the base model predicting the overall mean of the acoustic output, Chi-sq (5) = `r printnum(anovamod0mod1$L.Ratio[2], digits = 3)`, *p* = `r printnum(anovamod0mod1$'p-value'[2], digits = 3)`. Table 3 provides an overview of the model predictors.
   
 ```{r table03, echo = FALSE}
 tab03 <- cbind.data.frame(sum1$tTable, c(NA, Dmod1$d))
@@ -216,7 +218,8 @@ apa_table(
 )
 ```
 
-  We will further perform a post-hoc analysis disentangling these interaction effects, where we assess for which acoustic marker gesture vs. no gesture affected acoustic output. 
+  We will further perform a post-hoc analysis disentangling these interaction effects, where we assess for which acoustic marker gesture vs. no gesture affected acoustic output. Further, if there is an effect of gesture on stress realization, we will assess in a more complex model whether stress mark presence and L1-L2 stress mismatch interact with the gesture condition effect on stress realization. 
+
 </details>
 
 <details><summary>Click here for posthoc model 1 output</summary>
@@ -227,7 +230,7 @@ apa_table(
 
 </details> 
 
-## Research question 3: Gesture-speech asynchrony as a function of trial conditions
+## Research question 2A: Is gesture-prosody synchrony affected by stress-match/mismatch?
 
 From the previous analyses we should know whether stress timing performance and acoustic stress marking increases or decreases as a function of gesture, as well as the possible role of stress difference, and accentedness in stress timing. A further question is whether the timing between gesture and speech is affected by stress difference and accentedness, which would signal that gesture does not simply always synchronize with speech, but that coordination is destabilized due to difficulties of reaching the L2 targets without orthographic cues or with L1 stress competitor.  
 	Using a similar linear mixed modeling approach as the previous analysis we compare a base model with models with stress difference and accentedness (and their possible interactions) as predictors for the absolutized gesture-speech asynchrony. 
@@ -283,10 +286,9 @@ apa_table(
 </details>
 
 
-## Gesture-speech asynchrony and the directionality of error
+## 2B. Do correct L2 productions still demonstrate evidence of L1 temporal attraction  
 
-From the previous analysis we will know if gesture-speech synchrony can be affected by trial conditions that may complicate correct stress placement. If indeed gesture-speech (a)synchrony is affected, we can wonder about how gesture and speech temporally diverge when they are more asynchronous. We will assess this by looking at the gesture-speech asynchrony when speech stress peak is correctly placed a) on the L2 target, b) when placed incorrectly on L1 target, or c) incorrectly placed on any other syllable. Figure 6 provides an example of our pilot data results where we report directional gesture-speech (a)synchrony when acoustic stress is correctly placed on the L2 target. We will assess whether gesture is attracted to be asynchronous with speech in the direction of the L1 stress competitor. We compare this directional (a)synchrony when there is a L1/L2 stress difference, versus when there is no stress difference. If there is an attraction of gesture towards L1, we would predict the positive effect of stress difference on the directional gesture-speech (a)synchrony as compared to no stress difference condition.   
-The current analysis is conditional on whether we find a) obtained an effect on gesture-speech synchrony for confirmatory analysis 3, and b) that we have at least 33% of the total responses for a particular response type (at least 33% of the trials of L2 correct, L2 incorrect-L1 match, and L1-L2 incorrect). In the current pilot data, for example, we have primarily L2 correct responses (~78%), so we would only analyze this response type. For each conditional analysis we perform a linear mixed regression analysis with participant and trial ID as random intercept, and stress difference as IV, and directional gesture-speech (a)synchrony as DV.
+From the previous analysis we will know if gesture-speech synchrony can be affected by trial conditions that may complicate correct stress placement. If indeed gesture-speech (a)synchrony is affected, we can wonder about how gesture and speech temporally diverge when they are more asynchronous. We will assess this by looking at the gesture-speech asynchrony when speech stress peak is correctly placed a) on the L2 target (2B), b) when placed incorrectly on L1 target (2C). Figure 6 provides an example of our pilot data results where we report directional gesture-speech (a)synchrony when acoustic stress is correctly placed on the L2 target. We will assess whether gesture is attracted to be asynchronous with speech in the direction of the L1 stress competitor. We compare this directional (a)synchrony when there is a L1/L2 stress difference, versus when there is no stress difference. If there is an attraction of gesture towards L1, we would predict the positive effect of stress difference on the directional gesture-speech (a)synchrony as compared to no stress difference condition. The modeling we will perform is similar to our previous analysis, and are reported here below.
 
 
 ```{r, echo = FALSE}
@@ -299,10 +301,10 @@ ggplotly(a)
 
 Code Chunk 4. Conditional analysis 3a/3b
 ```{r}
-#basemodel predicting the overall mean accuracy
+#basemodel predicting the overall asynchrony
 model0 <- lme(asynchrony_L2L1~1, data = subD, random = list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
 
-#alternative model with gesture versus no gesture as predictor
+#alternative model stress versus no stress difference
 model1 <- lme(asynchrony_L2L1~stress, data = subD, random =  list(~1|ppn, ~1|target), method = "ML", na.action = na.exclude)
 anova(model0, model1) #test difference basemodel versus model 1
 summary(model1) 
@@ -314,21 +316,18 @@ summary(model1)
   We further report in Table 6 the power calculations are given for a more complex model with a three-way interaction, and the lower order interaction effects between stress, accentedness, and gesture condition. It can be seen that three-way interactions are likely to have low power, but that two-way interactions could become more meaningful at N = 60. Therefore we will set our ideal upper bound at N = 60.
 
 Table 5. Power analysis simple model
-```{r,cache = TRUE}
+```{r, cache = TRUE}
 #for details on this power analysis see
 #https://link.springer.com/article/10.3758/s13428-021-01546-0
 
-#main DV of interest
-D$accuracy <- abs(D$stressed_mistimingL2L1) #absolute deviation from stress from L2
 D$ppn <- as.numeric(as.factor(D$ppn)) #random variable to extend 
 
 #make a lme4 model instead of lme
-model1 <- lmer(accuracy~accent+stress+condition +(1|ppn) + (1|target), data = D, na.action = na.exclude)
-
+model1 <- glmer(accuracy ~  condition  + (1 | ppn)+(1|target),data = D, family = binomial(link="logit"))
 
 #Power analysis
 power_model1 <- mixedpower(model = model1, data = D,
-                        fixed_effects = c("condition", "stress", "accent"),
+                        fixed_effects = c("condition"),
                         simvar = "ppn", steps = c(20,30,40,50, 60),
                         critical_value = 2.14441, n_sim = 500)
 
@@ -343,8 +342,8 @@ apa_table(
 
 Table 6. Three way interaction model
 ```{r, cache = TRUE}
-#make a more complex lme4 model with three way interaction
-model2 <- lmer(accuracy~accent*stress*condition +(1|ppn) + (1|target), data = D, na.action = na.exclude)
+#alternative model with, stress, accentedness, and gesture versus no gesture as predictors
+model2 <- glmer(accuracy ~  condition * accent * stress + (1 | ppn)+(1|target),data = D, family = binomial(link="logit"))
 
 
 #Power analysis 2

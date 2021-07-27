@@ -83,7 +83,8 @@ for(ppn in ppns)
     D$condition[1:nrow(D)/2] <- "nogesture"   #set half to no gesture
     D$ppn <- D$syllables_detected <- D$stressed_syllable <- D$time_beat <-
       D$time_stress <- D$time_syl_L1 <- D$time_syl_L2 <- D$asynchrony_L2L1 <-
-      D$asynchrony <- D$correct <- D$stressed_mistimingL2L1 <-stressed_mistiming_raw<- NA
+      D$asynchrony <- D$correct <- D$stressed_mistimingL2L1 <-stressed_mistiming_raw <-
+      D$peakDEC <- D$peakF0z <- D$peakAMPz <- D$sDURz <- D$stressSCORE <- NA
     #loop through all txt.grids
     for(trs in unique(txtgrds)) #loop through txtgrids, merge, collect synchrony info, and plot
     {
@@ -135,8 +136,8 @@ for(ppn in ppns)
       name  <- str_remove(name, "_gesture")        #get only the target name
       MTe$STRESS_L1 <-  MTe$STRESS_L2 <- NA
       MTe$stresstimeL1 <- MTe$stresstimeL2 <- NA
-      MTe$STRESS_L1[MTe$syllable_num == trialinfo$stressed.syllable.L1[trialinfo$target==name]] <- "STRESS L1" 
-      MTe$STRESS_L2[MTe$syllable_num == trialinfo$stressed.syllable.L2[trialinfo$target==name]] <- "STRESS L2" 
+      MTe$STRESS_L1[which(MTe$syllable_num == trialinfo$stressed.syllable.L1[trialinfo$target==name])] <- "STRESS L1" 
+      MTe$STRESS_L2[which(MTe$syllable_num == trialinfo$stressed.syllable.L2[trialinfo$target==name])] <- "STRESS L2" 
       
       #select the syllable that is stressed
       MTe$envelope_z <- MTe$duration_z <- MTe$F0_z <-MTe$STRESS<- MTe$stresstime <- NA
@@ -170,13 +171,20 @@ for(ppn in ppns)
       D$time_beat[indexD]          <- MTe$time_ms[!is.na(MTe$peakz)]      #time of beat
       D$time_syl_L1[indexD]        <- MTe$time_ms[!is.na(MTe$stresstimeL1)] #time of L1 syllable occurence
       D$time_syl_L2[indexD]        <- MTe$time_ms[!is.na(MTe$stresstimeL2)] #time of L2 syllable occurence
+      D$peakDEC[indexD]            <- min(c(0, 0, diff(diff(MTe$vertical_movement)))) #peak deceleration (not used in our pre-reg analysis now)
+      D$peakF0z[indexD]            <- max(MTe$F0_z[MTe$STRESS=="STRESSED SYLLABLE"], na.rm =TRUE)
+      D$peakAMPz[indexD]           <- max(MTe$envelope_z[MTe$STRESS=="STRESSED SYLLABLE"], na.rm =TRUE)
+      D$sDURz[indexD]              <- max(MTe$duration_z[MTe$STRESS=="STRESSED SYLLABLE"], na.rm = TRUE)
+      D$stressSCORE[indexD]        <- max(MTe$stress_score, na.rm =TRUE)
+      
+      
       #raw asynchrony
-      D$asynchrony[indexD]         <-  D$time_stress[indexD]-D$time_beat[indexD] #just capture the asynchrony
+      D$asynchrony[indexD]         <-  D$time_beat[indexD]-D$time_stress[indexD] #just capture the asynchrony
       #compute an asynchrony measure such that negative values indicate overshoot in direction L2
       #and positive values indicate asynchrony towards L1 direction
       D$asynchrony_L2L1[indexD]             <- ifelse(D$L1.L2[indexD]!=0, 
-                                                     ifelse(D$L1.L2[indexD]>0, (D$time_stress[indexD]-D$time_beat[indexD])*-1,(D$time_stress[indexD]-D$time_beat[indexD])),
-                                                     D$time_stress[indexD]-D$time_beat[indexD])
+                                                     ifelse(D$L1.L2[indexD]>0, (D$time_beat[indexD]-D$time_stress[indexD])*-1, (D$time_beat[indexD]-D$time_stress[indexD])),
+                                                     D$time_beat[indexD]-D$time_stress[indexD])
       D$stressed_mistiming_raw              <- D$time_stress[indexD]-D$time_syl_L2[indexD]
       D$stressed_mistimingL2L1[indexD]      <- ifelse(D$L1.L2[indexD]!=0, 
                                              ifelse(D$L1.L2[indexD]>0, (D$time_stress[indexD]-D$time_syl_L2[indexD])*-1,(D$time_stress[indexD]-D$time_syl_L2[indexD])),
